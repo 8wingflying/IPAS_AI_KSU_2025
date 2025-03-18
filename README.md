@@ -78,6 +78,7 @@
   - https://github.com/ageron/handson-ml3
 - 非監督學習
   - [Hands-On Unsupervised Learning Using Python]() 
+
 ## 深度學習
 - [Keras 大神歸位：深度學習全面進化！用 Python 實作 CNN、RNN、GRU、LSTM、GAN、VAE、Transformer |François Chollet](https://www.tenlong.com.tw/products/9789863127017?list_name=sp)
 - [深度學習的 16 堂課：CNN + RNN + GAN + DQN + DRL, 看得懂、學得會、做得出！](https://www.tenlong.com.tw/products/9789863126782?list_name=sp)
@@ -86,6 +87,13 @@
   - 作者深度學習系列教學影片 → https://reurl.cc/mLj7jV
 - [跟 NVIDIA 學深度學習！從基本神經網路到 ......、GPT、BERT...，紮穩機器視覺與大型語言模型 (LLM) 的建模基礎|Magnus Ekman 著 哈雷 譯；施威銘研究室 監修](https://www.tenlong.com.tw/products/9789863127765?list_name=rd)
 - [核心開發者親授！PyTorch 深度學習攻略 (Deep Learning with Pytorch)|Eli Stevens、Luca Antiga、Thomas Viehmann 著 黃駿 , 施威銘研究室 監修](https://www.tenlong.com.tw/products/9789863126737?list_name=rd)
+
 ## 生成式 AI
-- [生成深度學習｜訓練機器繪畫、寫作、作曲與玩遊戲, 2/e]()
+- [生成深度學習｜訓練機器繪畫、寫作、作曲與玩遊戲, 2/e](https://www.tenlong.com.tw/products/9786263248540)
   - Generative Deep Learning: Teaching Machines to Paint, Write, Compose, and Play, 2/e)
+
+## 套件
+- [scikit-learn](https://scikit-learn.org/stable/)
+- [XGBoost](https://xgboost.readthedocs.io/en/stable/)
+- [Tensorflow](https://www.tensorflow.org/?hl=zh-tw)
+- [PyTorch](https://pytorch.org/tutorials/beginner/basics/intro.html)
