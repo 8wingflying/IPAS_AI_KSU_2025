@@ -1,9 +1,9 @@
 # IPAS_AI_KSU_2025
 
 # 期末總報告:每一科目四份報告
-- 監督式學習:回歸演算法
-- 監督式學習:分類演算法
-- 非監督式學習:KMeans叢集演算法
+- 1.監督式學習:回歸演算法 ==> linear regression
+- 2.監督式學習:分類演算法  ==> Decision tree classification
+- 3.非監督式學習:叢集演算法 ==> KMeans
 - 機器學習指標與評估
 - 程式註解 https://github.com/zotroneneis/machine_learning_basics/tree/master
 
