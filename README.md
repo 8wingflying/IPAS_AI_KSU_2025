@@ -1,5 +1,4 @@
 # IPAS_AI_KSU_2025
-# IPAS_AI_2025_ALL
 
 # 期末總報告:每一科目四份報告
 - 程式註解 https://github.com/zotroneneis/machine_learning_basics/tree/master
