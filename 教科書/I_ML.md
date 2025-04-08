@@ -72,6 +72,25 @@
 ## 6. 決策樹(Decision Trees) ==>  可以用到 分類(Classification) 與 回歸(Regression)
 
 ## 7. Ensemble學習和`隨機森林(Random Forests)` ==>  競賽常勝軍
+- Ensemble學習
+- Voting Classifiers(投票分類器)
+- Bagging裝袋 and Pasting粘貼
+- `隨機森林(Random Forests)`
+- Boosting(提高)
+  - AdaBoost | adaptive boosting
+  - gradient tree boosting| gradient boosted regression trees (GBRT)
+  - Histogram-based gradient boosting (HGB) 
+- Stacking(堆疊) |stacked generalization
+  - Scikit-Learn|StackingClassifier
+  - Scikit-Learn|StackingRegressor 
+- 補充說明
+  - 強大的套件 XGBoost, CatBoost, and LightGBM
+  - [TensorFlow Decision Forest](https://www.tensorflow.org/decision_forests?hl=zh-tw)
+    - plain random forests, extra-trees, GBRT 
+  - Deep Neural Decision Forests
+    - https://blog.goodaudience.com/deep-neural-decision-forests-b1dd39c4c6ce
+    - [PAPER](https://ieeexplore.ieee.org/document/7410529?denied=) 
+
 
 ## 8. 降維(Dimensionality Reduction)  ==>  非監督學習
 - The Curse of Dimensionality
