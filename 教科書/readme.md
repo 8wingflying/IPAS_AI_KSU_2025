@@ -9,13 +9,24 @@
 
 ## I. 機器學習的基礎知識
 
-1. 機器學習前景
+1. 機器學習`前景`The Machine Learning `Landscape`
+- 什麼是機器學習？
+- 為什麼使用機器學習？
+- 應用實例
+- 機器學習系統的類型
+  - 培訓監督Training Supervision
+  - 批量學習與在線學習`Batch Learning` VS `Online Learning`
+  - 基於實例的學習 與 基於模型的學習`Instance-Based` Learning VS `Model-Based` Learning
+- 機器學習的主要挑戰(Main Challenges)
+- 測試和驗證(Testing and Validating)
+  - 超參數調整和模型選擇(Hyperparameter Tuning and Model Selection)
+  - 資料不匹配(Data Mismatch)
 
-2. 端到端機器學習專案
+2.(端到端End-to-End)機器學習專案[Machine Learning Project]
 
-3. 分類
+4. 分類
 
-4. 訓練模型
+5. 訓練模型
    
 > Linear Regression
 
