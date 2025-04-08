@@ -73,9 +73,16 @@
 
 ## 7. Ensemble學習和`隨機森林(Random Forests)` ==>  競賽常勝軍
 - Ensemble學習
+  - https://scikit-learn.org/stable/api/sklearn.ensemble.html
+  - https://scikit-learn.org/stable/modules/ensemble.html#ensemble
 - Voting Classifiers(投票分類器)
-- Bagging裝袋 and Pasting粘貼
+  - from sklearn.ensemble import `VotingClassifier` 
+- Bagging裝袋(sampling with replacement) and Pasting粘貼(sampling without replacement)
+  - from sklearn.ensemble import BaggingClassifier
+  - Out-of-Bag Evaluation
+  - Random Patches and Random Subspaces 
 - `隨機森林(Random Forests)`
+  -  extremely randomized trees⁠| extra-trees 
 - Boosting(提高)
   - AdaBoost | adaptive boosting
   - gradient tree boosting| gradient boosted regression trees (GBRT)
