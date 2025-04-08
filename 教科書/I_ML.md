@@ -67,13 +67,37 @@
 - Logistic 回歸(Logistic Regression)|logit regression ==> 二元分類
   - softmax regression | multinomial logistic regression. ==> 多類別分類
 
+5. 支援向量機(Support Vector Machine)  ==>  可以用到 分類(Classification) 與 回歸(Regression)
 
-5. 支援向量機(Support Vector Machine)
+6. 決策樹(Decision Trees) ==>  可以用到 分類(Classification) 與 回歸(Regression)
 
-6. 決策樹(Decision Trees)
+7. Ensemble學習和`隨機森林(Random Forests)` ==>  競賽常勝軍
 
-8. 集成學習和隨機森林
-
-9. 降維
+8. 降維(Dimensionality Reduction)  ==>  非監督學習
+- The Curse of Dimensionality
+- 兩大類做法(Main Approaches for Dimensionality Reduction)
+  - Projection
+  - Manifold Learning
+    - https://scikit-learn.org/stable/modules/manifold.html 
+- PCA | Principal component analysis ==> Compression(壓縮)
+  - Randomized PCA
+  - Incremental PCA 
+- Random Projection
+  - `Gaussian`RandomProjection
+  - `Sparse`RandomProjection 
+- LLE | Locally linear embedding ==> nonlinear dimensionality reduction (NLDR)
+- Other Dimensionality Reduction Techniques ==> Scikit-Learn支援其他夠多的Dimensionality Reduction
+  - https://scikit-learn.org/stable/modules/decomposition.html
+  - 2.5.1.4. Sparse principal components analysis
+  - 2.5.2. Kernel Principal Component Analysis (kPCA)
+  - ...
+  - 2.5.8. Latent Dirichlet Allocation (LDA)
 
 10. 非監督學習技術
+- Clustering Algorithms: k-means and DBSCAN
+  - https://scikit-learn.org/stable/modules/clustering.html#clustering
+    - 參看 A comparison of the clustering algorithms in scikit-learn 
+  - k-means
+  - DBSCAN 
+- Gaussian Mixtures Model
+  - https://scikit-learn.org/stable/modules/mixture.html 
