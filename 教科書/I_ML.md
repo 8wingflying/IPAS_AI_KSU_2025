@@ -1,6 +1,6 @@
-## I. 機器學習的基礎知識
+# I. 機器學習的基礎知識
 
-1. 機器學習`前景`The Machine Learning `Landscape`
+## 1. 機器學習`前景`The Machine Learning `Landscape`
 - 什麼是機器學習？
 - 為什麼使用機器學習？
 - 應用實例
@@ -13,7 +13,7 @@
   - 超參數調整和模型選擇(Hyperparameter Tuning and Model Selection)
   - 資料不匹配(Data Mismatch)
 
-2.(端到端End-to-End)機器學習專案(Machine Learning Project)
+## 2.(端到端End-to-End)機器學習專案(Machine Learning Project)
 - 本章節以一個範例說明機器學習專案
 - 範例:使用 California 人口普查資料構建該州的房價模型
 - Working with Real Data
@@ -34,7 +34,7 @@
 - Fine-Tune Your Model
 - Launch, Monitor, and Maintain Your System
 
-3. 分類(Classification) ==> 監督學習 | 分類(Classification)
+## 3. 分類(Classification) ==> 監督學習 | 分類(Classification)
 - MNIST資料集
 - 二元分類(Training a Binary Classifier)
 - 績效衡量標準(Performance Measures)
@@ -48,7 +48,7 @@
 - 多`標籤`分類Multi`label` Classification
 - 多`輸出`分類Multi`output` Classification
 
-4. 訓練模型  ==> 監督學習 | 回歸(Regression)
+## 4. 訓練模型  ==> 監督學習 | 回歸(Regression)
 - 線性回歸(Linear Regression)
 - 梯度下降(Gradient Descent)
   - `Batch` Gradient Descent
@@ -67,13 +67,13 @@
 - Logistic 回歸(Logistic Regression)|logit regression ==> 二元分類
   - softmax regression | multinomial logistic regression. ==> 多類別分類
 
-5. 支援向量機(Support Vector Machine)  ==>  可以用到 分類(Classification) 與 回歸(Regression)
+## 5. 支援向量機(Support Vector Machine)  ==>  可以用到 分類(Classification) 與 回歸(Regression)
 
-6. 決策樹(Decision Trees) ==>  可以用到 分類(Classification) 與 回歸(Regression)
+## 6. 決策樹(Decision Trees) ==>  可以用到 分類(Classification) 與 回歸(Regression)
 
-7. Ensemble學習和`隨機森林(Random Forests)` ==>  競賽常勝軍
+## 7. Ensemble學習和`隨機森林(Random Forests)` ==>  競賽常勝軍
 
-8. 降維(Dimensionality Reduction)  ==>  非監督學習
+## 8. 降維(Dimensionality Reduction)  ==>  非監督學習
 - The Curse of Dimensionality
 - 兩大類做法(Main Approaches for Dimensionality Reduction)
   - Projection
@@ -93,7 +93,7 @@
   - ...
   - 2.5.8. Latent Dirichlet Allocation (LDA)
 
-10. 非監督學習技術
+## 9. 非監督學習技術
 - Clustering Algorithms: k-means and DBSCAN
   - https://scikit-learn.org/stable/modules/clustering.html#clustering
     - 參看 A comparison of the clustering algorithms in scikit-learn 
