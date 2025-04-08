@@ -7,7 +7,7 @@
 - 機器學習指標與評估
 - 程式註解 https://github.com/zotroneneis/machine_learning_basics/tree/master
 
-
+- https://github.com/MyDearGreatTeacher/ML2023_ref
 # 中級 能力鑑定
 - 1.人工智慧技術應用與規劃 [必考 ]
 - 2.大數據處理分析與應用 [必選考]
