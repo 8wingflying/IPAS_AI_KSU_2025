@@ -99,7 +99,7 @@
     - [PAPER](https://ieeexplore.ieee.org/document/7410529?denied=) 
 
 
-## 8. 降維(Dimensionality Reduction)  ==>  非監督學習
+## 8. 降維(Dimensionality Reduction)  ==>  [非監督學習](非監督學習.md)
 - The Curse of Dimensionality
 - 兩大類做法(Main Approaches for Dimensionality Reduction)
   - Projection
