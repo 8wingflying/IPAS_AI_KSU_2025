@@ -16,17 +16,20 @@
 3. 分類
 
 4. 訓練模型
+   
 > Linear Regression
+
 > Gradient Descent
+
 > Polynomial Regression
+
 > Learning Curves
+
 > Regularized Linear Models
+
 > Logistic Regression
 
-5. Support Vector Machine
-   
-
-5. 支援向量機()
+5. 支援向量機(Support Vector Machine)
 
 6. 決策樹(Decision Trees)
 
