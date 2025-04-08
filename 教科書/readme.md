@@ -6,6 +6,7 @@
 ## 上課規劃
 - 早上三節課 ==> I. 機器學習的基礎知識
 - 下午三節課 ==> II. 神經網路和深度學習
+
 ## I. 機器學習的基礎知識
 
 1. 機器學習前景
@@ -15,16 +16,25 @@
 3. 分類
 
 4. 訓練模型
+> Linear Regression
+> Gradient Descent
+> Polynomial Regression
+> Learning Curves
+> Regularized Linear Models
+> Logistic Regression
 
-5. 支援向量機
+5. Support Vector Machine
+   
 
-6. 決策樹
+5. 支援向量機()
 
-7. 集成學習和隨機森林
+6. 決策樹(Decision Trees)
 
-8. 降維
+8. 集成學習和隨機森林
 
-9. 非監督學習技術
+9. 降維
+
+10. 非監督學習技術
 
 ## II. 神經網路和深度學習
 - 10. 人工神經簡介 使用 Keras 建立網路
