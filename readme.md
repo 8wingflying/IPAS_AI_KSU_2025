@@ -1,0 +1,23 @@
+## 資料集
+- 迴歸
+  - 波士頓房價預測
+  - 加州房價預測 
+- 分類
+  - 糖尿病預測
+  - 鐵達尼號資料集的生存分析
+  - [鳶尾花資料集](IRIS.MD)
+  - Image Classificaiton|影像辨識(分類)
+    - MNIST 手寫辨識 ==> CNN
+  - TExt Classification|文本辨識(分類)
+    - 🎬[IMDb 網路電影資料集](IMDb.md) ==> RNN 
+    - 情感分析
+    - [Reuters 路透社資料集的新聞主題分類](Reuters.md)==> RNN
+  - Music Classification
+  - Video Classification
+- Generation生成
+  - Text Generation
+  - pose Generation
+  - Image Generation
+  - Art Generation
+  - Music Generation
+  - Video Generation 
