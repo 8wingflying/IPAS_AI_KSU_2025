@@ -52,9 +52,10 @@ random_state=None)
 - Figure 5-2. Sensitivity to feature scales
 - Figure 5-3. Hard margin sensitivity to outliers
 - Figure 5-4. Large margin (left) versus fewer margin violations (right)
+- The LinearSVC class is much faster than SVC(kernel="linear")
 #### 非線性SVC 
 - Figure 5-5. Adding features to make a dataset linearly separable
-- Figure 5-6. Linear SVM classifier using `polynomial` features
+
 - Figure 5-7. SVM classifiers with a `polynomial` kernel 
 - linear SCM
 ```python
@@ -91,6 +92,7 @@ polynomial_svm_clf = make_pipeline(
 )
 polynomial_svm_clf.fit(X, y)
 ```
+- SEE Figure 5-6. Linear SVM classifier using `polynomial` features(特徵)
 ```python
 # Polynomial Kernel
 from sklearn.svm import SVC
@@ -99,6 +101,12 @@ poly_kernel_svm_clf = make_pipeline(StandardScaler(),
                                     SVC(kernel="poly", degree=3, coef0=1, C=5))
 poly_kernel_svm_clf.fit(X, y)
 ```
+```python
+rbf_kernel_svm_clf = make_pipeline(StandardScaler(),
+                                   SVC(kernel="rbf", gamma=5, C=0.001))
+rbf_kernel_svm_clf.fit(X, y)
+```
+- Figure 5-9. SVM classifiers using an RBF kernel
 #### Similarity Features
 - Figure 5-8. Similarity features using the Gaussian RBF
 
