@@ -1,13 +1,27 @@
 ## Support Vector Machines
 - 分類問題 ==> Support Vector發現
 - hard vs soft
+  - Soft Margin Classification
+  - Soft Margin Classification 
 - Linear vs Nonlinerar
+  - Linear SVM Classification 
+  - Nonlinear SVM Classification
+    - Polynomial Kernel
+    - Gaussian RBF Kernel 
 - sklearn.svm模組說明 
-  - SVC  ==> C 
+  - LinearSVC vs SVC  ==> C
+  - 主要區別在於預設使用的損失函數
 - 工作原理
-  - training 兩種
+  - Equation 5-1. Hard margin linear SVM classifier objective
+  - Equation 5-2. Soft margin linear SVM classifier objective(引入 C)
+  - Dual problem
+  - training(兩種方式)
     - Using a QP solver
     - use gradient descent to minimize the hinge loss or the squared hinge loss  
+- 作業
+  - 第10題==>SVM 分類 ==>Train an SVM classifier on the wine dataset==> sklearn.datasets.load_wine()
+  - 第11題==>SVM 回歸 ==>Train and fine-tune an SVM regressor on the California housing dataset
+    - sklearn.datasets.fetch_california_housing() 
 ### 簡介
 - 支援向量機 （SVM） 是一種功能強大且用途廣泛的機器學習模型，能夠執行線性或非線性分類(SVC)、回歸(SVR)，甚至新穎性檢測。
 - SVM 適用於`中小型`非線性數據集（即數百到數千個實例），尤其是對於分類任務。
@@ -29,7 +43,7 @@
     - 大 c ==> 結果比較好 
   - SVM 模型 overfitting ==> 降低C 來正則化
 
-## sklearn.svm
+## sklearn.svm: SVC vs LinearSVC  
 - The multiclass support is handled according to a `one-vs-one` scheme.
 ```
 class sklearn.svm.SVC(
@@ -49,6 +63,22 @@ max_iter=-1,
 decision_function_shape='ovr',
 break_ties=False,
 random_state=None)
+```
+```
+class sklearn.svm.LinearSVC(
+penalty='l2',    ===> 
+loss='squared_hinge',   ===> 
+*,
+dual='auto',
+tol=0.0001,
+C=1.0,
+multi_class='ovr',
+fit_intercept=True,
+intercept_scaling=1,
+class_weight=None,
+verbose=0,
+random_state=None,
+max_iter=1000)
 ```
 
 ###  [sklearn.preprocessing](https://scikit-learn.org/stable/api/sklearn.preprocessing.html)
