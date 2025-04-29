@@ -24,6 +24,21 @@
   - training(兩種方式)
     - Using a QP solver
     - use gradient descent to minimize the hinge loss or the squared hinge loss  
+- 進階主題
+  - One-class SVM with non-linear kernel (RBF)
+  - Plot classification boundaries with different SVM Kernels
+  - Plot different SVM classifiers in the iris dataset
+  - Plot the support vectors in LinearSVC
+  - RBF SVM parameters
+  - SVM Margins Example
+  - SVM Tie Breaking Example
+  - SVM with custom kernel
+  - SVM-Anova: SVM with univariate feature selection
+  - SVM: Maximum margin separating hyperplane
+  - SVM: Separating hyperplane for unbalanced classes
+  - SVM: Weighted samples
+  - Scaling the regularization parameter for SVCs
+  - Support Vector Regression (SVR) using linear and non-linear kernels 
 - 作業
   - 第10題==>SVM 分類 ==>Train an SVM classifier on the wine dataset==> sklearn.datasets.load_wine()
   - 第11題==>SVM 回歸 ==>Train and fine-tune an SVM regressor on the California housing dataset
