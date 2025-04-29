@@ -7,10 +7,16 @@
   - Linear SVM Classification 
   - Nonlinear SVM Classification
     - Polynomial Kernel
-    - Gaussian RBF Kernel 
+    - Gaussian RBF Kernel
+    - Sigmod Kernel => see Equation 5-7. Common kernels
 - sklearn.svm模組說明 
   - LinearSVC vs SVC  ==> C
   - 主要區別在於預設使用的損失函數
+  - multi-class classification ==>  不同程式的實作差異
+    - see https://scikit-learn.org/stable/modules/svm.html#kernel-functions
+    - SVC and NuSVC implement the “one-versus-one” approach for multi-class classification.
+      - In total, n_classes * (n_classes - 1) / 2 classifiers are constructed and each one trains data from two classes
+    - LinearSVC implements “one-vs-the-rest” multi-class strategy, thus training n_classes models. 
 - 工作原理
   - Equation 5-1. Hard margin linear SVM classifier objective
   - Equation 5-2. Soft margin linear SVM classifier objective(引入 C)
