@@ -5,6 +5,9 @@
 - sklearn.svm模組說明 
   - SVC  ==> C 
 - 工作原理
+  - training 兩種
+    - Using a QP solver
+    - use gradient descent to minimize the hinge loss or the squared hinge loss  
 ### 簡介
 - 支援向量機 （SVM） 是一種功能強大且用途廣泛的機器學習模型，能夠執行線性或非線性分類(SVC)、回歸(SVR)，甚至新穎性檢測。
 - SVM 適用於`中小型`非線性數據集（即數百到數千個實例），尤其是對於分類任務。
