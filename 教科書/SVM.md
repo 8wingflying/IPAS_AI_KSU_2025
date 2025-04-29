@@ -1,5 +1,12 @@
 ## Support Vector Machines
-- 支援向量機 （SVM） 是一種功能強大且用途廣泛的機器學習模型，能夠執行線性或非線性分類、回歸，甚至新穎性檢測。
+- 分類問題 ==> Support Vector發現
+- hard vs soft
+- Linear vs Nonlinerar
+- sklearn.svm模組說明 
+  - SVC  ==> C 
+- 工作原理
+### 簡介
+- 支援向量機 （SVM） 是一種功能強大且用途廣泛的機器學習模型，能夠執行線性或非線性分類(SVC)、回歸(SVR)，甚至新穎性檢測。
 - SVM 適用於`中小型`非線性數據集（即數百到數千個實例），尤其是對於分類任務。
 - 它們不能很好地擴展到非常大的數據集==> random forest
 
@@ -18,6 +25,7 @@
     - 小 c ==> 結果差
     - 大 c ==> 結果比較好 
   - SVM 模型 overfitting ==> 降低C 來正則化
+
 ## sklearn.svm
 - The multiclass support is handled according to a `one-vs-one` scheme.
 ```
@@ -41,4 +49,81 @@ random_state=None)
 ```
 
 ###  [sklearn.preprocessing](https://scikit-learn.org/stable/api/sklearn.preprocessing.html)
+- Figure 5-2. Sensitivity to feature scales
+- Figure 5-3. Hard margin sensitivity to outliers
+- Figure 5-4. Large margin (left) versus fewer margin violations (right)
+#### 非線性SVC 
+- Figure 5-5. Adding features to make a dataset linearly separable
+- Figure 5-6. Linear SVM classifier using `polynomial` features
+- Figure 5-7. SVM classifiers with a `polynomial` kernel 
+- linear SCM
+```python
+from sklearn.svm import LinearSVC
 
+svm_clf = make_pipeline(StandardScaler(), LinearSVC(C=1, dual=True, random_state=42))
+```
+```python
+import numpy as np
+from sklearn.datasets import load_iris
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import LinearSVC
+
+iris = load_iris(as_frame=True)
+X = iris.data[["petal length (cm)", "petal width (cm)"]].values
+y = (iris.target == 2)  # Iris virginica
+
+svm_clf = make_pipeline(StandardScaler(),
+                        LinearSVC(C=1, dual=True, random_state=42))
+svm_clf.fit(X, y)
+```
+- nonlinear SVM
+```python
+from sklearn.datasets import make_moons
+from sklearn.preprocessing import PolynomialFeatures
+
+X, y = make_moons(n_samples=100, noise=0.15, random_state=42)
+
+polynomial_svm_clf = make_pipeline(
+    PolynomialFeatures(degree=3),
+    StandardScaler(),
+    LinearSVC(C=10, max_iter=10_000, dual=True, random_state=42)
+)
+polynomial_svm_clf.fit(X, y)
+```
+```python
+# Polynomial Kernel
+from sklearn.svm import SVC
+
+poly_kernel_svm_clf = make_pipeline(StandardScaler(),
+                                    SVC(kernel="poly", degree=3, coef0=1, C=5))
+poly_kernel_svm_clf.fit(X, y)
+```
+#### Similarity Features
+- Figure 5-8. Similarity features using the Gaussian RBF
+
+#### 線性回歸|SVM Regression
+```python
+from sklearn.svm import LinearSVR
+
+# extra code – these 3 lines generate a simple linear dataset
+np.random.seed(42)
+X = 2 * np.random.rand(50, 1)
+y = 4 + 3 * X[:, 0] + np.random.randn(50)
+
+svm_reg = make_pipeline(StandardScaler(),
+                        LinearSVR(epsilon=0.5, dual=True, random_state=42))
+svm_reg.fit(X, y)
+```
+```python
+from sklearn.svm import SVR
+
+# extra code – these 3 lines generate a simple quadratic dataset
+np.random.seed(42)
+X = 2 * np.random.rand(50, 1) - 1
+y = 0.2 + 0.1 * X[:, 0] + 0.5 * X[:, 0] ** 2 + np.random.randn(50) / 10
+
+svm_poly_reg = make_pipeline(StandardScaler(),
+                             SVR(kernel="poly", degree=2, C=0.01, epsilon=0.1))
+svm_poly_reg.fit(X, y)
+```
