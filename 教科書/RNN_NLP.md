@@ -31,6 +31,7 @@
      - BERT分配給一個詞的向量是整個句子的函數，因此，一個詞可以根據上下文不同而有不同的詞向量。
      - https://zhuanlan.zhihu.com/p/260707761
 - RNN model ==> SImpleRNN, LSTM, GRU
+  - The Problem of Long-Term Dependencies
   - SImpleRNN
   - LSTM (Long short-term memory)
     - LSTM由四個unit組成: Input Gate、Output Gate、Memory Cell以及Forget Gate。
