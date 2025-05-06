@@ -12,7 +12,8 @@
     - metrics.adjusted_rand_score,
     - metrics.adjusted_mutual_info_score
     - metrics.silhouette_score
-
+  - https://zhuanlan.zhihu.com/p/609722957
+  - https://www.geeksforgeeks.org/homogeneity_score-using-sklearn-in-python/
 ### K-means
 - [sklearn.cluster.KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans)
 ```
