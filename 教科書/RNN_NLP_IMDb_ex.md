@@ -5,7 +5,9 @@
 - SimpleRNN
 - LSTM
 - GRU
-- 各種變形
+- 各種變形LSTM+CNN
+- 官方程式碼[Text classification with an RNN ](https://www.tensorflow.org/text/tutorials/text_classification_rnn)
+- 官方程式碼[Classify text with BERT](https://www.tensorflow.org/text/tutorials/classify_text_with_bert)
 
 ### 載入資料
 ```python
