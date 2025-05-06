@@ -15,3 +15,14 @@
 - 自動摘要（Automatic summarization）
 - 文字蘊涵（Textual entailment）
 - 命名實體辨識（Named entity recognition）
+
+#### 常用工具
+- NTLK
+- genism
+#### Sentiment Analysis@P
+- [Sentiment Analysis Based on Deep Learning: A Comparative Study](https://arxiv.org/pdf/2006.03541v1)
+- [Sentiment Analysis]()
+- [Multimodal Sentiment Analysis](https://paperswithcode.com/task/multimodal-sentiment-analysis)
+- [Twitter Sentiment Analysis](https://paperswithcode.com/task/multimodal-sentiment-analysis)
+- [Aspect-Based Sentiment Analysis (ABSA)](https://paperswithcode.com/task/aspect-based-sentiment-analysis)
+- [Aspect Sentiment Triplet Extraction (ASTE) ](https://paperswithcode.com/task/aspect-sentiment-triplet-extraction)
