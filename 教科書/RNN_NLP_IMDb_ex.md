@@ -1,9 +1,10 @@
 # RNN_NLP_IMDb
-- IMDB 數據集具有 50K 條電影評論，用於自然語言處理或文本分析。
-- 這是一個用於二元情感分類的數據集，包含的數據比以前的基準數據集多得多。
-- 我們提供一組 25,000 篇高度極性的電影評論用於培訓，25,000 篇用於測試。
-- 因此，使用分類或深度學習演算法預測正面和負面評論的數量。
-- 有關數據集的更多資訊，請訪問以下連結 http://ai.stanford.edu/~amaas/data/sentiment/
+- [IMDB Dataset of 50K Movie Reviews|Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+  - IMDB 數據集具有 50K 條電影評論，用於自然語言處理或文本分析。
+  - 這是一個用於二元情感分類的數據集，包含的數據比以前的基準數據集多得多。
+  - 一組 25,000 篇高度極性的電影評論用於培訓，25,000 篇用於測試。
+  - 因此，使用分類或深度學習演算法預測正面和負面評論的數量。
+  - 有關數據集的更多資訊，請訪問以下連結 http://ai.stanford.edu/~amaas/data/sentiment/
 - [Towards Tensorflow 2.0 系列](https://ithelp.ithome.com.tw/users/20119971/ironman/2254?page=1)
 - 傳統做法: word2vec | tfidf | bow
   - https://www.kaggle.com/code/jagarapusiva/imdb-movie-reviews-word2vec-tfidf-bow
@@ -16,6 +17,8 @@
 - 官方程式碼[Text classification with an RNN ](https://www.tensorflow.org/text/tutorials/text_classification_rnn)
 - 官方程式碼[Classify text with BERT](https://www.tensorflow.org/text/tutorials/classify_text_with_bert)
 
+### 其他分析
+- [NLP Text Preprocessing Tutorial](https://www.kaggle.com/code/rudraneelsannigrahi/nlp-text-preprocessing-tutorial)
 ### 載入資料
 ```python
 from keras.datasets import imdb
