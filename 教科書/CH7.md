@@ -5,6 +5,7 @@
 - Bagging and Pasting
 - Boosting
 - stacking
+- Random Forest
 
 ## sklearn.ensemble
 ## voting
@@ -66,3 +67,6 @@ voting_clf.score(X_test, y_test)
 ## Bagging and Pasting
 - bagging== bootstrap aggregating==>sampling with replacement
 - pasting  ==>sampling without replacement
+- https://www.geeksforgeeks.org/ml-bagging-classifier/
+## Random Forest
+- https://www.geeksforgeeks.org/random-forest-algorithm-in-machine-learning/
