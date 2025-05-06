@@ -2,6 +2,8 @@
 - voting 投票
   - hard voting vs soft voting
   - VotingClassifier
+- Bagging and Pasting
+- Boosting
 - stacking
 
 ## sklearn.ensemble
@@ -45,6 +47,14 @@ voting_clf.predict(X_test[:1])
 [clf.predict(X_test[:1]) for clf in voting_clf.estimators_]
 
 voting_clf.score(X_test, y_test)
+
+## 看最後總成績
+from sklearn.metrics import accuracy_score
+
+for clf in (log_clf, rnd_clf, svm_clf, voting_clf):
+   clf.fit(X_train, y_train)
+   y_pred = clf.predict(X_test)
+   print(clf.__class__.__name__, accuracy_score(y_test, y_pred))
 ```
 - soft voting
 ```python
@@ -53,4 +63,6 @@ voting_clf.named_estimators["svc"].probability = True
 voting_clf.fit(X_train, y_train)
 voting_clf.score(X_test, y_test)
 ```
-
+## Bagging and Pasting
+- bagging== bootstrap aggregating==>sampling with replacement
+- pasting  ==>sampling without replacement
