@@ -45,8 +45,12 @@ voting_clf.predict(X_test[:1])
 [clf.predict(X_test[:1]) for clf in voting_clf.estimators_]
 
 voting_clf.score(X_test, y_test)
-
-
 ```
-
+- soft voting
+```python
+voting_clf.voting = "soft"
+voting_clf.named_estimators["svc"].probability = True
+voting_clf.fit(X_train, y_train)
+voting_clf.score(X_test, y_test)
+```
 
