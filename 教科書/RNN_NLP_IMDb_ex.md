@@ -26,7 +26,17 @@ print(X_train[0])
 print("----------------")
 print(y_train[0])   # 標籤資料
 ```
-### 預處理
+### 預處理 ==>[tf.keras.utils.pad_sequences](https://www.tensorflow.org/api_docs/python/tf/keras/utils/pad_sequences#:~:text=This%20function%20transforms%20a%20list%20(of%20length%20num_samples),length%20of%20the%20longest%20sequence%20in%20the%20list.)
+```
+tf.keras.utils.pad_sequences(
+    sequences,
+    maxlen=None,
+    dtype='int32',
+    padding='pre',
+    truncating='pre',
+    value=0.0
+)
+```
 ```python
 from keras.datasets import imdb
 from keras.utils import pad_sequences
