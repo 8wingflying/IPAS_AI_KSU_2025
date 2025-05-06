@@ -1,0 +1,101 @@
+## RNN
+- sequential data: text , time series
+- 文本(text) == > vector
+  - https://ithelp.ithome.com.tw/articles/10264726
+  - https://zhuanlan.zhihu.com/p/260707761
+  - oHE
+  - Bag of Word ngram
+  - 傳統NLP之文本特徵提取 ==> tf-idf
+    - [sklearn.feature_extraction](https://scikit-learn.org/stable/api/sklearn.feature_extraction.html) | text
+      - text.CountVectorizer ==> Convert a collection of text documents to a matrix of token counts.
+      - text.HashingVectorizer ==> Convert a collection of text documents to a matrix of token occurrences.
+      - text.TfidfTransformer  ==>  Transform a count matrix to a normalized tf or tf-idf representation.
+      - text.TfidfVectorizer  ==> Convert a collection of raw documents to a matrix of TF-IDF features.
+   - Word embedding ==>wordvector
+     - Word2vec：由Google的Tomas Mikolov研究團隊所創造。
+     - [GloVe: Global Vectors for Word Representation]()：由史丹佛(Stanford)研究團隊所創造。
+     - [fasttext- Library for efficient text classification and representation learning]()
+     - https://ithelp.ithome.com.tw/articles/10194633
+     - https://blog.paperspace.com/pre-trained-word-embeddings-natural-language-processing/
+     - keras embedding做了甚麼事?
+       - https://stackoverflow.com/questions/45649520/explain-with-example-how-embedding-layers-in-keras-works
+       - https://stackoverflow.com/questions/45649520/explain-with-example-how-embedding-layers-in-keras-works
+   - 語言模型|預訓詞向量(Pre-trained Word Vectors)
+     - 語言模型==上下文/動態詞嵌入（Contextualized/Dynamic Word Embeddings）
+     - 克服了經典詞嵌入方法的最大局限：多義詞消歧義，一個具有不同含義的詞（如" bank "或" stick"）只需一個向量就能識別。
+     - 最早流行的是 ELMO（2018），它並沒有採用固定的嵌入，而是利用雙向 LSTM觀察整個句子，然後給每個詞分配一個嵌入。
+     - 到Transformers時代, Google的論文Attention is All You Need（2017）提出的一種新的語言建模技術，在該論文中，證明了序列模型（如LSTM）可以完全被Attention機制取代，甚至獲得更好的性能。
+     - 而後Google的BERT（Bidirectional Encoder Representations from Transformers，2018）包含了ELMO的上下文嵌入和幾個Transformers，而且它是雙向的（這是對Transformers的一大創新改進）。
+     - BERT分配給一個詞的向量是整個句子的函數，因此，一個詞可以根據上下文不同而有不同的詞向量。
+     - https://zhuanlan.zhihu.com/p/260707761
+- RNN model ==> SImpleRNN, LSTM, GRU
+  - SImpleRNN
+  - LSTM
+  - GRU
+- Transformer(2017) ==> BERT(2018)
+  - seq-seq model
+  - Transformer(2017)
+  - BERT(2018)
+- 預訓練模型
+  - [6個用於文本分類的最新開源預訓練模型（NLP必備）](https://www.analyticsvidhya.com/blog/2020/03/6-pretrained-models-text-classification/)
+  - XLNet
+  - ERNIE
+  - Text-to-Text Transfer Transformer (T5)
+  - Binary Partitioning Transfomer (BPT)
+  - Neural Attentive Bag-of-Entities (NABoE)
+  - Rethinking Complex Neural Network Architectures
+- LLM
+  - Best LLMs For Text Classification: Overview, Tables and Costs
+  - [Large Language Models For Text Classification: Case Study And Comprehensive Review(arXiv:2501.08457)](https://arxiv.org/abs/2501.08457) 
+
+
+## 文本特徵提取
+- 文本特徵提取是將文本資料轉換為數值特徵的過程，以便於機器學習演算法進行處理和分析。
+- 特徵提取在文本分類、情感分析、資訊檢索等任務中非常重要
+- 特徵項
+  - 特徵項要能夠確實標示文本內容
+  - 特徵項具有將目標文本與其他文本相區分的能力。
+  - 特徵項的個數不能太多。
+  - 特徵項分離要比較容易實現。
+- 特徵抽取的主要功能是在不損傷文本核心資訊的情況下儘量減少要處理的單詞數，以此來降低向量空間維數，從而簡化計算，提高文本處理的速度和效率。
+- 特徵抽取：通常根據某個特徵評估函數計算各個特徵的評分值，然後按評分值對這些特徵進行排序，選取若干個評分值最高的作為特徵。
+- 特徵選取的方法有4種：
+  - 1.	用映射或變換的方法把原始特徵變換為較少的新特徵。
+  - 2.	從原始特徵中挑選出一些最具代表性的特徵。
+  - 3.	根據專家的知識挑選最有影響的特徵。
+  - 4.	用數學的方法進行選取，找出最具分類資訊的特徵，尤其適合於文本自動分類挖掘系統的應用。
+- TF-IDF是一種統計方法，用於評估一個詞語在文檔集合中的重要性。
+- 其核心思想是：如果一個詞語在某一文檔中頻繁出現，但在其他文檔中較少出現，那麼該詞語對於區分文檔內容具有重要意義。
+- TF-IDF的組成部分
+- 詞頻（TF，Term Frequency）：衡量一個詞語在文檔中出現的頻率。
+- 計算公式為： [ \text{TF}(w, d) = \frac{\text{count}(w, d)}{\text{size}(d)} ] 其中，(\text{count}(w, d))是詞語(w)在文檔(d)中出現的次數，(\text{size}(d))是文檔(d)的總詞數。
+- 逆文檔頻率（IDF，Inverse Document Frequency）：衡量一個詞語的普遍重要性。
+- 計算公式為： [ \text{IDF}(w) = \log \left( \frac{N}{1 + \text{df}(w)} \right) ] 其中，(N)是文檔總數，(\text{df}(w))是包含詞語(w)的文檔數。
+- TF-IDF權重：結合TF和IDF
+- https://www.oryoy.com/news/ji-yu-tf-idf-suan-fa-de-python-wen-ben-te-zheng-ti-qu-yu-quan-zhong-ji-suan-shi-jian-zhi-nan.html
+
+- Bog of word
+- 
+## TF-IDF
+- TF-IDF的應用場景
+  - 搜尋引擎：通過計算查詢詞與文檔的TF-IDF權重，提高搜索結果的準確性。
+  - 推薦系統：分析使用者歷史行為，推薦與使用者興趣相關的文本內容。
+  - 文本分類：提取文本特徵，用於訓練分類模型。
+  - 關鍵字提取：識別文檔中的關鍵字，用於摘要生成或資訊檢索。
+- TF-IDF的優缺點
+  - 優點
+    - 簡單易實現：計算公式直觀，易於程式設計實現。
+    - 高效性：適用于大規模文本資料處理。
+    - 有效性：在許多實際應用中表現出良好的效果。
+  - 缺點
+    - 忽略語義資訊：僅考慮詞頻和文檔頻率，無法捕捉詞語的語義關係。
+    - 受停用詞影響：高頻詞（如“的”、“是”）可能被賦予較高權重。
+    - 短文本處理不足：對於短文本，TF-IDF可能無法有效區分特徵。
+- F-IDF的改進與替代方法
+  - 改進方法
+    - 結合N-gram模型：考慮詞語的上下文資訊。
+    - 引入詞性標注：區分不同詞性的重要性。
+  - 替代方法
+    - Word2Vec：通過訓練詞向量模型，捕捉詞語的語義資訊。
+    - GloVe：全域向量標記法，通過矩陣分解得到詞向量。
+    - FastText：子詞級別的向量表示，處理未登錄詞問題。
