@@ -3,11 +3,11 @@
   - hard voting vs soft voting
   - VotingClassifier
 - Bagging and Pasting ==> 訓練集進行抽樣
-  - Random Forest(隨機森林) == bag of tree(一堆樹木)
+  - 👍Random Forest(隨機森林) == bag of tree(一堆樹木)
 - Boosting ==> 逐步增強法
-  - AdaBoost == Adaptive Boosting (二元分類) VS
+  - 👍AdaBoost == Adaptive Boosting (二元分類) VS
     - SAMME ==Stagewise Additive Modeling using a Multiclass Exponential loss function(多元分類) <==SCIKIT-LEARN實作
-  - Gradient Boosting ==> GradientBoostingClassifier
+  - 👍Gradient Boosting ==> GradientBoostingClassifier
   - HistGradientBoostingClassifier 
 - stacking
 
