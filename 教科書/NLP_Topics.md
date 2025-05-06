@@ -17,11 +17,12 @@
 - 命名實體辨識（Named entity recognition）
 ## NLP ==> Cybersecurity
 - https://www.masernet.com/project/role-and-applications-of-nlp-in-cybersecurity
+- [Towards Automated Classification of Attackers' TTPs by combining NLP with ML Techniques(arXiv:2207.08478)](https://arxiv.org/abs/2207.08478)
 
 #### 常用工具
 - [NLTK :: Natural Language Toolkit](https://www.nltk.org/)
 - genism
-#### Sentiment Analysis@P
+#### Sentiment Analysis@PaperWithCode
 - [Sentiment Analysis Based on Deep Learning: A Comparative Study](https://arxiv.org/pdf/2006.03541v1)
 - [Sentiment Analysis]()
 - [Multimodal Sentiment Analysis](https://paperswithcode.com/task/multimodal-sentiment-analysis)
