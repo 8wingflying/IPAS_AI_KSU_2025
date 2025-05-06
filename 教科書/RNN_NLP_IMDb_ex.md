@@ -1,4 +1,5 @@
 # RNN_NLP_IMDb
+- [Towards Tensorflow 2.0 系列](https://ithelp.ithome.com.tw/users/20119971/ironman/2254?page=1)
 - MLP
 - CNN
 - SimpleRNN
