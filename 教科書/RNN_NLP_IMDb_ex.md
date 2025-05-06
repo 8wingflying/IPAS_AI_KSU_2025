@@ -115,13 +115,13 @@ import numpy as np
 from keras.datasets import imdb
 from keras.utils import pad_sequences
 from keras import Sequential
-from keras.layers import Input, Dense, Dropout, Embedding, SimpleRNN
+from keras.layers import Input, Dense, Dropout, Embedding, SimpleRNN,  LSTM, GRU
 
 np.random.seed(7)  # 指定亂數種子
 # 載入 IMDb 資料集
 top_words = 1000
-(X_train, y_train), (X_test, y_test) = imdb.load_data(
-                                num_words=top_words)
+(X_train, y_train), (X_test, y_test) = imdb.load_data(num_words=top_words)
+
 # 資料預處理
 max_words = 100
 X_train = pad_sequences(X_train, maxlen=max_words)
@@ -142,6 +142,7 @@ print("--------------------------")
 
 # 編譯模型
 model.compile(loss="binary_crossentropy", optimizer="rmsprop",  metrics=["accuracy"])
+### optimizer ==> adam, rmsprop
 
 # 訓練模型
 history = model.fit(X_train, y_train, validation_split=0.2, epochs=5, batch_size=128, verbose=2)
@@ -178,10 +179,11 @@ plt.xlabel("Epochs")
 plt.ylabel("Accuracy")
 plt.legend()
 plt.show()
+
 # 儲存模型結構和權重
 model.save("imdb_rnn.keras")
 ```
-###
+### LSTM +CNN
 ```python
 import numpy as np
 from keras.datasets import imdb
