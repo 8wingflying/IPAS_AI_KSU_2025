@@ -1,6 +1,8 @@
 # 🎬IMDb 網路電影資料集
 - TExt Classification|文本辨識(分類)
-- 情感分析
+- 情感分析(Sentiment Analysis)
+  - 情感分析是一個計算上的過程，用於識別和分類在文本數據中表達的意見、情感和態度。
+  - 它利用自然語言處理 (NLP) 技術和機器學習算法來分析文本內容，將其分類為積極、消極或中性。 
 - 推薦系統(Recommendation System)
 - [IMDB Movies Dataset|Top 1000 Movies by IMDB Rating](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows)
 
