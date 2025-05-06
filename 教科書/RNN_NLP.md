@@ -34,7 +34,10 @@
   - SImpleRNN
   - LSTM (Long short-term memory)
     - LSTM由四個unit組成: Input Gate、Output Gate、Memory Cell以及Forget Gate。
-    - [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness/) 
+    - https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+    - [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+    - https://www.analyticsvidhya.com/blog/2022/01/the-complete-lstm-tutorial-with-implementation/
+    - https://mlarchive.com/deep-learning/understanding-long-short-term-memory-networks/
   - GRU (Gated Recurrent Unit)
     - https://medium.com/@anishnama20/understanding-gated-recurrent-unit-gru-in-deep-learning-2e54923f3e2 
 - Transformer(2017) ==> BERT(2018)
