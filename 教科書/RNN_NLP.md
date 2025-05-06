@@ -32,12 +32,18 @@
      - https://zhuanlan.zhihu.com/p/260707761
 - RNN model ==> SImpleRNN, LSTM, GRU
   - SImpleRNN
-  - LSTM
-  - GRU
+  - LSTM (Long short-term memory)
+    - LSTM由四個unit組成: Input Gate、Output Gate、Memory Cell以及Forget Gate。
+    - [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness/) 
+  - GRU (Gated Recurrent Unit)
+    - https://medium.com/@anishnama20/understanding-gated-recurrent-unit-gru-in-deep-learning-2e54923f3e2 
 - Transformer(2017) ==> BERT(2018)
-  - seq-seq model
+  - Seq2Seq(Sequence to Sequence) model
+    - https://ithelp.ithome.com.tw/articles/10268772 
   - Transformer(2017)
+    - [Attention Is All You Need(arXiv:1706.03762)](https://arxiv.org/abs/1706.03762) 
   - BERT(2018)
+    - [[1810.04805]BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) 
 - 預訓練模型
   - [6個用於文本分類的最新開源預訓練模型（NLP必備）](https://www.analyticsvidhya.com/blog/2020/03/6-pretrained-models-text-classification/)
   - XLNet
