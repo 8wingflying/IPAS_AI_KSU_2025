@@ -52,7 +52,20 @@ X_test = pad_sequences(X_test, maxlen=max_words)
 print("X_train.shape: ", X_train.shape)
 print("X_test.shape: ", X_test.shape)
 ```
-
+### 預處理 ==>Embedding  [tf.keras.layers.Embedding](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Embedding)
+```python
+tf.keras.layers.Embedding(
+    input_dim,
+    output_dim,
+    embeddings_initializer='uniform',
+    embeddings_regularizer=None,
+    embeddings_constraint=None,
+    mask_zero=False,
+    weights=None,
+    lora_rank=None,
+    **kwargs
+)
+```
 ### MLP
 ```python
 import numpy as np
