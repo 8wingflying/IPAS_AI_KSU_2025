@@ -3,9 +3,10 @@
   - hard voting vs soft voting
   - VotingClassifier
 - Bagging and Pasting
+  - Random Forest(隨機森林) == bag of tree(一堆樹木)
 - Boosting
 - stacking
-- Random Forest
+
 
 ## sklearn.ensemble
 ## voting
@@ -68,5 +69,81 @@ voting_clf.score(X_test, y_test)
 - bagging== bootstrap aggregating==>sampling with replacement
 - pasting  ==>sampling without replacement
 - https://www.geeksforgeeks.org/ml-bagging-classifier/
-## Random Forest
+- BaggingClassifier
+```
+class sklearn.ensemble.BaggingClassifier(estimator=None,
+n_estimators=10,
+*,
+max_samples=1.0,
+max_features=1.0,
+bootstrap=True(Bagging), ==>bootstrap=False(Pasting)
+bootstrap_features=False, ==>
+oob_score=False, ==> 
+warm_start=False,
+n_jobs=None,
+random_state=None,
+verbose=0)
+```
+- Out-of-Bag Evaluation
+- Random Patches and Random Subspaces
+
+
+## Random Forest  <== Decision Trees (一堆樹木成森林)
+- Bagging(pasting) using Decision tree
 - https://www.geeksforgeeks.org/random-forest-algorithm-in-machine-learning/
+```
+class sklearn.ensemble.RandomForestClassifier(
+n_estimators=100, *,
+criterion='gini',
+max_depth=None,
+min_samples_split=2,
+min_samples_leaf=1,
+min_weight_fraction_leaf=0.0,
+max_features='sqrt',
+max_leaf_nodes=None,
+min_impurity_decrease=0.0,
+bootstrap=True,
+oob_score=False,
+n_jobs=None,
+random_state=None,
+verbose=0,
+warm_start=False,
+class_weight=None,
+ccp_alpha=0.0,
+max_samples=None,
+monotonic_cst=None)
+```
+```python
+from sklearn.ensemble import RandomForestClassifier
+
+rnd_clf = RandomForestClassifier(n_estimators=500, max_leaf_nodes=16,
+                                 n_jobs=-1, random_state=42)
+rnd_clf.fit(X_train, y_train)
+y_pred_rf = rnd_clf.predict(X_test)
+```
+#### 證實
+- A Random Forest is equivalent to a bag of decision trees
+
+### extra-tree
+```python
+class sklearn.ensemble.ExtraTreesClassifier(
+n_estimators=100, *,
+criterion='gini',
+max_depth=None,
+min_samples_split=2,
+min_samples_leaf=1,
+min_weight_fraction_leaf=0.0,
+max_features='sqrt',
+max_leaf_nodes=None,
+min_impurity_decrease=0.0,
+bootstrap=False,
+oob_score=False,
+n_jobs=None,
+random_state=None,
+verbose=0,
+warm_start=False,
+class_weight=None,
+ccp_alpha=0.0,
+max_samples=None,
+monotonic_cst=None)
+```
