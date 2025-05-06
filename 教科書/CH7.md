@@ -1,10 +1,10 @@
 # CH7.集成學習和隨機森林 ==> 競賽常勝軍
-- voting 投票
+- voting 投票表決法(多數決,Majority vote)
   - hard voting vs soft voting
   - VotingClassifier
-- Bagging and Pasting
+- Bagging and Pasting ==> 訓練集進行抽樣
   - Random Forest(隨機森林) == bag of tree(一堆樹木)
-- Boosting
+- Boosting ==> 逐步增強法
   - AdaBoost == Adaptive Boosting (二元分類) VS
     - SAMME ==Stagewise Additive Modeling using a Multiclass Exponential loss function(多元分類) <==SCIKIT-LEARN實作
   - Gradient Boosting ==> GradientBoostingClassifier
@@ -150,4 +150,38 @@ class_weight=None,
 ccp_alpha=0.0,
 max_samples=None,
 monotonic_cst=None)
+```
+### Stacking
+```python
+class sklearn.ensemble.StackingClassifier(
+estimators, ==> 第一階段的學習器(個別的學習器)
+final_estimator=None, ==> 最後的學習器(meta-learner)
+*,
+cv=None, ==> cross-validation generator
+stack_method='auto', ==> 有四種
+n_jobs=None,
+passthrough=False,
+verbose=0)
+```
+```python
+clf = StackingClassifier(
+      estimators=estimators, final_estimator=LogisticRegression()
+      )
+```
+```python
+from sklearn.ensemble import StackingClassifier
+
+stacking_clf = StackingClassifier(
+    estimators=[
+        ('lr', LogisticRegression(random_state=42)),
+        ('rf', RandomForestClassifier(random_state=42)),
+        ('svc', SVC(probability=True, random_state=42))
+    ],
+
+## meta-learner
+    final_estimator=RandomForestClassifier(random_state=43),
+
+    cv=5  # number of cross-validation folds
+)
+stacking_clf.fit(X_train, y_train)
 ```
