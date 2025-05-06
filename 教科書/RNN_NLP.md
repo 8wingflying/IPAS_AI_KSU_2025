@@ -31,9 +31,14 @@
      - BERT分配給一個詞的向量是整個句子的函數，因此，一個詞可以根據上下文不同而有不同的詞向量。
      - https://zhuanlan.zhihu.com/p/260707761
 - RNN model ==> SImpleRNN, LSTM, GRU
-  - The Problem of Long-Term Dependencies
+  - 李弘毅教授教學影片
+    - [ML Lecture 21-1: Recurrent Neural Network (Part I) ](https://www.youtube.com/watch?v=xCGidAeyS4M)
+    - [ML Lecture 21-2: Recurrent Neural Network (Part II)](https://www.youtube.com/watch?v=rTqmWlnwz_0)
   - SImpleRNN
-  - LSTM (Long short-term memory)
+  - LSTM (Long short-term memory) 1997
+    - [](https://www.researchgate.net/publication/13853244_Long_Short-Term_Memory)
+    - https://www.bioinf.jku.at/publications/older/2604.pdf 
+    - The Problem of Long-Term Dependencies
     - LSTM由四個unit組成: Input Gate、Output Gate、Memory Cell以及Forget Gate。
     - https://colah.github.io/posts/2015-08-Understanding-LSTMs/
     - [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)
