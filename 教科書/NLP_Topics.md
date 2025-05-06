@@ -15,11 +15,18 @@
 - 自動摘要（Automatic summarization）
 - 文字蘊涵（Textual entailment）
 - 命名實體辨識（Named entity recognition）
-## NLP ==> Cybersecurity
+
+## NLP ==> Cybersecurity ==> (Encrypted)traffic Analysis| log Analysis
 - https://www.masernet.com/project/role-and-applications-of-nlp-in-cybersecurity
 - 日誌分析 Log Analysis
-  - 碩士論文 [Using NLP Techniques for Log Analysis to Recommend Activities For Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
+  - 碩士論文[Using NLP Techniques for Log Analysis to Recommend Activities For Troubleshooting Processes](https://www.diva-portal.org/smash/get/diva2:1523606/FULLTEXT01.pdf)
   - 碩士論文[Log Classification using NLP Techniques](https://odr.chalmers.se/server/api/core/bitstreams/4933bbd6-bdbe-4b98-a609-a4f316fd3c2d/content)
+    - LogAnomaly
+    - four unsupervised baseline Methods
+      - LogCluster [Lin et al., 2016],
+      - PCA [Xu et al., 2009],
+      - Invariant Mining (IM) [Lou et al., 2010],
+      - Deeplog [Du et al., 2017]
   - 論文[Automated Log Classification Using Deep Learning](https://www.sciencedirect.com/science/article/pii/S1877050923001503)
   - [Log Classification With Hybrid Classification Framework](https://github.com/codebasics/project-nlp-log-classification)
   - https://github.com/LogIntelligence/LogADEmpirical
