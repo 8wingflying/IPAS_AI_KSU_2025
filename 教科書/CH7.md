@@ -5,6 +5,10 @@
 - Bagging and Pasting
   - Random Forest(隨機森林) == bag of tree(一堆樹木)
 - Boosting
+  - AdaBoost == Adaptive Boosting (二元分類) VS
+    - SAMME ==Stagewise Additive Modeling using a Multiclass Exponential loss function(多元分類) <==SCIKIT-LEARN實作
+  - Gradient Boosting ==> GradientBoostingClassifier
+  - HistGradientBoostingClassifier 
 - stacking
 
 
