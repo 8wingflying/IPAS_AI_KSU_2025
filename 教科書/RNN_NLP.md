@@ -1,5 +1,7 @@
 ## RNN
-- sequential data: text , time series
+- sequential data:
+  - text
+  - time series
 - 文本(text) == > vector
   - https://ithelp.ithome.com.tw/articles/10264726
   - https://zhuanlan.zhihu.com/p/260707761
@@ -48,7 +50,8 @@
   - Best LLMs For Text Classification: Overview, Tables and Costs
   - [Large Language Models For Text Classification: Case Study And Comprehensive Review(arXiv:2501.08457)](https://arxiv.org/abs/2501.08457) 
 
-
+## 參考資料
+- [30天初步了解自然語言處理-自學筆記](https://ithelp.ithome.com.tw/users/20140426/ironman/4233)
 ## 文本特徵提取
 - 文本特徵提取是將文本資料轉換為數值特徵的過程，以便於機器學習演算法進行處理和分析。
 - 特徵提取在文本分類、情感分析、資訊檢索等任務中非常重要
