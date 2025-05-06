@@ -10,7 +10,7 @@
 
 ## 👍14. 使用`卷積神經網路CNN`的深度`計算機視覺(Computer Vision)`
 
-## 15. 使用 RNN 和 CNN 處理序列
+## 15. 使用 RNN 和 CNN 處理時間序列(Time series | 股票)
 
 ## 👍16. 使用 RNN 和 Attention 進行`自然語言處理(NLP)`
 
