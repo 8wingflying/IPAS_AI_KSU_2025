@@ -62,7 +62,8 @@ minibatch_kmeans.fit(X)
 
 ## 高斯混合模型（Gaussian Mixture Model， GMM）
 - 機器學習_學習筆記系列(92)：高斯混合模型(Gaussian Mixture Models)
-- sklearn.mixture
+- [2.1. Gaussian mixture models](https://scikit-learn.org/stable/modules/mixture.html)
+- [sklearn.mixture](https://scikit-learn.org/stable/api/sklearn.mixture.html)
   - BayesianGaussianMixture ==>Variational Bayesian estimation of a Gaussian mixture.
   - GaussianMixture ==> Gaussian Mixture. 
 
