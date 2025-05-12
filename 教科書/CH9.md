@@ -60,12 +60,60 @@ minibatch_kmeans.fit(X)
 
 ```
 
-#### Gaussian Mixtures
+## 高斯混合模型（Gaussian Mixture Model， GMM）
+- 機器學習_學習筆記系列(92)：高斯混合模型(Gaussian Mixture Models)
+- sklearn.mixture
+  - BayesianGaussianMixture ==>Variational Bayesian estimation of a Gaussian mixture.
+  - GaussianMixture ==> Gaussian Mixture. 
 
-#### Anomaly Detection Using Gaussian Mixtures
-#### Selecting the Number of Clusters
+### Gaussian Mixtures
+- 應用:Anomaly Detection ==> Anomaly Detection Using Gaussian Mixtures
+- 關鍵主題:選擇聚類數量Selecting the Number of Clusters
 
-#### Bayesian Gaussian Mixture Models
+```python
+X1, y1 = make_blobs(n_samples=1000, centers=((4, -4), (0, 0)), random_state=42)
+X1 = X1.dot(np.array([[0.374, 0.95], [0.732, 0.598]]))
+X2, y2 = make_blobs(n_samples=250, centers=1, random_state=42)
+X2 = X2 + [6, -8]
+X = np.r_[X1, X2]
+y = np.r_[y1, y2]
+
+from sklearn.mixture import GaussianMixture
+
+gm = GaussianMixture(n_components=3, n_init=10, random_state=42)
+gm.fit(X)
+
+## 檢視 EM演算法估計的參數
+gm.weights_
+
+gm.means_
+
+gm.covariances_
+
+gm.converged_
+
+gm.n_iter_
+
+## 預測 ==> 使用該模型來預測每個實例屬於哪個聚類（硬聚類）或它來自每個聚類的機率
+
+gm.predict(X)
+
+gm.predict_proba(X).round(3)
+```
+#### 應用:異常檢測
+- 高斯混合可用於異常檢測==>位於低密度區域的實例可視為異常
+- 必須定義要使用的密度閾值。
+- 在一家試圖檢測缺陷產品的製造公司中，缺陷產品的比例通常是眾所周知的。假設它等於 2%，那麼您可以將密度閾值設定為導致 2% 的實例位於低於該閾值密度的區域的值：
+```
+
+#### 關鍵主題:選擇聚類數量Selecting the Number of Clusters
+- 不能使用慣性或輪廓分數==>因為它們都假設簇是球形的。
+- 可以嘗試找到最小化理論資訊準則（例如貝葉斯資訊準則（BIC）或赤池資訊準則（AIC））的模型：
+
+### Bayesian Gaussian Mixture Models
+- GaussianMixture ==> 需手動搜尋最佳聚類數量
+- 使用BayesianGaussianMixture能夠為不必要的聚類賦予等於（或接近）零的權重的類別。
+- 只需將組件數量設定為您認為大於最佳聚類數量的值，演算法就會自動消除不必要的聚類
 
 # 作業 ==> Olivetti faces dataset
 - [Olivetti Faces - Kaggle](https://www.kaggle.com/datasets/sahilyagnik/olivetti-faces)
