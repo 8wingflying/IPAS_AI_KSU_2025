@@ -64,19 +64,42 @@ minibatch_kmeans.fit(X)
 
 ## 高斯混合模型（Gaussian Mixture Model， GMM）
 - 高斯混合模型（Gaussian Mixture Model， GMM）
-- [Gaussian Mixture Models (GMMs)](https://www.datasciencebase.com/unsupervised-ml/probabilistic-models/gausian-mixture-models-gmms)
+- 原理:[Gaussian Mixture Models (GMMs)](https://www.datasciencebase.com/unsupervised-ml/probabilistic-models/gausian-mixture-models-gmms)
 - https://medium.com/@juanc.olamendy/understanding-gaussian-mixture-models-a-comprehensive-guide-df30af59ced7
 - 機器學習_學習筆記系列(92)：高斯混合模型(Gaussian Mixture Models)
 - [2.1. Gaussian mixture models](https://scikit-learn.org/stable/modules/mixture.html)
 - [sklearn.mixture](https://scikit-learn.org/stable/api/sklearn.mixture.html)
+  - GaussianMixture ==> Gaussian Mixture
   - BayesianGaussianMixture ==>Variational Bayesian estimation of a Gaussian mixture.
-  - GaussianMixture ==> Gaussian Mixture. 
+- k-means vs Gaussian Mixture Model
 
-
-### Gaussian Mixtures
-- 應用:Anomaly Detection ==> Anomaly Detection Using Gaussian Mixtures
-- 關鍵主題:選擇聚類數量Selecting the Number of Clusters
-
+### Gaussian Mixtures model
+- GMM = n_components 個Guassian model渾成的模型
+- 模型訓練 ==> Expectation-Maximization (EM) Algorithm
+  - Expectation 步驟
+  - Maximization 步驟
+```
+class sklearn.mixture.GaussianMixture(n_components=1,
+*,
+covariance_type='full', ==>covariance_type{‘full’, ‘tied’, ‘diag’, ‘spherical’}, default=’full’
+   String describing the type of covariance parameters to use. Must be one of:
+   ‘full’: each component has its own general covariance matrix.
+   ‘tied’: all components share the same general covariance matrix.
+   ‘diag’: each component has its own diagonal covariance matrix.
+   ‘spherical’: each component has its own single variance.
+tol=0.001,
+reg_covar=1e-06,
+max_iter=100,
+n_init=1,
+init_params='kmeans',
+weights_init=None,
+means_init=None,
+precisions_init=None,
+random_state=None,
+warm_start=False,
+verbose=0,
+verbose_interval=10)
+```
 ```python
 X1, y1 = make_blobs(n_samples=1000, centers=((4, -4), (0, 0)), random_state=42)
 X1 = X1.dot(np.array([[0.374, 0.95], [0.732, 0.598]]))
@@ -107,6 +130,14 @@ gm.predict(X)
 
 gm.predict_proba(X).round(3)
 ```
+- GMM ==> IRIS
+  - https://github.com/ParthShethSK/GMM-Iris-Clustering 
+- 應用:Anomaly Detection ==> Anomaly Detection Using Gaussian Mixtures
+  - Anomaly Detection | Outlier detection  ==> 評估指標另訂 
+    - 正常 99.99%  Anomaly:0.01%
+- 關鍵主題:選擇聚類數量Selecting the Number of Clusters
+
+
 #### 應用:異常檢測
 - 高斯混合可用於異常檢測==>位於低密度區域的實例可視為異常
 - 必須定義要使用的密度閾值。
