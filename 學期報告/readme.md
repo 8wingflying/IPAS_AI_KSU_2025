@@ -9,7 +9,11 @@
     - ref 1 [scikit-learn Cookbook - Second Edition |Cross-Validation and Post-Model Workflow](https://learning.oreilly.com/library/view/scikit-learn-cookbook/9781787286382/)
   - 參數調校
   - 模型評估 ==> 指標
-  - AutoML 
+  - AutoML
+  - 部屬
+  - MLOps
+  - Continuous Integration and Continuous Deployment (CI/CD) in MLOps
+  - End-to-End MLOps
 ## ref
 - [VE445: Introduction to Machine Learning](https://shuaili8.github.io/Teaching/VE445/)
 ## ref 1
