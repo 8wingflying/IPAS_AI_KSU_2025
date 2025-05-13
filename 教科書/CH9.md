@@ -78,6 +78,20 @@ minibatch_kmeans.fit(X)
 - 模型訓練 ==> Expectation-Maximization (EM) Algorithm
   - Expectation 步驟
   - Maximization 步驟
+- [How GMM Works](https://www.geeksforgeeks.org/gaussian-mixture-model/)
+  - Initialization:從每個高斯分佈的均值、協方差和混合係數的初始猜測開始。
+  - E-step:對於每個數據點，計算它屬於每個高斯分佈（集群）的概率
+  - M-step:使用在 E 步中計算的概率更新參數（均值、協方差、混合係數）。
+  - Repeat:繼續在 E 步和 M 步之間交替，直到數據的對數似然（衡量模型與數據擬合程度的度量）收斂。
+- 高斯混合模型 （GMM） 的優勢
+  - 靈活的集群形狀：與假設球形集群的 K-Means 不同，GMM 可以對具有任意形狀的集群進行建模。
+  - 軟分配：GMM 為每個數據點分配一個概率，使其屬於每個聚類，而 K-Means 將每個點分配給一個聚類。
+  - 處理重疊數據：當集群重疊或具有不同的密度時，GMM 表現良好。由於它使用概率分佈，因此它可以將一個點分配給具有不同概率的多個聚類
+- GMM 的局限性
+  - 計算複雜性：GMM 的計算成本往往很高，尤其是對於大型數據集，因為它需要像期望最大化 （EM） 演算法這樣的反覆運算過程來估計參數。
+  - 選擇集群數量：與其他集群方法一樣，GMM 要求您預先指定集群數量
+    - 貝葉斯資訊準則 （BIC） 和 Akaike 資訊準則 （AIC） 等方法可以幫助根據數據選擇最佳聚類數
+####
 ```
 class sklearn.mixture.GaussianMixture(n_components=1,
 *,
