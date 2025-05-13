@@ -64,7 +64,8 @@ minibatch_kmeans.fit(X)
 
 ## 高斯混合模型（Gaussian Mixture Model， GMM）
 - 高斯混合模型（Gaussian Mixture Model， GMM）
-- [Gaussian Mixture Models (GMMs)](https://medium.com/@juanc.olamendy/understanding-gaussian-mixture-models-a-comprehensive-guide-df30af59ced7)
+- [Gaussian Mixture Models (GMMs)](https://www.datasciencebase.com/unsupervised-ml/probabilistic-models/gausian-mixture-models-gmms)
+- https://medium.com/@juanc.olamendy/understanding-gaussian-mixture-models-a-comprehensive-guide-df30af59ced7
 - 機器學習_學習筆記系列(92)：高斯混合模型(Gaussian Mixture Models)
 - [2.1. Gaussian mixture models](https://scikit-learn.org/stable/modules/mixture.html)
 - [sklearn.mixture](https://scikit-learn.org/stable/api/sklearn.mixture.html)
