@@ -121,7 +121,7 @@ minibatch_kmeans.fit(X)
 
 #### Finding the optimal number of clusters
 - 方法1:劃出inertia與k的關係 ==> elbow Fig 9-8
-- 方法2:使用silhouette_score ==> elbow Fig 9-9
+- 方法2:使用silhouette_score ==> Fig 9-9
 - 方法3:silhouette diagram ==> Figure 9-10
 ```python
 from sklearn.metrics import silhouette_score
@@ -132,10 +132,52 @@ silhouette_score(X, kmeans.labels_)
 - k-means應用1:圖像分割(Image Segmentation)
 - k-means應用2:半監督學習
 
-#### DBSCAN
+#### DBSCAN(1996)
+- 論文[Density-based spatial clustering of applications with noise|M Ester, HP Kriegel, J Sander, X Xu](https://cdn.aaai.org/KDD/1996/KDD96-037.pdf)
+- https://zh.wikipedia.org/zh-tw/DBSCAN
+- https://myapollo.com.tw/blog/dbscan/
+- [不要再用K-means！ 超實用分群法DBSCAN詳解](https://axk51013.medium.com/%E4%B8%8D%E8%A6%81%E5%86%8D%E7%94%A8k-means-%E8%B6%85%E5%AF%A6%E7%94%A8%E5%88%86%E7%BE%A4%E6%B3%95dbscan%E8%A9%B3%E8%A7%A3-a33fa287c0e)
+- DBSCAN 有 3 個重要核心概念： 
+  - Core points
+  - Reachable points
+  - Outliers
+- DBSCAN參數==>在使用 DBSCAN 時，我們需要定義：
+  - 1 個半徑(radius) ε
+  - 1 個群所需要的最少鄰居數 minPoints
+    - 如果有 1 個點 p 周圍半徑 ε 滿足 1 個群所需要的最少鄰居數 minPoints（包含 p 點），那點 p 就是 Core points
+- 範例      
 ```python
 
 ```
+#### HDBSCAN
+- HDBSCAN的優點:
+  - 只有一個超參數min_cluster_size要調
+  - 不會受限於DBSCAN對於cluster密度的限制
+- 範例
+```python
+from sklearn.datasets import make_blobs
+import hdbscan
+import matplotlib.pyplot as plt
+
+N_SAMPLES = 1000
+RANDOM_STATE = 42
+X, y = make_blobs(n_samples=N_SAMPLES,
+                  cluster_std=[2.0, 0.5],
+                  centers=[(0, 0), (5, 5)],
+                  random_state=RANDOM_STATE)
+
+plt.figure(figsize = (10, 10))
+plt.scatter(X[:, 0], X[:, 1])
+plt.show()
+
+hclusterer = hdbscan.HDBSCAN(min_cluster_size=5).fit(X)
+
+plt.figure(figsize = (10, 10))
+plt.scatter(X[:, 0], X[:, 1], c = hclusterer.labels_)
+plt.show()
+```
+- 範例[Demo of HDBSCAN clustering algorithm](https://scikit-learn.org/stable/auto_examples/cluster/plot_hdbscan.html#sphx-glr-auto-examples-cluster-plot-hdbscan-py)
+
 
 ## 高斯混合模型（Gaussian Mixture Model， GMM）
 - 高斯混合模型（Gaussian Mixture Model， GMM）
