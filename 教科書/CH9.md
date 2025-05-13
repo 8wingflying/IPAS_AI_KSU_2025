@@ -16,6 +16,33 @@
     - metrics.silhouette_score
   - https://zhuanlan.zhihu.com/p/609722957
   - https://www.geeksforgeeks.org/homogeneity_score-using-sklearn-in-python/
+
+### Classification vs Clustering
+- 使用Classification演算法
+- 使用Clustering演算法 ==> 三個cluster 
+```python
+import numpy as np
+from scipy import stats
+from sklearn.mixture import GaussianMixture
+
+y_pred = GaussianMixture(n_components=3, random_state=42).fit(X).predict(X)
+
+mapping = {}
+for class_id in np.unique(y):
+    mode, _ = stats.mode(y_pred[y==class_id])
+    mapping[mode] = class_id
+
+y_pred = np.array([mapping[cluster_id] for cluster_id in y_pred])
+
+plt.plot(X[y_pred==0, 2], X[y_pred==0, 3], "yo", label="Cluster 1")
+plt.plot(X[y_pred==1, 2], X[y_pred==1, 3], "bs", label="Cluster 2")
+plt.plot(X[y_pred==2, 2], X[y_pred==2, 3], "g^", label="Cluster 3")
+plt.xlabel("Petal length")
+plt.ylabel("Petal width")
+plt.legend(loc="upper left")
+plt.grid()
+plt.show()
+```
 ### K-means
 - [sklearn.cluster.KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans)
 ```
@@ -41,8 +68,48 @@ algorithm='lloyd')
 - [Notice of Violation of IEEE Publication Principles: K-means versus k-means ++ clustering technique](https://ieeexplore.ieee.org/abstract/document/6199061)
 
 ### K-means 範例
-```
+- [sklearn.datasets](https://scikit-learn.org/stable/api/sklearn.datasets.html)
+  - 資料載入器(Loaders)有許多 load_XXX()   fetch_YYY()
+    - load_iris
+    - fetch_olivetti_faces 
+  - 樣本產生器(Sample generators) ==> make_XXXX()
+    - make_moons ==> Make two interleaving half circles. 
+```python
+from sklearn.cluster import KMeans
+from sklearn.datasets import make_blobs
 
+# extra code – the exact arguments of make_blobs() are not important
+blob_centers = np.array([[ 0.2,  2.3], [-1.5 ,  2.3], [-2.8,  1.8],
+                         [-2.8,  2.8], [-2.8,  1.3]])
+blob_std = np.array([0.4, 0.3, 0.1, 0.1, 0.1])
+X, y = make_blobs(n_samples=2000, centers=blob_centers, cluster_std=blob_std,
+                  random_state=7)
+
+k = 5
+kmeans = KMeans(n_clusters=k, n_init=10, random_state=42)
+
+## 訓練
+y_pred = kmeans.fit_predict(X)
+
+## 展示 5 centroids (i.e., cluster centers) 
+kmeans.cluster_centers_
+
+## 預測
+import numpy as np
+
+X_new = np.array([[0, 2], [3, 2], [-3, 3], [-3, 2.5]])
+kmeans.predict(X_new)
+```
+- Figure 9-3. k-means decision boundaries (Voronoi tessellation)
+- Hard Clustering vs Soft Clustering
+- 演算法複雜度
+- Fig 9-5 ==> 不同初始化(質心) 會有不同行為
+- 如何選擇初始化(質心 Centroid initialization methods)??  ==> 使用inertia
+
+```python
+good_init = np.array([[-3, 3], [-3, 2], [-3, 1], [-1, 2], [0, 2]])
+kmeans = KMeans(n_clusters=5, init=good_init, n_init=1, random_state=42)
+kmeans.fit(X)
 ```
 ```python
 from sklearn.cluster import MiniBatchKMeans
@@ -53,9 +120,17 @@ minibatch_kmeans.fit(X)
 ```
 
 #### Finding the optimal number of clusters
+- 方法1:劃出inertia與k的關係 ==> elbow Fig 9-8
+- 方法2:使用silhouette_score ==> elbow Fig 9-9
+- 方法3:silhouette diagram ==> Figure 9-10
 ```python
+from sklearn.metrics import silhouette_score
 
+silhouette_score(X, kmeans.labels_)
 ```
+## k-means應用
+- k-means應用1:圖像分割(Image Segmentation)
+- k-means應用2:半監督學習
 
 #### DBSCAN
 ```python
