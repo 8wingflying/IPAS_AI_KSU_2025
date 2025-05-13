@@ -6,6 +6,7 @@
   - 資料預處理 ==>資料轉換 pipeline| FeatureUnion | featureUnion vs columnTransformer
   - Feature Engineering
   - 交叉驗證
+    - ref [scikit-learn Cookbook - Second Edition |Cross-Validation and Post-Model Workflow](https://learning.oreilly.com/library/view/scikit-learn-cookbook/9781787286382/)
   - 參數調校
   - 模型評估 ==> 指標
   - AutoML 
