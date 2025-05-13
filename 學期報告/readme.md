@@ -6,7 +6,26 @@
   - 資料預處理 ==>資料轉換 pipeline| FeatureUnion | featureUnion vs columnTransformer
   - Feature Engineering
   - 交叉驗證
-    - ref [scikit-learn Cookbook - Second Edition |Cross-Validation and Post-Model Workflow](https://learning.oreilly.com/library/view/scikit-learn-cookbook/9781787286382/)
+    - ref 1 [scikit-learn Cookbook - Second Edition |Cross-Validation and Post-Model Workflow](https://learning.oreilly.com/library/view/scikit-learn-cookbook/9781787286382/)
   - 參數調校
   - 模型評估 ==> 指標
   - AutoML 
+
+## ref 1
+- [scikit-learn Cookbook - Second Edition |Cross-Validation and Post-Model Workflow](https://learning.oreilly.com/library/view/scikit-learn-cookbook/9781787286382/)
+```
+Selecting a model with cross-validation
+K-fold cross-validation
+Balanced cross-validation
+Cross-validation with ShuffleSplit
+Time series cross-validation
+Grid search with scikit-learn
+Randomized search with scikit-learn
+Classification metrics
+Regression metrics
+Clustering metrics
+Using dummy estimators to compare results
+Feature selection
+Feature selection on L1 norms
+Persisting models with joblib or pickle
+```
