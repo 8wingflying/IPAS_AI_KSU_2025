@@ -19,6 +19,9 @@
 ## 導讀
 - [Autoencoders in Machine Learning](https://www.geeksforgeeks.org/auto-encoders/)
 - [Variational AutoEncoders](https://www.geeksforgeeks.org/variational-autoencoders/)
-
+- https://www.jeremyjordan.me/autoencoders/
+- https://www.jeremyjordan.me/variational-autoencoders/
+- 深度學習Paper系列(04)：Variational Autoencoder (VAE)
+- https://en.wikipedia.org/wiki/Variational_autoencoder
 ## VAR
 - [[1312.6114] Auto-Encoding Variational Bayes](https://arxiv.org/abs/1906.02691)
