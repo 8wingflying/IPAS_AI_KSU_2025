@@ -1,4 +1,5 @@
-## 
+## 學習資源
+- https://andy6804tw.github.io/wiki/
 ## 歷史發展
 - 2015 Diffusion Model
   - [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://proceedings.mlr.press/v37/sohl-dickstein15.pdf)
@@ -20,5 +21,10 @@
   - Stable Video 4D (2024-07)
 - 2021 Latent diffusion model (LDM)
   - [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) 
+- 2021 CLIP (Contrastive Language-Image Pre-Training)
+  - 經典[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) 
+- Vision Transformer (ViT)
+- 微軟提出的 Swin Transformer
+- Facebook 提出的 DeiT (Data-efficient image Transformer) 
 
 ## [Stable Diffusion 在線](https://stablediffusionweb.com/zh-tw)
