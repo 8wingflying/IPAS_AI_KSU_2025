@@ -9,22 +9,22 @@
   - [GITHUB](https://github.com/aapatel09/handson-unsupervised-learning)
   - 繁體中譯本 [非監督式學習｜使用 Python](https://www.tenlong.com.tw/products/9789865024062?list_name=srh)
   - I. Fundamentals of Unsupervised Learning
-    - 1. Unsupervised Learning in the Machine Learning Ecosystem
-    - 2. End-to-End Machine Learning Project
+    - `1`. Unsupervised Learning in the Machine Learning Ecosystem
+    - `2`. End-to-End Machine Learning Project
   - II. Unsupervised Learning Using Scikit-Learn
-    - 3. Dimensionality Reduction
-    - 4. Anomaly Detection
-    - 5. Clustering
-    - 6. Group Segmentation
+    - `3`. Dimensionality Reduction
+    - `4`. Anomaly Detection
+    - `5`. Clustering
+    - `6`. Group Segmentation
   - III. Unsupervised Learning Using TensorFlow and Keras
-    - 👍7. Autoencoders
-    - 8. Hands-On Autoencoder
-    - 9. Semisupervised Learning
+    - 👍`7`. Autoencoders
+    - `8`. Hands-On Autoencoder
+    - `9`. Semisupervised Learning
   - IV. Deep Unsupervised Learning Using TensorFlow and Keras
-    - 👍10. Recommender Systems Using Restricted Boltzmann Machines
-    - 11. Feature Detection Using Deep Belief Networks
-    - 12. Generative Adversarial Networks(另外書籍)
-    - 13. Time Series Clustering
+    - 👍`10`. Recommender Systems Using Restricted Boltzmann Machines
+    - `11`. Feature Detection Using Deep Belief Networks
+    - `12`. Generative Adversarial Networks(另外書籍)
+    - `13`. Time Series Clustering
 - [Hands-On Unsupervised Learning with Python(2019)](https://www.packtpub.com/product/hands-on-unsupervised-learning-with-python/9781789348279)
   - 簡體中譯本 [Python 無監督學習](https://www.tenlong.com.tw/products/9787115540720?list_name=srh)
   - [GITHUB](https://github.com/PacktPublishing/Hands-on-Unsupervised-Learning-with-Python)
