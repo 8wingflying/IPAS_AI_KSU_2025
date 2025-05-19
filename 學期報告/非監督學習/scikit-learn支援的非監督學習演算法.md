@@ -1,4 +1,5 @@
-## [scikit-learn支援的演算法 2. Unsupervised learning](https://scikit-learn.org/stable/unsupervised_learning.html)
+## scikit-learn支援的非監督演算法 
+- [2. Unsupervised learning](https://scikit-learn.org/stable/unsupervised_learning.html)
 - 2.1. Gaussian mixture models
 - 2.2. Manifold learning|Nonlinear dimensionality reduction | NLDR [WIKI](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction)
   - NLDR refers to various related techniques that aim to project high-dimensional data onto lower-dimensional latent manifolds, with the goal of either visualizing the data in the low-dimensional space, or learning the mapping (either from the high-dimensional space to the low-dimensional embedding or vice versa) itself.
