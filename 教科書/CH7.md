@@ -14,7 +14,7 @@
 
 ## sklearn.ensemble
 ## voting
-- class sklearn.ensemble.VotingClassifier(estimators, *, voting='hard', weights=None, n_jobs=None, flatten_transform=True, verbose=False)
+- class sklearn.ensemble.VotingClassifier
 ```
 sklearn.ensemble.VotingClassifier(
 estimators,
