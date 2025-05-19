@@ -1,6 +1,7 @@
 # 非監督學習主題
 - 機器學習與非監督學習
 - KERAS/Tensorflow 與非監督學習
+- 深度學習之非監督學習
 
 # 非監督學習:書籍
 - 👍[Hands-on Unsupervised Learning Using Python](https://www.oreilly.com/library/view/hands-on-unsupervised-learning/9781492035633/) 
