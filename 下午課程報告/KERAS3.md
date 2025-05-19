@@ -25,8 +25,9 @@ import os
 os.environ["KERAS_BACKEND"] = "jax"
 import keras
 ```
-##
+## 檢視各種模型
 ```python
 from tensorflow.keras.applications import EfficientNetB0
 model = EfficientNetB0(weights='imagenet')
+model.summary()
 ```
