@@ -1,5 +1,6 @@
 # 非監督學習主題
 - 機器學習與非監督學習
+  - [scikit-learn支援的非監督學習演算法](scikit-learn支援的非監督學習演算法.md)
 - KERAS/Tensorflow 與非監督學習
 - 深度學習之非監督學習
 
