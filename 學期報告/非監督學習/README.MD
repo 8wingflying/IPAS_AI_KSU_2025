@@ -12,10 +12,10 @@
     - `1`. Unsupervised Learning in the Machine Learning Ecosystem
     - `2`. End-to-End Machine Learning Project
   - II. Unsupervised Learning Using Scikit-Learn
-    - `3`. Dimensionality Reduction
-    - `4`. Anomaly Detection
-    - `5`. Clustering
-    - `6`. Group Segmentation
+    - `3`. Dimensionality Reduction(降維| 位度縮減)
+    - `4`. Anomaly Detection(異常偵測)
+    - `5`. Clustering(叢集法)
+    - `6`. Group Segmentation(群組區隔) ==> 會還錢的群組 vs 不會
   - III. Unsupervised Learning Using TensorFlow and Keras
     - 👍`7`. Autoencoders
     - `8`. Hands-On Autoencoder
