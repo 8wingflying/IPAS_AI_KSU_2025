@@ -15,7 +15,7 @@
     - `3`. Dimensionality Reduction(降維| 位度縮減)
     - `4`. Anomaly Detection(異常偵測)
     - `5`. Clustering(叢集法)
-    - `6`. Group Segmentation(群組區隔) ==> 會還錢的群組 vs 不會
+    - `6`. Group Segmentation(群組區隔) ==> 不同客群
   - III. Unsupervised Learning Using TensorFlow and Keras
     - 👍`7`. Autoencoders
     - `8`. Hands-On Autoencoder
