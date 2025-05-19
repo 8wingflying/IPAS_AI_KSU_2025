@@ -7,6 +7,8 @@
 ## Fastai
 - 論文[Fastai: A Layered API for Deep Learning(2020)](https://www.mdpi.com/2078-2489/11/2/108)
 - 👍FREE 書籍[Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD](https://course.fast.ai/Resources/book.html)
+  - https://learning.oreilly.com/library/view/deep-learning-for/9781492045519/
+  - https://course.fast.ai/
 - 書籍[Deep Learning with fastai Cookbook(2021)](https://learning.oreilly.com/library/view/deep-learning-with/9781800208100/)
   - https://github.com/PacktPublishing/Deep-Learning-with-fastai-Cookbook
 - 
