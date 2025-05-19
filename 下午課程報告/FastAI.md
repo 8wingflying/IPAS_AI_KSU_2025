@@ -16,6 +16,11 @@
 - 它構建在提供可組合構建塊的較低級別 API 層次結構之上。
 - 這樣，想要重寫高級 API 的一部分或添加特定行為以滿足其需求的使用者不必學習如何使用最低級別。
 
+### 測試程式碼
+```
+import fastai
+fastai.__version__
+```
 ## 參考資源
 - 論文[Fastai: A Layered API for Deep Learning(2020)](https://www.mdpi.com/2078-2489/11/2/108)
 - 👍FREE 書籍[Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD](https://course.fast.ai/Resources/book.html)
