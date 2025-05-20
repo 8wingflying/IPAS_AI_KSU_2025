@@ -18,6 +18,12 @@
     - [A walk through latent space with Stable Diffusion 3](https://keras.io/examples/generative/random_walks_with_stable_diffusion_3/)
     - [Fine-tuning Stable Diffusion](https://keras.io/examples/generative/finetune_stable_diffusion/)
 - Tensorflow
+  - [TensorFlow 教學課程](https://www.tensorflow.org/tutorials?hl=zh-tw)
+    - [Intro to Autoencoders](https://www.tensorflow.org/tutorials/generative/autoencoder)
+    - [Convolutional Variational Autoencoder](https://www.tensorflow.org/tutorials/generative/cvae)
+    - [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan)
+    - [High-performance image generation using Stable Diffusion in KerasCV](https://www.tensorflow.org/tutorials/generative/generate_images_with_stable_diffusion)
+  - [API Documentation](https://www.tensorflow.org/api_docs)
 - PyTorch
   - [PyTorch Tutorials](https://docs.pytorch.org/tutorials/)
   - [PyTorch documentation](https://docs.pytorch.org/docs/stable/index.html)
@@ -43,6 +49,8 @@
   - `3`. Variational Autoencoders
   - `4`. Generative Adversarial Networks
   - `5`. Autoregressive Models
+    - LSTM for time series
+    - PixcNN 
   - `6`. Normalizing Flow Models
   - `7`. Energy-Based Models
   - `8`. Diffusion Models 
