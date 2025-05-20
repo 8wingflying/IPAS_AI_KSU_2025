@@ -49,10 +49,21 @@
   - `3`. Variational Autoencoders
   - `4`. Generative Adversarial Networks
   - `5`. Autoregressive Models
+    - 自我迴歸模型（英語：Autoregressive model，簡稱AR模型），是統計上一種處理時間序列的方法，用同一變數例如x的之前期資料來預測本期xt，並假設它們為一線性關係。
+    - 因為這是從迴歸分析中的線性迴歸發展而來，只是不用x預測y,而是用x預測x（自己）；因此叫做自我迴歸。
+    - 動迴歸模型是機器學習 (ML) 模型的一種類型，其透過測量先前依序的輸入來自動預測序列中的下一個組成。
+    - 自動迴歸是時間序列分析中使用的統計技術，其假設時間序列的目前值是過去值的其中一個函數。自動迴歸模型使用類似的數學技術來確定序列中元素之間的概率相關性。其接著使用衍生的知識來猜測未知序列中的下一個元素
     - LSTM for time series
-    - PixcNN 
+    - Stacked Recurrent Networks
+    - Gated Recurrent Units
+    - Bidirectional Cells
+    - PixelCNN 
   - `6`. Normalizing Flow Models
-  - `7`. Energy-Based Models
+  - `7`. Energy-Based Models 基於能量的模型
+    - 事件的概率可以使用玻爾茲曼分佈來表示
+    - 玻爾茲曼分佈是將實值能量函數標準化為 0 到 1 之間的特定函數
+    - 這個分佈最初是由路德維希·玻爾茲曼 （Ludwig Boltzmann） 於 1868 年制定的，他用它來描述處於熱平衡狀態的氣體。
+    - [Tutorial 8: Deep Energy-Based Generative Models](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial8/Deep_Energy_Models.html)
   - `8`. Diffusion Models 
 
 
