@@ -29,14 +29,17 @@
   - 【導讀】https://www.geeksforgeeks.org/swin-transformer/
   - 【導讀】https://blog.csdn.net/qq_37541097/article/details/121119988
 - Facebook 提出的 DeiT (Data-efficient image Transformer)
-- LLM再學習 ==> Parameter-Efficient Fine-Tuning (PEFT) ==> 🤗 [HuggingFace Parameter-Efficient Fine-Tuning (PEFT)](https://github.com/huggingface/peft)
+- LLM再學習 ==>
+  - Parameter-Efficient Fine-Tuning (PEFT) ==> 🤗 [HuggingFace Parameter-Efficient Fine-Tuning (PEFT)](https://github.com/huggingface/peft)
+  - 【綜合報告】[Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment](https://arxiv.org/abs/2312.12148)
   - 透過凍結原本的預訓練模型(e.g., GPT-3) 的權重，搭配一個小的模型進行微調就可以達到很好的 Fine-Tuning 效果，同 Adapter 的概念：透過 Freeze LLM 僅透過微調新增的小型網路，當作補丁或是插件
   - LoRA(2021): Low-Rank Adaptation of Large Language Models
     - 【論文】[LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
     - https://github.com/cloneofsimo/lora
     - https://huggingface.co/spaces/lora-library/LoRA-DreamBooth-Training-UI
     - 【導讀】微調大型語言模型LLM的技術LoRA及生成式AI-Stable diffusion LoRA
-    - 
+    - 【導讀】【LLM專欄】All about Lora
+    - https://www.accucrazy.com/lora-ai-training/
   - Dreambooth(2022)
     - 【論文】[DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation](https://arxiv.org/abs/2208.12242) 
   - ControlNet(2023)
