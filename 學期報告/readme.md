@@ -14,6 +14,7 @@
   - MLOps
   - Continuous Integration and Continuous Deployment (CI/CD) in MLOps
   - End-to-End MLOps
+  - https://github.com/andy6804tw/crazyai-ml
 ## ref
 - [VE445: Introduction to Machine Learning](https://shuaili8.github.io/Teaching/VE445/)
 ## ref 1
