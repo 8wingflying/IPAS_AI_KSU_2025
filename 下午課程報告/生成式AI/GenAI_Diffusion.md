@@ -23,9 +23,26 @@
   - [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) 
 - 2021 CLIP (Contrastive Language-Image Pre-Training)
   - 經典[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) 
-- Vision Transformer (ViT)
+- 2021 Vision Transformer (ViT)
 - 微軟提出的 Swin Transformer
-- Facebook 提出的 DeiT (Data-efficient image Transformer) 
+  - 【論文】[Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030)
+  - 【導讀】https://www.geeksforgeeks.org/swin-transformer/
+  - 【導讀】https://blog.csdn.net/qq_37541097/article/details/121119988
+- Facebook 提出的 DeiT (Data-efficient image Transformer)
+- LLM再學習 ==> Parameter-Efficient Fine-Tuning (PEFT) ==> 🤗 [HuggingFace Parameter-Efficient Fine-Tuning (PEFT)](https://github.com/huggingface/peft)
+  - 透過凍結原本的預訓練模型(e.g., GPT-3) 的權重，搭配一個小的模型進行微調就可以達到很好的 Fine-Tuning 效果，同 Adapter 的概念：透過 Freeze LLM 僅透過微調新增的小型網路，當作補丁或是插件
+  - LoRA(2021): Low-Rank Adaptation of Large Language Models
+    - 【論文】[LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
+    - https://github.com/cloneofsimo/lora
+    - https://huggingface.co/spaces/lora-library/LoRA-DreamBooth-Training-UI
+    - 【導讀】微調大型語言模型LLM的技術LoRA及生成式AI-Stable diffusion LoRA
+    - 
+  - Dreambooth(2022)
+    - 【論文】[DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation](https://arxiv.org/abs/2208.12242) 
+  - ControlNet(2023)
+    - 【論文】[Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543)  
+- https://d223302.github.io/AACL2022-Pretrain-Language-Model-Tutorial/lecture_material/AACL_2022_tutorial_PLMs.pdf
+
 
 ## [Stable Diffusion 在線](https://stablediffusionweb.com/zh-tw)
 ## BOOKS
