@@ -34,3 +34,4 @@
   - Market Basket Analysis
   - Hotspot Analysis 
 - [The Unsupervised Learning Workshop(2020)](https://www.packtpub.com/product/the-unsupervised-learning-workshop/9781800200708) [GITHUB](https://github.com/PacktWorkshops/The-Unsupervised-Learning-Workshop)
+- [Data Without Labels|Practical unsupervised machine learning](https://www.manning.com/books/data-without-labels)
