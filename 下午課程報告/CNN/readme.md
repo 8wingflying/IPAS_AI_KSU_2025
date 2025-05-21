@@ -1,83 +1,109 @@
-# [Transfer learning with TensorFlow Hub](https://www.tensorflow.org/tutorials/images/transfer_learning_with_hub)
+# 電腦視覺與CNN
+- 電腦視覺(Computer Vision)
+  - https://www.geeksforgeeks.org/computer-vision/
+  - 任務
+  - 應用
+- 電腦視覺的數學基礎
+  - `1`.線性代數
+    - 向量
+    - 矩陣和張量
+    - 特徵值和特徵向量
+    - 奇異值分解
+  - `2`.機率論與統計
+    - 機率分佈
+    - 貝葉斯推理與貝葉斯定理
+    - 馬可夫鏈
+    - 卡爾曼濾波器
+  - `3`.訊號處理
+    - 影像濾波和卷積
+    - 離散傅立葉變換（DFT）
+    - 快速傅立葉變換（FFT）
+    - 主成分分析（PCA） 
 
-#### 圖形處理常用套件
-- [Python Image Processing Libraries](https://www.geeksforgeeks.org/python-image-processing-libraries/)
-- OpenCV
-- Scikit-Image
-- Pillow/PIL
-- Matplotlib
-- [seaborn: statistical data visualization](https://seaborn.pydata.org/)
-  - 【學習指南(tutorial)】https://seaborn.pydata.org/tutorial.html
-  - 【範例】https://seaborn.pydata.org/examples/index.html
+## 電腦視覺之影像處理
+- 影像處理 ==>處理和分析數位影像的技術。
+  - `1`.`影像轉換(Image Transformation)` ==> 修改或改變影像的過程。
+    - 幾何變換(Geometric Transformations)
+    - 傅立葉變換(Fourier Transform)
+    - 強度變換(Intensity Transformation)
+  - `2`.影像增強(Image Enhancement) ==>提高影像的視覺品質或清晰度，以突顯重要特徵或細節，從而最大限度地減少雜訊或失真。
+    - 直方圖均衡化(Histogram Equalization)
+    - 對比增強(Contrast Enhancement)
+    - 影像銳化(Image Sharpening)
+    - 色彩校正(Color Correction)
+  - `3`.降噪技術(Noise Reduction Techniques )==>消除影像中不必要的`噪音(noise)`，同時保留邊緣(edges)和紋理(texture)等重要特徵。
+    - 高斯平滑(Gaussian Smoothing)
+    - 中值濾波(Median Filtering)
+    - 雙邊過濾(Bilateral Filtering)
+    - 小波去噪(Wavelet Denoising)
+  - `4`.形態學運算(Morphological Operation)==>根據影像的結構和形狀進行處理。
+    - 侵蝕和擴張(Erosion and Dilation)
+    - 開場(Opening)
+    - 結束語(Closing)
+    - 形態梯度(Morphological Gradient)
+- 特徵提取(Feature Extraction)
+  - `1`. 邊緣偵測(Edge Detection)技術==>辨識影像中與物體邊界相對應的強度或顏色的顯著變化。
+    - Canny邊緣偵測器(Edge Detector)
+    - Sobel Operator
+    - Prewitt Operator
+    - Laplacian of Gaussian (LoG)
+  - `2`.角點和興趣點偵測(Corner and Interest Point Detection)==>辨識影像中獨特的點，並且可以在不同的視圖、變換或尺度上偵測到。
+    - 哈里斯角點偵測(Harris Corner Detection)
+    - Shi-Tomasi角點檢測器(Shi-Tomasi Corner Detector)
+  - `3`.特徵描述子(Feature Descriptors) ==>產生關鍵點周圍局部影像區域的緊湊表示，從而更容易對應不同影像之間的特徵。
+    - SIFT（尺度不變特徵變換）(Scale-Invariant Feature Transform)
+    - SURF（加速穩健特質）(Speeded-Up Robust Features)
+    - ORB（定向快速旋轉簡報）(Oriented FAST and Rotated BRIEF)
+    - HOG（方向梯度直方圖）(Histogram of Oriented Gradients)
+    
+## 電腦視覺之深度學習
+- Image Classification(圖像分類) ==> 根據圖像內容為整個圖像分配標籤或類別
+  - 多類別分類(Multiclass classification )==> 將影像分為多個預定義類別。
+  - 多標籤分類(Multilabel classification) ==> 涉及為單一影像分配多個標籤。
+  - 零樣本分類(Zero-shot classification)==> 將影像分類為模型在訓練期間從未見過的類別
+  - CNN 元件
+  - CNN 模型
+  - [Transfer learning with TensorFlow Hub](https://www.tensorflow.org/tutorials/images/transfer_learning_with_hub)
+- 物件偵測(Object Detection)
+  - 重要觀念
+    - 邊界框回歸(Bounding Box Regression)
+    - 交並比Intersection over Union (IoU)
+    - 區域提議網Region Proposal Networks (RPN)
+    - 非最大抑制Non-Maximum Suppression (NMS)
+  - 方法:
+  - 方法`1`. 單階段目標偵測(Single-Stage Object Detection)
+    - YOLO (You Only Look Once)
+    - SSD (Single Shot Multibox Detector)
+  - 方法`2`. 兩階段目標偵測(Two-Stage Object Detection)
+    - Region-Based Convolutional Neural Networks (R-CNNs)
+    - Fast R-CNN
+    - Faster R-CNN
+    - Mask R-CNN
+- 影像分割(Image Segmentation)==> 將影像劃分為不同的區域或片段，以在像素層級識別物件或邊界
+  - https://www.geeksforgeeks.org/semantic-segmentation-vs-instance-segmentation/ 
+  - 語意分割(Semantic Segmentation)
+  - 實例分割(Instance Segmentation)
+  - 全景分割(Panoptic Segmentation)
+- 影像生成(Image Generation) ==> 生成式AI
+  - `1`.Generative Adversarial Networks (GANs)
+    - Deep Convolutional GAN (DCGAN)
+    - Conditional GAN (cGAN)
+    - Cycle-Consistent GAN (CycleGAN)
+    - Super-Resolution GAN (SRGAN)
+    - Wasserstein GAN (WGAN)
+    - StyleGAN
+  - `2`.Autoencoders (AEs)
+    - Vanilla Autoencoders
+    - Denoising Autoencoders (DAE)
+    - Convolutional Autoencoder (CAE)
+    - Variational Autoencoders (VAEs)
+  - `3`. Vision Transformers (ViT)
+    - DeiT (Data-efficient Image Transformer)
+    - Swin Transformer
+    - CvT (Convolutional Vision Transformer)
+    - T2T-ViT (Tokens-to-Token Vision Transformer) 
+  - `4`. 視覺語言模型(Vision Language Models)
+    - CLIP (Contrastive Language-Image Pre-training)
+    - ALIGN (A Large-scale ImaGe and Noisy-text)
+    - BLIP (Bootstrapping Language-Image Pre-training)
 
-#### 範例學習
-- [Image Processing with SciPy and NumPy in Python](https://www.geeksforgeeks.org/image-processing-with-scipy-and-numpy-in-python/)
-- 使用 NumPy 和 SciPy 等核心科學模組在 Python 中進行影像處理。
-- 圖像由 NumPy ndarrays 組成，因此我們可以處理和操作圖像
-- SciPy 提供了子模組 scipy.ndimage，它提供了可以在 NumPy 數組上操作的函數
-- 安裝
-  - pip install numpy
-  - pip install scipy 
-- SciPy 的misc packag附帶一些預先載入的圖片。
-- 我們將使用這些圖像來了解圖像處理。
-- face() 函數提供了一個這樣的圖像。
-- face() 函數將取得浣熊(raccoon)臉的彩色影像。
-- 範例：使用 SciPy 儲存影像
-```python
-from scipy import misc
-import imageio
-import matplotlib.pyplot as plt
-
-# reads a raccoon face
-face = misc.face()
-
-# save the image
-imageio.imsave('raccoon.png', face)
-
-plt.imshow(face)
-plt.show()
-```
-- 範例：從圖像建立 NumPy 數組
-```python
-from scipy import misc
-import imageio
-import matplotlib.pyplot as plt
-
-img = imageio.imread('raccoon.png')
-
-print(img.shape)
-print(img.dtype)
-
-plt.imshow(img)
-plt.show()
-```
-- 裁切影像
-```python
-from scipy import misc
-import matplotlib.pyplot as plt
-
-# for grascaling the image
-img = misc.face(gray = True)
-
-
-x, y = img.shape
-
-# 裁切影像(Cropping the image)
-crop = img[x//3: - x//8, y//3: - y//8]
-
-plt.imshow(crop)
-plt.show()
-```
-- 模糊影像
-```python
-from scipy import misc,ndimage
-import matplotlib.pyplot as plt
-
-img = misc.face()
-
-# 模糊影像
-blur_G = ndimage.gaussian_filter(img,sigma=7)
-
-plt.imshow(blur_G)
-plt.show()
-```
