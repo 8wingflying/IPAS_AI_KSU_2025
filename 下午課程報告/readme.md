@@ -6,4 +6,8 @@
 ## 開發技術
 - Keras 3
 - Fastai
+## 部屬技術
 
+## 其他
+- https://getpelican.com/
+- https://leemeng.tw/index.html#home
