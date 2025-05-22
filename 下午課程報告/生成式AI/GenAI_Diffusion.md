@@ -43,7 +43,8 @@
   - Dreambooth(2022)
     - 【論文】[DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation](https://arxiv.org/abs/2208.12242) 
   - ControlNet(2023)
-    - 【論文】[Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543)  
+    - 【論文】[Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543)
+    - 【導讀】https://ai-summoner.tw/7612/what-is-controlnet1-1/  
 - https://d223302.github.io/AACL2022-Pretrain-Language-Model-Tutorial/lecture_material/AACL_2022_tutorial_PLMs.pdf
 
 
