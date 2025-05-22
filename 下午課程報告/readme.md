@@ -5,6 +5,8 @@
 - 強化學習
 ## 開發技術
 - Keras 3
+- 🤗[Hugging Face – The AI community building the future.](https://huggingface.co)
+- 🤗[Diffusers |state-of-the-art pretrained diffusion models](https://github.com/huggingface/diffusers)
 - Fastai
 ## 部屬技術
 - API ==> 使用 Flask | FastAPI
