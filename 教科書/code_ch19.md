@@ -99,9 +99,9 @@ sorted([str(path) for path in model_path.parent.glob("**/*")])  # extra code
 
 """For even more details, you can run the following command:
 
-```ipython
-!saved_model_cli show --dir '{model_path}' --all
-```
+#```ipython
+#!saved_model_cli show --dir '{model_path}' --all
+#```
 
 ### Installing and Starting TensorFlow Serving
 
