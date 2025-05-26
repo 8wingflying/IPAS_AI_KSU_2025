@@ -18,7 +18,7 @@
   - PCA ==> 線性維度縮減 | 線性學習
     - 內核PCA
   - LLE ==> 非線性維度縮減| Manifold Learning
-  - t_SNE(推薦)
+  - [t_SNE(推薦|補充)](t-SNE.md)
   - 其他降維技術
 - 第9章非監督學習技術
   - 聚類
