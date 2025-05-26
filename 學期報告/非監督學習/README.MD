@@ -22,7 +22,7 @@
   - 其他降維技術
 - 第9章非監督學習技術
   - 聚類
-  - 高斯混合模型
+  - [高斯混合模型](高斯混合模型.md)
 
 # 延伸學習 ==>非監督學習:書籍
 - 👍[Hands-on Unsupervised Learning Using Python](https://www.oreilly.com/library/view/hands-on-unsupervised-learning/9781492035633/) 
