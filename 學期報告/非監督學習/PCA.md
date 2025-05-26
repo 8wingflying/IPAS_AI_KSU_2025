@@ -1,5 +1,9 @@
-#
-
+# PCA
+- 機器學習_學習筆記系列(59)：主成分分析-最大化變異數觀點(Principal Component Analysis — Maximum Variance Prospective)
+- 機器學習_學習筆記系列(60)：主成分分析-最小化平方差觀點 (Principal Component Analysis — Minimum MSE Prospective)
+- 機器學習_學習筆記系列(61)：核主成分分析 (Kernel Principal Component Analysis)
+- 機器學習_學習筆記系列(62)：稀疏主成分分析 (Sparse Principal Component Analysis)
+- https://mml-book.github.io/
 #### 原理
 - 機器/統計學習:主成分分析(Principal Component Analysis, PCA)
 - https://ithelp.ithome.com.tw/articles/10211877
