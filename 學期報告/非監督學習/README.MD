@@ -13,7 +13,7 @@
 - 第8章降維
   - 維度的詛咒
   - 降維的主要方法
-  - PCA
+  - PCA ==> 線性維度縮減 | 線性學習
     - 內核PCA
   - LLE ==> 非線性維度縮減| Manifold Learning
   - t_SNE(推薦)
