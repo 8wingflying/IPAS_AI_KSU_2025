@@ -4,7 +4,24 @@
 - KERAS/Tensorflow 與非監督學習
 - 深度學習之非監督學習
 
-# 非監督學習:書籍
+### 報告內容
+- 非監督學習
+- 
+- 非監督學習評估
+### 教科書範例 ==> 降維 + 叢集法 + 高斯混合模型
+- 第8章降維
+  - 維度的詛咒
+  - 降維的主要方法
+  - PCA
+    - 內核PCA
+  - LLE ==> 非線性維度縮減| Manifold Learning
+  - t_SNE(推薦)
+  - 其他降維技術
+- 第9章非監督學習技術
+  - 聚類
+  - 高斯混合模型
+
+# 延伸學習 ==>非監督學習:書籍
 - 👍[Hands-on Unsupervised Learning Using Python](https://www.oreilly.com/library/view/hands-on-unsupervised-learning/9781492035633/) 
   - [GITHUB](https://github.com/aapatel09/handson-unsupervised-learning)
   - 繁體中譯本 [非監督式學習｜使用 Python](https://www.tenlong.com.tw/products/9789865024062?list_name=srh)
