@@ -14,8 +14,10 @@
   - `3`.LLE 使用這些權重來創建數據的低維版本。
   - 它通過根據所需的維數選擇最佳方向（特徵向量）來保持重要的形狀。
 ### 數學推導
+- https://www.geeksforgeeks.org/locally-linear-embedding-in-machine-learning/
+- 機器學習_學習筆記系列(73)：局部線性嵌入演算法(Locally Linear Embedding)
 ### 範例 ==> 瑞士捲
-
+- https://www.geeksforgeeks.org/locally-linear-embedding-in-machine-learning/
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -49,29 +51,8 @@ plt.ylabel("Component 2")
 
 plt.tight_layout()
 plt.show()
-
-## 
 ```
 
-```python
-
-
-```
-
-```python
-
-
-```
-
-```python
-
-
-```
-
-```python
-
-
-```
 ### LLE:教科書範例
 ```python
 from sklearn.datasets import make_swiss_roll
@@ -83,10 +64,9 @@ X_swiss, t = make_swiss_roll(n_samples=1000, noise=0.2, random_state=42)
 lle = LocallyLinearEmbedding(n_components=2, n_neighbors=10, random_state=42)
 
 X_unrolled = lle.fit_transform(X_swiss)
-```
-- 底下是畫圖
-```python
-# Define the save_fig function
+
+
+# 畫圖Define the save_fig function
 def save_fig(fig_id, tight_layout=True, fig_extension="png", resolution=300):
     """Saves the current matplotlib figure."""
     import os
@@ -99,9 +79,7 @@ def save_fig(fig_id, tight_layout=True, fig_extension="png", resolution=300):
     if tight_layout:
         plt.tight_layout()
     plt.savefig(path, format=fig_extension, dpi=resolution)
-```
 
-```python
 # extra code – this cell generates and saves Figure 8–10
 import matplotlib.cm as cm
 
