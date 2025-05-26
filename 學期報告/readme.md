@@ -18,6 +18,7 @@
 ## ref
 - [VE445: Introduction to Machine Learning](https://shuaili8.github.io/Teaching/VE445/)
 - 劉智皓 (Chih-Hao Liu)  https://tomohiroliu22.medium.com/
+- 全民瘋AI系列 [經典機器學習] https://andy6804tw.github.io/crazyai-ml/
 ## ref 1
 - [scikit-learn Cookbook - Second Edition |Cross-Validation and Post-Model Workflow](https://learning.oreilly.com/library/view/scikit-learn-cookbook/9781787286382/)
 ```
