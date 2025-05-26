@@ -8,9 +8,11 @@
 - https://www.geeksforgeeks.org/principal-component-analysis-pca/
 - https://www.geeksforgeeks.org/recovering-feature-names-of-explainedvarianceratio-in-pca-with-sklearn/
 - [Difference between PCA VS t-SNE](https://www.geeksforgeeks.org/difference-between-pca-vs-t-sne/)
+- https://www.geeksforgeeks.org/mathematical-approach-to-pca/
+- https://www.geeksforgeeks.org/reduce-data-dimentionality-using-pca-python/
 #### 範例學習:PCA vs Kernel Principal Component Analysis (KPCA)
 - KPCA is a technique used in machine learning for nonlinear dimensionality reduction
-
+- 論文[Nonlinear Component Analysis as a Kernel Eigenvalue Problem(1998)](https://direct.mit.edu/neco/article-abstract/10/5/1299/6193/Nonlinear-Component-Analysis-as-a-Kernel?redirectedFrom=fulltext)
 ```python
 
 import matplotlib.pyplot as plt
