@@ -18,7 +18,121 @@
 - https://developer.aliyun.com/article/62946
 - https://distill.pub/2016/misread-tsne/
 
-## 手把手實作
+## 範例學習
+- https://www.geeksforgeeks.org/ml-t-distributed-stochastic-neighbor-embedding-t-sne-algorithm/
+- [sklearn.manifold.TSNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)
+```python
+class sklearn.manifold.TSNE(
+n_components=2, *,
+perplexity=30.0,
+early_exaggeration=12.0,
+learning_rate='auto',
+max_iter=None,
+n_iter_without_progress=300,
+min_grad_norm=1e-07,
+metric='euclidean',
+metric_params=None,
+init='pca',
+verbose=0,
+random_state=None,
+method='barnes_hut',
+angle=0.5,
+n_jobs=None,
+n_iter='deprecated')
+```
+```python
+import numpy as np
+import pandas as pd
+import seaborn as sn
+import matplotlib.pyplot as plt
+from sklearn.manifold import TSNE
+from sklearn.preprocessing import StandardScaler
+from sklearn.datasets import fetch_openml
+
+## 使用mnist資料集
+mnist = fetch_openml('mnist_784', version=1)
+
+d = mnist.data  
+l = mnist.target  
+
+df = pd.DataFrame(d)
+df['label'] = l  
+
+print(df.head(4))
+
+## standardize the data
+from sklearn.preprocessing import StandardScaler
+
+standardized_data = StandardScaler().fit_transform(df)
+print(standardized_data.shape)
+
+##
+data_1000 = standardized_data[0:1000, :]
+labels_1000 = l[0:1000]
+
+model = TSNE(n_components = 2, random_state = 0)
+
+tsne_data = model.fit_transform(data_1000)
+
+tsne_data = np.vstack((tsne_data.T, labels_1000)).T
+tsne_df = pd.DataFrame(data = tsne_data,
+     columns =("Dim_1", "Dim_2", "label"))
+
+sn.scatterplot(data=tsne_df, x='Dim_1', y='Dim_2',
+               hue='label', palette="bright")
+plt.show()
+```
+## sklearn測試
+
+
+```python
+import numpy as np
+from sklearn.datasets import load_digits
+from scipy.spatial.distance import pdist
+from sklearn.manifold.t_sne import _joint_probabilities
+from scipy import linalg
+from sklearn.metrics import pairwise_distances
+from scipy.spatial.distance import squareform
+from sklearn.manifold import TSNE
+from matplotlib import pyplot as plt
+import seaborn as sns
+sns.set(rc={'figure.figsize':(11.7,8.27)})
+palette = sns.color_palette("bright", 10)
+
+X, y = load_digits(return_X_y=True)
+
+tsne = TSNE()
+X_embedded = tsne.fit_transform(X)
+
+sns.scatterplot(X_embedded[:,0], X_embedded[:,1], hue=y, legend='full', palette=palette)
+```
+
+```python
+## 經過Gemini 修正數次後的程式
+
+import numpy as np
+from sklearn.datasets import load_digits
+from scipy.spatial.distance import pdist
+# from sklearn.manifold.t_sne import _joint_probabilities # Remove this line
+from scipy import linalg
+from sklearn.metrics import pairwise_distances
+from scipy.spatial.distance import squareform
+from sklearn.manifold import TSNE
+from matplotlib import pyplot as plt
+import seaborn as sns
+sns.set(rc={'figure.figsize':(11.7,8.27)})
+palette = sns.color_palette("bright", 10)
+
+X, y = load_digits(return_X_y=True)
+
+tsne = TSNE()
+X_embedded = tsne.fit_transform(X)
+
+# Pass x and y coordinates as keyword arguments
+sns.scatterplot(x=X_embedded[:,0], y=X_embedded[:,1], hue=y, legend='full', palette=palette)
+```
+## 範例學習 手把手實作
+- 機器學習_學習筆記系列(78)：t-隨機鄰近嵌入法(t-distributed stochastic neighbor embedding)
 ```python
 
 ## t-隨機鄰近嵌入法(t-distributed stochastic neighbor embedding)
@@ -308,70 +422,4 @@ plt.yticks(fontsize=30)
 plt.legend(fontsize=20)
 plt.show()
 ```
-## sklearn測試
 
-```python
-class sklearn.manifold.TSNE(
-n_components=2, *,
-perplexity=30.0,
-early_exaggeration=12.0,
-learning_rate='auto',
-max_iter=None,
-n_iter_without_progress=300,
-min_grad_norm=1e-07,
-metric='euclidean',
-metric_params=None,
-init='pca',
-verbose=0,
-random_state=None,
-method='barnes_hut',
-angle=0.5,
-n_jobs=None,
-n_iter='deprecated')
-```
-```python
-import numpy as np
-from sklearn.datasets import load_digits
-from scipy.spatial.distance import pdist
-from sklearn.manifold.t_sne import _joint_probabilities
-from scipy import linalg
-from sklearn.metrics import pairwise_distances
-from scipy.spatial.distance import squareform
-from sklearn.manifold import TSNE
-from matplotlib import pyplot as plt
-import seaborn as sns
-sns.set(rc={'figure.figsize':(11.7,8.27)})
-palette = sns.color_palette("bright", 10)
-
-X, y = load_digits(return_X_y=True)
-
-tsne = TSNE()
-X_embedded = tsne.fit_transform(X)
-
-sns.scatterplot(X_embedded[:,0], X_embedded[:,1], hue=y, legend='full', palette=palette)
-```
-
-```python
-## 經過Gemini 修正數次後的程式
-
-import numpy as np
-from sklearn.datasets import load_digits
-from scipy.spatial.distance import pdist
-# from sklearn.manifold.t_sne import _joint_probabilities # Remove this line
-from scipy import linalg
-from sklearn.metrics import pairwise_distances
-from scipy.spatial.distance import squareform
-from sklearn.manifold import TSNE
-from matplotlib import pyplot as plt
-import seaborn as sns
-sns.set(rc={'figure.figsize':(11.7,8.27)})
-palette = sns.color_palette("bright", 10)
-
-X, y = load_digits(return_X_y=True)
-
-tsne = TSNE()
-X_embedded = tsne.fit_transform(X)
-
-# Pass x and y coordinates as keyword arguments
-sns.scatterplot(x=X_embedded[:,0], y=X_embedded[:,1], hue=y, legend='full', palette=palette)
-```
