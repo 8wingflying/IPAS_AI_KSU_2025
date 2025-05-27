@@ -21,6 +21,7 @@
   - 2021 | OpenAI |
   - 2021 | LDM | latent diffusion models
   - 2022 | Stable Diffusion  ==> KerasCV
+  - 推薦課程 ==> https://github.com/huggingface/diffusion-models-class
 ## GenAI 
 ## 程式範例
 - Keras
