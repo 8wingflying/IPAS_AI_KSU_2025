@@ -10,9 +10,12 @@
   - SVM　regression
 - 分類　==> [Breast Cancer Wisconsin (Diagnostic) Data Set | Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)  [Iris Species | Kaggle](https://www.kaggle.com/datasets/uciml/iris)
   - [sklearn.linear_model](https://scikit-learn.org/stable/api/sklearn.linear_model.html)
-　- LogisticRegression
-  - Decision Tress ==> see ch6
-  - SVM ==> Ch5
+　- 👍LogisticRegression ==> 參考 綠皮書 CH8
+  - Naive Bayes ==> 參考 綠皮書 CH8
+  - LDA ==> 參考 綠皮書 CH8
+  - 👍Decision Tress ==> see ch6
+  - 👍SVM ==> Ch5
+  - Neural network ==> keras 
 - 評估指標 ==> 參看綠皮書"機器學習的統計基礎"
   - see  [3.4. Metrics and scoring: quantifying the quality of predictions](https://scikit-learn.org/stable/modules/model_evaluation.html)
   - 回歸 ==> MSE, MAE, MSLE
