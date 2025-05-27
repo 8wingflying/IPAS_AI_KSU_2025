@@ -1,8 +1,9 @@
 ## 課程A_機器學習報告
 - 平時考報告(期中):IRIS機器學習 ==> 以一個資料集展示不同機器學習演算法
-- 期中報告:監督式學習 vs 非監督學習
-- 平時考報告(期末):Ensemble Learning
-- 期末報告:機器學習專案(流程)
+- 期中報告:監督式學習 
+- 平時考報告(期末):非監督學習
+- 期末報告:Ensemble Learning
+- 機器學習專案(流程)
   - 資料預處理 ==>資料轉換 pipeline| FeatureUnion | featureUnion vs columnTransformer
   - Feature Engineering
   - 交叉驗證
