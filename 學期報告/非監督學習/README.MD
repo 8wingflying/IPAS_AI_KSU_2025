@@ -8,9 +8,18 @@
 - 非監督學習
 - 非監督學習類型
 - 非監督學習:降維
+  - 維度的詛咒
+  - 線性學習 ==> PCA
+  - 非線性維度縮減| Manifold Learning
+    - [LLE](LLE.md)
+    - [t_SNE](t-SNE.md)
 - 非監督學習:聚類
-- 非監督學習:高斯混合模型
+  - 四大類型_1_Centroid-based Methods: K-Means clustering
+  - 四大類型_2_Distribution-based Methods ==>[Gaussian mixture models|高斯混合模型](高斯混合模型.md)
+  - 四大類型_3_Connectivity based methods==> [Hierarchical clustering(階層式分群)](Hierarchical_Clustering.md)
+  - 四大類型_4_Density Based methods==> [DBSCAN (Density-Based Spatial Clustering of Applications with Noise)](DBSCAN.md)
 - 非監督學習評估
+
 ### 教科書範例 ==> 降維 + 叢集法 + 高斯混合模型
 - 第8章降維
   - 維度的詛咒
@@ -23,10 +32,7 @@
 - 第9章非監督學習技術  [非監督學習之演算法類型](非監督學習之演算法類型.md)  [scikit-learn支援的非監督演算法](scikit-learn支援的非監督學習演算法.md)
   - 聚類
   - [高斯混合模型](高斯混合模型.md)
-  - 四大類型_1_Centroid-based Methods: K-Means clustering
-  - 四大類型_2_Distribution-based Methods ==>[Gaussian mixture models|高斯混合模型](高斯混合模型.md)
-  - 四大類型_3_Connectivity based methods==> [Hierarchical clustering(階層式分群)](Hierarchical_Clustering.md)
-  - 四大類型_4_Density Based methods==> [DBSCAN (Density-Based Spatial Clustering of Applications with Noise)](DBSCAN.md)
+
   
 # 延伸學習 ==>非監督學習:書籍
 - 👍[Hands-on Unsupervised Learning Using Python](https://www.oreilly.com/library/view/hands-on-unsupervised-learning/9781492035633/) 
