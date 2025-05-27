@@ -7,6 +7,10 @@
 ## 導讀
 - https://zhuanlan.zhihu.com/p/639664615
 - https://blog.csdn.net/2401_84206094/article/details/145701239
+## 範例學習
+- PyTorch | TorchMultimodal
+  - [TorchMultimodal Tutorial: Finetuning FLAVA](https://docs.pytorch.org/tutorials/beginner/flava_finetuning_tutorial.html)
+    - 論文2021[FLAVA: A Foundational Language And Vision Alignment Model](https://arxiv.org/abs/2112.04482) 
 ## Survey
 - [[2306.13549] A Survey on Multimodal Large Language Models](https://arxiv.org/abs/2306.13549)
 - 一個典型的 MLLM 可以抽象為三個模組
