@@ -1,10 +1,25 @@
 ## GenAI
 - VAE 2013
-- GAN(2014)
-  - 範例1
+  - Stacked Autoencoders
+    - Implementing a Stacked Autoencoder Using Keras
+    - Unsupervised Pretraining Using Stacked Autoencoders
+  - Training One Autoencoder at a Time
+  - Convolutional Autoencoders
+  - Denoising Autoencoders
+  - Sparse Autoencoders
+  - Variational Autoencoders 
+- GAN(2014) Generative Adversarial Networks
+  - The Difficulties of Training GANs 
+  - Deep Convolutional GANs(DCGANs)
+  - 2018 NVIDIA | Progressive Growing of GANs
+  - 2018 NVIDIA |StyleGANs
+  - 範例1 Fashion MNIST
   - 範例2
-- diffussion Model(2021)
-
+- Diffussion Model(2015)
+  - 2015 
+  - 2020 | DDPM|denoising diffusion probabilistic model
+  - 2021 | OpenAI |
+## GenAI 
 ## 程式範例
 - Keras
   - VAE
