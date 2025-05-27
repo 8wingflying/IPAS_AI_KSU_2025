@@ -1,6 +1,8 @@
 ## scikit-learn支援的非監督演算法 
 - [2. Unsupervised learning](https://scikit-learn.org/stable/unsupervised_learning.html)
 - 2.1. Gaussian mixture models
+  - 2.1.1. Gaussian Mixture
+  - 2.1.2. Variational Bayesian Gaussian Mixture 
 - 2.2. Manifold learning|Nonlinear dimensionality reduction | NLDR [WIKI](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction)
   - NLDR refers to various related techniques that aim to project high-dimensional data onto lower-dimensional latent manifolds, with the goal of either visualizing the data in the low-dimensional space, or learning the mapping (either from the high-dimensional space to the low-dimensional embedding or vice versa) itself.
   - NLDR can be understood as generalizations of linear decomposition methods used for dimensionality reduction, such as singular value decomposition(SVD) and principal component analysis(PCA).
@@ -8,11 +10,43 @@
   - 教學影片[Introduction to Machine Learning - 11 - Manifold learning and t-SNE]()
   - 哈佛大學論文 [The Mathematical Foundations of Manifold Learning()| Luke Melas-Kyriazi](https://arxiv.org/abs/2011.01307)
 - 👍2.3. Clustering
+  - 2.3.1. Overview of clustering methods
+  - 2.3.2. K-means
+  - 2.3.3. Affinity Propagation
+  - 2.3.4. Mean Shift
+  - 2.3.5. Spectral clustering
+  - 2.3.6. Hierarchical clustering
+  - 2.3.7. DBSCAN
+  - 2.3.8. HDBSCAN
+  - 2.3.9. OPTICS
+  - 2.3.10. BIRCH
+  - 2.3.11. Clustering performance evaluation 
 - 2.4. Biclustering: Spectral Co-Clustering | Spectral Biclustering
+  - 2.4.1. Spectral Co-Clustering
+  - 2.4.2. Spectral Biclustering
+  - 2.4.3. Biclustering evaluation 
 - 👍2.5. [Decomposing signals in components (matrix factorization problems)](https://scikit-learn.org/stable/modules/decomposition.html)
-  - Principal component analysis (PCA) | Kernel Principal Component Analysis (kPCA)|Truncated singular value decomposition and latent semantic analysis
-  - Dictionary Learning | Factor Analysis |Independent component analysis (ICA) | Non-negative matrix factorization (NMF or NNMF) |Latent Dirichlet Allocation (LDA)
+  - 2.5.1. Principal component analysis (PCA)
+  - 2.5.2. Kernel Principal Component Analysis (kPCA)
+  - 2.5.3. Truncated singular value decomposition and latent semantic analysis
+  - 2.5.4. Dictionary Learning
+  - 2.5.5. Factor Analysis
+  - 2.5.6. Independent component analysis (ICA)
+  - 2.5.7. Non-negative matrix factorization (NMF or NNMF)
+  - 2.5.8. Latent Dirichlet Allocation (LDA)
 - 2.6. Covariance estimation
+  - 2.6.1. Empirical covariance
+  - 2.6.2. Shrunk Covariance
+  - 2.6.3. Sparse inverse covariance
+  - 2.6.4. Robust Covariance Estimation 
 - 👍[2.7. Novelty and Outlier Detection](https://scikit-learn.org/stable/modules/outlier_detection.html)
+  - 2.7.1. Overview of outlier detection methods
+  - 2.7.2. Novelty Detection
+  - 2.7.3. Outlier Detection
+  - 2.7.4. Novelty detection with Local Outlier Factor 
 - 2.8. Density Estimation
-- 👍2.9. Neural network models (unsupervised)
+  - 2.8.1. Density Estimation: Histograms
+  - 2.8.2. Kernel Density Estimation 
+- 👍2.9. Neural network models (unsupervised)支援度太少 ==> 使用keras
+  - Neural network models有的是監督式學習(如Restricted Boltzmann machines), 有的是非監督式學習(GAN, VAE,.....)
+  - 2.9.1. Restricted Boltzmann machines 
