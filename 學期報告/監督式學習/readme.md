@@ -25,7 +25,6 @@
     - confusion matrix
 - 模型選擇與參數調教
   - see [3. Model selection and evaluation](https://scikit-learn.org/stable/model_selection.html)
-  - 3.1. Cross-validation
+  - 3.1. Cross-validation ==>  參看綠皮書" Ch14-4
   - 3.2. Tuning the hyper-parameters of an estimator
- 
-  - 3.2. Tuning the hyper-parameters of an estimator
+  - 3.5. Validation curves: plotting scores to evaluate models
