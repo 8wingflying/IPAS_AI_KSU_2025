@@ -1,1 +1,28 @@
-
+## 報告內容
+- 回歸　==> [Boston House Prices | Kaggle](https://www.kaggle.com/datasets/vikrishnan/boston-house-prices)
+  - see Ch4
+  - linear regression
+  - l1 l2
+  - Multilinear regression
+  - Polynomial regression
+  - https://scikit-learn.org/stable/api/sklearn.linear_model.html
+  - Decision tree regression
+  - SVM　regression
+- 分類　==> [Breast Cancer Wisconsin (Diagnostic) Data Set | Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)  [Iris Species | Kaggle](https://www.kaggle.com/datasets/uciml/iris)
+  - [sklearn.linear_model](https://scikit-learn.org/stable/api/sklearn.linear_model.html)
+　- LogisticRegression
+  - Decision Tress ==> see ch6
+  - SVM ==> Ch5
+- 評估指標 ==> 參看綠皮書"機器學習的統計基礎"
+  - see  [3.4. Metrics and scoring: quantifying the quality of predictions](https://scikit-learn.org/stable/modules/model_evaluation.html)
+  - 回歸 ==> MSE, MAE, MSLE
+  - 分類
+    - FP FN ==> accuracy , precision, sesitivity(recall) , F1 F_beta
+    - heatmap
+    - confusion matrix
+- 模型選擇與參數調教
+  - see [3. Model selection and evaluation](https://scikit-learn.org/stable/model_selection.html)
+  - 3.1. Cross-validation
+  - 3.2. Tuning the hyper-parameters of an estimator
+ 
+  - 3.2. Tuning the hyper-parameters of an estimator
