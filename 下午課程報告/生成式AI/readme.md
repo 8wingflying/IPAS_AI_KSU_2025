@@ -19,6 +19,8 @@
   - 2015 
   - 2020 | DDPM|denoising diffusion probabilistic model
   - 2021 | OpenAI |
+  - 2021 | LDM | latent diffusion models
+  - 2022 | Stable Diffusion  ==> KerasCV
 ## GenAI 
 ## 程式範例
 - Keras
