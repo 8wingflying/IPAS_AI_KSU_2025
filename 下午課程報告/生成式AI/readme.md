@@ -22,6 +22,7 @@
   - 2021 | LDM | latent diffusion models
   - 2022 | Stable Diffusion  ==> KerasCV
   - 推薦課程 ==> https://github.com/huggingface/diffusion-models-class
+    - 中文說明 ==> [擴散模型從原理到實戰](https://www.tenlong.com.tw/products/9787115618870?list_name=srh) 
 ## GenAI 
 ## 程式範例
 - Keras
