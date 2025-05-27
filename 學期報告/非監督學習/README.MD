@@ -16,7 +16,7 @@
 - 非監督學習:聚類
   - 四大類型_1_Centroid-based Methods: K-Means clustering
   - 四大類型_2_Distribution-based Methods ==>[Gaussian mixture models|高斯混合模型](高斯混合模型.md)
-  - 四大類型_3_Connectivity based methods==> [Hierarchical clustering(階層式分群)](Hierarchical_Clustering.md)
+  - 四大類型_3_Connectivity based methods==> [Hierarchical clustering(階層式分群)](HierarchicalClustering.md)
   - 四大類型_4_Density Based methods==> [DBSCAN (Density-Based Spatial Clustering of Applications with Noise)](DBSCAN.md)
 - 非監督學習評估
 
