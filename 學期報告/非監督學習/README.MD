@@ -20,10 +20,14 @@
   - [LLE](LLE.md) ==> 非線性維度縮減| Manifold Learning
   - [t_SNE(推薦|補充)](t-SNE.md)
   - 其他降維技術
-- 第9章非監督學習技術
+- 第9章非監督學習技術  [非監督學習之演算法類型](非監督學習之演算法類型.md)  [scikit-learn支援的非監督演算法](scikit-learn支援的非監督學習演算法.md)
   - 聚類
   - [高斯混合模型](高斯混合模型.md)
-
+  - 四大類型_1_Centroid-based Methods: K-Means clustering
+  - 四大類型_2_Distribution-based Methods ==>[Gaussian mixture models|高斯混合模型](高斯混合模型.md)
+  - 四大類型_3_Connectivity based methods==> [Hierarchical clustering(階層式分群)](Hierarchical_Clustering.md)
+  - 四大類型_4_Density Based methods==> [DBSCAN (Density-Based Spatial Clustering of Applications with Noise)](DBSCAN.md)
+  
 # 延伸學習 ==>非監督學習:書籍
 - 👍[Hands-on Unsupervised Learning Using Python](https://www.oreilly.com/library/view/hands-on-unsupervised-learning/9781492035633/) 
   - [GITHUB](https://github.com/aapatel09/handson-unsupervised-learning)
