@@ -43,6 +43,8 @@
   - [API Documentation](https://www.tensorflow.org/api_docs)
 - PyTorch
   - [PyTorch Tutorials](https://docs.pytorch.org/tutorials/)
+    - [DCGAN Tutorial](https://docs.pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
+    - [Optimizing Vision Transformer Model for Deployment](https://docs.pytorch.org/tutorials/beginner/vt_tutorial.html) ==> Facebook Data-efficient Image Transformers
   - [PyTorch documentation](https://docs.pytorch.org/docs/stable/index.html)
 
 ## Awesome-VAE
