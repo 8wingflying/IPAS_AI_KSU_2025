@@ -1,5 +1,5 @@
 # t-distributed stochastic neighbor embedding (t-SNE)
-- 論文 [Visualizing data using t-SNE](https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf) | L.v.d. Maaten, G. Hinton. |Journal of Machine Learning Research, Vol 9(Nov), pp. 2579—2605. 2008
+- 論文 [Visualizing data using t-SNE](https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf) | L.v.d. Maaten, **G. Hinton**. |Journal of Machine Learning Research, Vol 9(Nov), pp. 2579—2605. 2008
 - [Accelerating t-SNE using tree-based algorithms(2014)](https://jmlr.org/papers/volume15/vandermaaten14a/vandermaaten14a.pdf)
   - Barnes-Hut algorithm
   - dual-tree algorithm 
