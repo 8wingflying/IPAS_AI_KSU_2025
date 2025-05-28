@@ -2,7 +2,10 @@
 - PCA
 - Random Projection
 - LLE
-
+### 論文
+- Roweis, Sam T and Saul, Lawrence K. Nonlinear dimensionality reduction by locally linear embedding. Science,290(5500):2323–2326, 2000.
+- Saul, Lawrence K and Roweis, Sam T. An introduction to locally linear embedding. Technical report, 2000.
+- 2020[Locally Linear Embedding and its Variants: Tutorial and Survey](https://arxiv.org/abs/2011.10925)
 ### LLE
 - LLE（Locally Linear Embedding）演算法，即局部線性嵌入演算法。
 - 該演算法是針對非線性信號特徵向量維數的優化方法，這種維數優化並不是僅僅在數量上簡單的約簡，而是在保持原始資料性質不變的情況下，將高維空間的信號映射到低維空間上，即特徵值的二次提
@@ -13,9 +16,13 @@
   - `2`.計算出顯示每個點與其相鄰點的關係的權重。這些權重有助於捕獲數據的本地結構。
   - `3`.LLE 使用這些權重來創建數據的低維版本。
   - 它通過根據所需的維數選擇最佳方向（特徵向量）來保持重要的形狀。
+### 導讀
+- [An Introduction to Locally Linear Embedding (LLE)](https://medium.com/biased-algorithms/an-introduction-to-locally-linear-embedding-lle-f40b2b703040)
 ### 數學推導
 - https://www.geeksforgeeks.org/locally-linear-embedding-in-machine-learning/
 - 機器學習_學習筆記系列(73)：局部線性嵌入演算法(Locally Linear Embedding)
+
+
 ### 範例 ==> 瑞士捲
 - https://www.geeksforgeeks.org/locally-linear-embedding-in-machine-learning/
 ```python
