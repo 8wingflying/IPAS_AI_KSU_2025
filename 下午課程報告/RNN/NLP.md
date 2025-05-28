@@ -2,6 +2,7 @@
 - 自然語言處理 (NLP) 是人工智慧 (AI) 的一個分支，它使機器能夠理解和處理人類語言。
 - 人類語言可以採用文字或音訊格式。
 - [Natural Language Processing (NLP) Tutorial](https://www.geeksforgeeks.org/natural-language-processing-nlp-tutorial/)
+- https://www.geeksforgeeks.org/artificial-intelligence-natural-language-generation/
 
 #### NLP的應用
 - Alexa、Siri 和 Google Assistant 等語音助理使用 NLP 進行語音辨識和互動。
