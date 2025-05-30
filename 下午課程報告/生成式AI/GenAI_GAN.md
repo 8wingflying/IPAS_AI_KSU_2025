@@ -7,10 +7,17 @@
 
 ## review
 - [A survey on GANs for computer vision: Recent research, analysis and taxonomy](https://arxiv.org/abs/2203.11242)
+- [A Survey on Generative Adversarial Networks: Variants, Applications, and Training](https://arxiv.org/abs/2006.05132)
+- [Generative Adversarial Networks (GANs Survey): Challenges, Solutions, and Future Directions](https://arxiv.org/abs/2005.00065)
+- [Generative Adversarial Networks for photo to Hayao Miyazaki style cartoons](https://arxiv.org/abs/2005.07702)
 - [A Survey on the Application of Generative Adversarial Networks in Cybersecurity: Prospective, Direction and Open Research Scopes](https://arxiv.org/abs/2407.08839)
+- [Generative adversarial networks in time series: A survey and taxonomy](https://arxiv.org/abs/2107.11098)
 - [Generative Adversarial Networks for Malware Detection: a Survey](https://arxiv.org/abs/2302.08558)
 - [A Survey on Malware Detection with Graph Representation Learning](https://arxiv.org/abs/2303.16004)
 - [On Deep Learning in Password Guessing, a Survey](https://arxiv.org/abs/2208.10413)
+- [Stegomalware: A Systematic Survey of MalwareHiding and Detection in Images, Machine LearningModels and Research Challenges](https://arxiv.org/abs/2110.02504)
+- [Video Generative Adversarial Networks: A Review](https://arxiv.org/abs/2011.02250)
+- [A review of Generative Adversarial Networks (GANs) and its applications in a wide variety of disciplines -- From Medical to Remote Sensing](https://arxiv.org/abs/2110.01442)
 - [Generative Adversarial Networks for Image Super-Resolution: A Survey](https://arxiv.org/abs/2204.13620)
 - [A survey on text generation using generative adversarial networks](https://arxiv.org/abs/2212.11119)
 - [Deep Generative Models on 3D Representations: A Survey](https://arxiv.org/abs/2210.15663)
