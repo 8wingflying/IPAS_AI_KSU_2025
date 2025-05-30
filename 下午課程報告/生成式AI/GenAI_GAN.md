@@ -1,4 +1,4 @@
-## ## Awesome GAN
+## Awesome GAN
 - https://github.com/nightrome/really-awesome-gan
 - https://github.com/nashory/gans-awesome-applications
 - https://github.com/Faldict/awesome-GAN
@@ -20,6 +20,7 @@
 - [A survey of synthetic data augmentation methods in computer vision](https://arxiv.org/abs/2411.09955)
 - [A Survey on Super Resolution for video Enhancement Using GAN](https://arxiv.org/abs/2312.16471)
 - [A Chronological Survey of Theoretical Advancements in Generative Adversarial Networks for Computer Vision](https://arxiv.org/abs/2311.00995)
+
 ## 歷史發展與模型
 - GAN(2014)
 - CGANs | Conditional Generative Adversarial Networks
@@ -35,4 +36,5 @@
   - Video: https://youtu.be/c-NJtV9Jvp0
   - TensorFlow implementation: https://github.com/NVlabs/stylegan2
 
+![GAN](GAN.png)
 
