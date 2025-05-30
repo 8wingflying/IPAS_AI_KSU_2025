@@ -1,7 +1,10 @@
 ## 學習資源
 - https://andy6804tw.github.io/wiki/
 ## review
+- [Diffusion Models in Vision: A Survey](https://arxiv.org/abs/2209.04747)
 - [Diffusion Models in Recommendation Systems: A Survey](https://arxiv.org/abs/2501.10548)
+- [A Survey on Deep Neural Networks in Collaborative Filtering Recommendation Systems](https://arxiv.org/abs/2412.01378)
+- [Attacks and Defenses for Generative Diffusion Models: A Comprehensive Survey](https://arxiv.org/abs/2408.03400)
 - [A Comprehensive Survey on Knowledge Distillation of Diffusion Models](https://arxiv.org/abs/2304.04262)
 - [Survey of Video Diffusion Models: Foundations, Implementations, and Applications](https://arxiv.org/abs/2504.16081)
 - [Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions](https://arxiv.org/abs/2502.17119)
