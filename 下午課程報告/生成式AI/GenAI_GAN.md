@@ -28,6 +28,7 @@
 - [A survey of synthetic data augmentation methods in computer vision](https://arxiv.org/abs/2411.09955)
 - [A Survey on Super Resolution for video Enhancement Using GAN](https://arxiv.org/abs/2312.16471)
 - [A Chronological Survey of Theoretical Advancements in Generative Adversarial Networks for Computer Vision](https://arxiv.org/abs/2311.00995)
+- [GANs Conditioning Methods: A Survey](https://arxiv.org/abs/2408.15640)
 
 ## 歷史發展與模型
 - GAN(2014)
