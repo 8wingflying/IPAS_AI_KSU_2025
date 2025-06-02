@@ -158,5 +158,394 @@ if __name__ == '__main__':
 ### WGAN-ng 
 - https://www.cnblogs.com/for-technology-lover/p/14854809.html
 ```python
+# wgan_and_wgan_gp.py
+import tensorflow as tf
+from tensorflow.keras import layers, Model
+from tensorflow.keras.activations import relu
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
+from tensorflow.keras.losses import BinaryCrossentropy
+from tensorflow.keras.optimizers import RMSprop, Adam
+from tensorflow.keras.metrics import binary_accuracy
+
+import tensorflow_datasets as tfds
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+import warnings
+warnings.filterwarnings('ignore')
+print("Tensorflow", tf.__version__)
+
+ds_train, ds_info = tfds.load('fashion_mnist', split='train',shuffle_files=True,with_info=True)
+fig = tfds.show_examples(ds_train, ds_info)
+
+batch_size = 64
+image_shape = (32, 32, 1)
+
+def preprocess(features):
+    image = tf.image.resize(features['image'], image_shape[:2])    
+    image = tf.cast(image, tf.float32)
+    image = (image-127.5)/127.5
+    return image
+
+ds_train = ds_train.map(preprocess)
+ds_train = ds_train.shuffle(ds_info.splits['train'].num_examples)
+ds_train = ds_train.batch(batch_size, drop_remainder=True).repeat()
+
+train_num = ds_info.splits['train'].num_examples
+train_steps_per_epoch = round(train_num/batch_size)
+print(train_steps_per_epoch)
+
+"""
+WGAN
+"""
+class WGAN():
+    def __init__(self, input_shape):
+
+        self.z_dim = 128
+        self.input_shape = input_shape
+        
+        # losses
+        self.loss_critic_real = {}
+        self.loss_critic_fake = {}
+        self.loss_critic = {}
+        self.loss_generator = {}
+        
+        # critic
+        self.n_critic = 5
+        self.critic = self.build_critic()
+        self.critic.trainable = False
+
+        self.optimizer_critic = RMSprop(5e-5)
+
+        # build generator pipeline with frozen critic
+        self.generator = self.build_generator()
+        critic_output = self.critic(self.generator.output)
+        self.model = Model(self.generator.input, critic_output)
+        self.model.compile(loss = self.wasserstein_loss,
+                           optimizer =  RMSprop(5e-5))
+        self.critic.trainable = True
+
+        
+    def wasserstein_loss(self, y_true, y_pred):
+
+        w_loss = -tf.reduce_mean(y_true*y_pred)
+
+        return w_loss
+
+    def build_generator(self):
+
+        DIM = 128
+        model = tf.keras.Sequential(name='Generator') 
+
+        model.add(layers.Input(shape=[self.z_dim])) 
+
+        model.add(layers.Dense(4*4*4*DIM))
+        model.add(layers.BatchNormalization()) 
+        model.add(layers.ReLU())
+        model.add(layers.Reshape((4,4,4*DIM))) 
+
+        model.add(layers.UpSampling2D((2,2), interpolation="bilinear"))
+        model.add(layers.Conv2D(2*DIM, 5, padding='same')) 
+        model.add(layers.BatchNormalization()) 
+        model.add(layers.ReLU())
+
+        model.add(layers.UpSampling2D((2,2), interpolation="bilinear"))
+        model.add(layers.Conv2D(DIM, 5, padding='same')) 
+        model.add(layers.BatchNormalization()) 
+        model.add(layers.ReLU())
+
+        model.add(layers.UpSampling2D((2,2), interpolation="bilinear"))       
+        model.add(layers.Conv2D(image_shape[-1], 5, padding='same', activation='tanh')) 
+
+        return model             
+    
+    def build_critic(self):
+
+        DIM = 128
+        model = tf.keras.Sequential(name='critics') 
+
+        model.add(layers.Input(shape=self.input_shape)) 
+
+        model.add(layers.Conv2D(1*DIM, 5, strides=2, padding='same'))
+        model.add(layers.LeakyReLU(0.2))
+
+        model.add(layers.Conv2D(2*DIM, 5, strides=2, padding='same'))
+        model.add(layers.BatchNormalization()) 
+        model.add(layers.LeakyReLU(0.2))
+
+        model.add(layers.Conv2D(4*DIM, 5, strides=2, padding='same'))
+        model.add(layers.BatchNormalization()) 
+        model.add(layers.LeakyReLU(0.2))
+
+
+        model.add(layers.Flatten()) 
+        model.add(layers.Dense(1)) 
+
+        return model     
+    
+ 
+    def train_critic(self, real_images, batch_size):
+
+        real_labels = tf.ones(batch_size)
+        fake_labels = -tf.ones(batch_size)
+                  
+        g_input = tf.random.normal((batch_size, self.z_dim))
+        fake_images = self.generator.predict(g_input)
+        
+        with tf.GradientTape() as total_tape:
+            
+            # forward pass
+            pred_fake = self.critic(fake_images)
+            pred_real = self.critic(real_images)
+            
+            # calculate losses
+            loss_fake = self.wasserstein_loss(fake_labels, pred_fake)
+            loss_real = self.wasserstein_loss(real_labels, pred_real)           
+
+            # total loss
+            total_loss = loss_fake + loss_real
+            
+            # apply gradients
+            gradients = total_tape.gradient(total_loss, self.critic.trainable_variables)
+            
+            self.optimizer_critic.apply_gradients(zip(gradients, self.critic.trainable_variables))
+
+        for layer in self.critic.layers: 
+            weights = layer.get_weights() 
+            weights = [tf.clip_by_value(w, -0.01, 0.01) for w in weights]
+            layer.set_weights(weights) 
+
+        return loss_fake, loss_real
+                                                
+    def train(self, data_generator, batch_size, steps, interval=200):
+
+        val_g_input = tf.random.normal((batch_size, self.z_dim))
+        real_labels = tf.ones(batch_size)
+
+        for i in range(steps):
+            for _ in range(self.n_critic):
+                real_images = next(data_generator)
+                loss_fake, loss_real = self.train_critic(real_images, batch_size)
+                critic_loss = loss_fake + loss_real
+                
+            # train generator
+            g_input = tf.random.normal((batch_size, self.z_dim))
+            g_loss = self.model.train_on_batch(g_input, real_labels)
+            
+            self.loss_critic_real[i] = loss_real.numpy()
+            self.loss_critic_fake[i] = loss_fake.numpy()
+            self.loss_critic[i] = critic_loss.numpy()
+            self.loss_generator[i] = g_loss
+
+            if i%interval == 0:
+                msg = "Step {}: g_loss {:.4f} critic_loss {:.4f} critic fake {:.4f}  critic_real {:.4f}"\
+                .format(i, g_loss, critic_loss, loss_fake, loss_real)
+                print(msg)
+
+                fake_images = self.generator.predict(val_g_input)
+                self.plot_images(fake_images)
+                self.plot_losses()
+
+    def plot_images(self, images):   
+        grid_row = 1
+        grid_col = 8
+        f, axarr = plt.subplots(grid_row, grid_col, figsize=(grid_col*2.5, grid_row*2.5))
+        for row in range(grid_row):
+            for col in range(grid_col):
+                if self.input_shape[-1]==1:
+                    axarr[col].imshow(images[col,:,:,0]*0.5+0.5, cmap='gray')
+                else:
+                    axarr[col].imshow(images[col]*0.5+0.5)
+                axarr[col].axis('off') 
+        plt.show()
+
+    def plot_losses(self):
+        fig, (ax1, ax2) = plt.subplots(2, sharex=True)
+        fig.set_figwidth(10)
+        fig.set_figheight(6)
+        ax1.plot(list(self.loss_critic.values()), label='Critic loss', alpha=0.7)
+        ax1.set_title("Critic loss")
+        ax2.plot(list(self.loss_generator.values()), label='Generator loss', alpha=0.7)
+        ax2.set_title("Generator loss")
+
+        plt.xlabel('Steps')
+        plt.show()
+
+wgan = WGAN(image_shape)
+wgan.generator.summary()
+
+wgan.critic.summary()
+
+wgan.train(iter(ds_train), batch_size, 2000, 100)
+
+z = tf.random.normal((8, 128))
+generated_images = wgan.generator.predict(z)
+wgan.plot_images(generated_images)
+
+wgan.generator.save_weights('./wgan_models/wgan_fashion_minist.weights')
+
+"""
+WGAN_GP
+"""
+class WGAN_GP():
+    def __init__(self, input_shape):
+
+        self.z_dim = 128
+        self.input_shape = input_shape
+
+        # critic
+        self.n_critic = 5
+        self.penalty_const = 10
+        self.critic = self.build_critic()
+        self.critic.trainable = False
+
+        self.optimizer_critic = Adam(1e-4, 0.5, 0.9)
+
+        # build generator pipeline with frozen critic
+        self.generator = self.build_generator()
+        critic_output = self.critic(self.generator.output)
+        self.model = Model(self.generator.input, critic_output)
+        self.model.compile(loss=self.wasserstein_loss, optimizer=Adam(1e-4, 0.5, 0.9))
+
+    def wasserstein_loss(self, y_true, y_pred):
+
+        w_loss = -tf.reduce_mean(y_true*y_pred)
+
+        return w_loss
+    
+    def build_generator(self):
+
+        DIM = 128
+        model = Sequential([
+            layers.Input(shape=[self.z_dim]),
+            
+            layers.Dense(4*4*4*DIM),
+            layers.BatchNormalization(),
+            layers.ReLU(),
+            layers.Reshape((4,4,4*DIM)),
+
+            layers.UpSampling2D((2,2), interpolation='bilinear'),
+            layers.Conv2D(2*DIM, 5, padding='same'),
+            layers.BatchNormalization(),
+            layers.ReLU(),
+
+            layers.UpSampling2D((2,2), interpolation='bilinear'),
+            layers.Conv2D(2*DIM, 5, padding='same'),
+            layers.BatchNormalization(),
+            layers.ReLU(),
+
+            layers.UpSampling2D((2,2), interpolation='bilinear'),
+            layers.Conv2D(image_shape[-1], 5, padding='same', activation='tanh')
+        ],name='Generator')
+
+        return model
+    
+    def build_critic(self):
+
+        DIM = 128
+        model = Sequential([
+            layers.Input(shape=self.input_shape),
+
+            layers.Conv2D(1*DIM, 5, strides=2, padding='same', use_bias=False),
+            layers.LeakyReLU(0.2),
+
+            layers.Conv2D(2*DIM, 5, strides=2, padding='same', use_bias=False),
+            layers.LeakyReLU(0.2),
+
+            layers.Conv2D(4*DIM, 5, strides=2, padding='same', use_bias=False),
+            layers.LeakyReLU(0.2),
+
+            layers.Flatten(),
+            layers.Dense(1)
+        ], name='critics')
+
+        return model
+    
+    def gradient_loss(self, grad):
+        loss = tf.square(grad)
+        loss = tf.reduce_sum(loss, axis=np.arange(1, len(loss.shape)))
+        loss = tf.sqrt(loss)
+        loss = tf.reduce_mean(tf.square(loss - 1))
+        loss = self.penalty_const * loss
+        return loss
+    
+    def train_critic(self, real_images, batch_size):
+        real_labels = tf.ones(batch_size)
+        fake_labels = -tf.ones(batch_size)
+
+        g_input = tf.random.normal((batch_size, self.z_dim))
+        fake_images = self.generator.predict(g_input)
+
+        with tf.GradientTape() as gradient_tape, tf.GradientTape() as total_tape:
+            # forward pass
+            pred_fake = self.critic(fake_images)
+            pred_real = self.critic(real_images)
+
+            # calculate losses
+            loss_fake = self.wasserstein_loss(fake_labels, pred_fake)
+            loss_real = self.wasserstein_loss(real_labels, pred_real)
+
+            # gradient penalty
+            epsilon = tf.random.uniform((batch_size, 1, 1, 1))
+            interpolates = epsilon * real_images + (1-epsilon) * fake_images
+            gradient_tape.watch(interpolates)
+
+            critic_interpolates = self.critic(interpolates)
+            gradients_interpolates = gradient_tape.gradient(critic_interpolates, [interpolates])
+            gradient_penalty = self.gradient_loss(gradients_interpolates)
+
+            # total loss
+            total_loss = loss_fake + loss_real + gradient_penalty
+
+            # apply gradients
+            gradients = total_tape.gradient(total_loss, self.critic.variables)
+
+            self.optimizer_critic.apply_gradients(zip(gradients, self.critic.variables))
+        return loss_fake, loss_real, gradient_penalty
+    
+    def train(self, data_generator, batch_size, steps, interval=100):
+        val_g_input = tf.random.normal((batch_size, self.z_dim))
+        real_labels = tf.ones(batch_size)
+
+        for i in range(steps):
+            for _ in range(self.n_critic):
+                real_images = next(data_generator)
+                loss_fake, loss_real, gradient_penalty = self.train_critic(real_images, batch_size)
+                critic_loss = loss_fake + loss_real + gradient_penalty
+            # train generator
+            g_input = tf.random.normal((batch_size, self.z_dim))
+            g_loss = self.model.train_on_batch(g_input, real_labels)
+            if i%interval == 0:
+                msg = "Step {}: g_loss {:.4f} critic_loss {:.4f} critic fake {:.4f}  critic_real {:.4f} penalty {:.4f}".format(i, g_loss, critic_loss, loss_fake, loss_real, gradient_penalty)
+                print(msg)
+
+                fake_images = self.generator.predict(val_g_input)
+                self.plot_images(fake_images)
+
+    def plot_images(self, images):   
+        grid_row = 1
+        grid_col = 8
+        f, axarr = plt.subplots(grid_row, grid_col, figsize=(grid_col*2.5, grid_row*2.5))
+        for row in range(grid_row):
+            for col in range(grid_col):
+                if self.input_shape[-1]==1:
+                    axarr[col].imshow(images[col,:,:,0]*0.5+0.5, cmap='gray')
+                else:
+                    axarr[col].imshow(images[col]*0.5+0.5)
+                axarr[col].axis('off') 
+        plt.show()
+
+wgan = WGAN_GP(image_shape)
+wgan.train(iter(ds_train), batch_size, 5000, 100)
+
+wgan.model.summary()
+
+wgan.critic.summary()
+
+z = tf.random.normal((8, 128))
+generated_images = wgan.generator.predict(z)
+wgan.plot_images(generated_images)
 
 ```
