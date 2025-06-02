@@ -31,7 +31,8 @@
   - 峰值訊噪比 (Peak Signal-to-Noise Ratio, PSNR)
   - 結構相似性指數 (Structural Similarity Index, SSIM)
   - Learned perceptual image patch similarity (LPIPS)
-    - https://ithelp.ithome.com.tw/articles/10332547    
+    - https://ithelp.ithome.com.tw/articles/10332547
+    - https://blog.51cto.com/u_16175458/6906283   
 ## GenAI
 - VAE 2013
   - Stacked Autoencoders
