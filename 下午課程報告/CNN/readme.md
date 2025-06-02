@@ -25,7 +25,7 @@
     - [Image classification from scratch](https://keras.io/examples/vision/image_classification_from_scratch/)
       - 資料集 [Dogs vs. Cats - Kaggle](https://www.kaggle.com/c/dogs-vs-cats/overview)
       - image data augmentation ==> 資料量太少 ==> 擴增資料量的技術
-      - Batch Normalization()
+      - 使用Batch Normalization()
     - 教科書 ResNet-34
     - TF官方範例 [Convolutional Neural Network (CNN) ](https://www.tensorflow.org/tutorials/images/cnn)   ==> CIFAR10 資料集
     - TF官方範例 [Image classification](https://www.tensorflow.org/tutorials/images/classification)
@@ -40,10 +40,10 @@
 
 ## 其他主題 
 - Image Classification與Transformer模型
-  - [Image classification with EANet (External Attention Transformer)](https://keras.io/examples/vision/eanet/)
+  - 【KERAS 官方範例】[Image classification with EANet (External Attention Transformer)](https://keras.io/examples/vision/eanet/)
     - [Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks](https://arxiv.org/abs/2105.02358)
-  - [Train a Vision Transformer on small datasets](https://keras.io/examples/vision/vit_small_ds/)
-- 物件偵測
+  - 【KERAS 官方範例】[Train a Vision Transformer on small datasets](https://keras.io/examples/vision/vit_small_ds/)
+- 物件偵測......
 
 #### 教科書:第14章 Deep Computer Vision Using Convolutional Neural Networks
 - The Architecture of the Visual Cortex
