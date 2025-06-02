@@ -32,18 +32,26 @@
 
 ## 歷史發展與模型
 - GAN(2014)
-- [CGANs | Conditional Generative Adversarial Networks(2014)](https://arxiv.org/abs/1411.1784)
+- [CGANs(2014)| Conditional Generative Adversarial Networks(2014)](https://arxiv.org/abs/1411.1784)
+  - 在生成器和判別器中加入額外的條件輸入，條件輸入會嵌入 (Embedding)至神經網路中，使得生成的圖片可以按照指定的條件進行控制。
+  - 這解決了GAN在圖片生成時，無法控制要生成什麼圖片的問題，也可以更好的因應使用者的需求去生成對應的圖片。 
+- DCGAN(2015)
+  - [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan)
+  - 使用卷積神經網路作為生成器和判別器，提高了圖像品質和穩定性，基本上剛入門以圖像生成任務的GAN都會使用這個。
+  - 因為模型比較簡單，且目標函數與原始的GAN一樣，但也是要小心訓練不穩定等問題。
 - 訓練GAN的難處: 模式崩潰
-  - problem of JS散度(Jensen–Shannon divergence) ==> Training ==>
+  - problem of `JS散度(Jensen–Shannon divergence)` ==> Training ==>
     - https://blog.csdn.net/weixin_44441131/article/details/105878383
     - https://blog.csdn.net/weixin_44441131/article/details/105878383
     - sigmoid cross entropy loss function ==> vanishing gradients problem
     - 原始的GAN的損失函數存在兩個主要問題，導致訓練十分不穩定而且難以收斂：
       - `1`. 判別器越好，生成器梯度消失越嚴重
-      - `2`. 使用Ian Goodfellow trick ==> 會導致梯度不穩定和 mode collapse
+      - `2`. 使用Ian Goodfellow trick(“- log D trick”) ==> 會導致梯度不穩定和 mode collapse
   - 解決方式:
+  - 讚👍 【數學推導】 https://zhuanlan.zhihu.com/p/388486502
   - [WGAN == Wasserstein GAN(2017)](https://arxiv.org/abs/1701.07875)
     - [GAN Lecture 6 (2018): WGAN, EBGAN](https://www.youtube.com/watch?v=3JP-xuBJsyc)
+    - [Towards Principled Methods for Training Generative Adversarial Networks(2017)](https://arxiv.org/abs/1701.04862)
     - 使用Wasserstein divergence|Earth-Mover (EM)距離
     - https://www.cnblogs.com/for-technology-lover/p/14854809.html
     - 對比原始的GAN，有四個改動：
@@ -52,18 +60,41 @@
       - 每次更新判別器時把參數截斷到一定範圍內
       - 不用基於動量的優化演算法（Adam等）（挺離譜的，作者之後在WGAN-GP又用了adam
   - [Improved Training of Wasserstein GANs(2017)](https://arxiv.org/abs/1704.00028)
+    - https://zhuanlan.zhihu.com/p/25071913
+    - https://zhuanlan.zhihu.com/p/39181287
   - [Energy-based Generative Adversarial Network(2016)](https://arxiv.org/abs/1609.03126)
   - [Least Squares Generative Adversarial Networks(2016)](https://arxiv.org/abs/1611.04076)
     - 使用另一個 divergence
-- DCGAN(2015)
-  - [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan) 
+- pix2pix(2016) [Image-to-Image Translation with Conditional Adversarial Networks(2016)](https://arxiv.org/abs/1611.07004)
+  - [pix2pix: Image-to-image translation with a conditional GAN](https://www.tensorflow.org/tutorials/generative/pix2pix)
+  - 使用條件對抗網路和U-Net結構。
+  - U-Net是指許多下採樣層與對應的上採樣層進行連接  https://ithelp.ithome.com.tw/articles/10316383
+  - 任務也是圖片到圖片的變換，但是使用這個模型則需要使用成對的數據，在資料前處理上需要特別注意，最常用的方法就是把草圖轉成精緻的圖、黑白圖轉成彩色圖等 
+  - Pix2Pix HD(2017)
+    - [High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs](https://ar5iv.labs.arxiv.org/html/1711.11585)
+    - 深度學習Paper系列(09)：Pix2Pix HD
+- CycleGAN(2017)
+  - https://ar5iv.labs.arxiv.org/html/1703.10593
+  - 使用循環一致性損失 (Cycle Consistency Loss)，實現了不同風格之間的圖像轉換
+  - 這個訓練不需要成對的訓練圖片，只需要兩種風格的圖片就好，訓練起來比較方便。
+  - CycleGAN可以把馬的圖片變成斑馬、蘋果變橘子、照片變成莫內的畫風等…
+  - https://blog.csdn.net/weixin_36474809/article/details/88778213
+  - 深度學習Paper系列(10)：CycleGAN
 - [Progressive Growing of GANs for Improved Quality, Stability, and Variation(2017)](https://arxiv.org/abs/1710.10196)
-- StyleGAN |Style Generative Adversarial Network(2018) 
+- StyleGAN(2018) |Style Generative Adversarial Network(2018) 
   - [A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948) 
 - StyleGAN2 (2019)
   - ArXiv: https://arxiv.org/abs/1912.04958
   - Video: https://youtu.be/c-NJtV9Jvp0
   - TensorFlow implementation: https://github.com/NVlabs/stylegan2
+- StyleGAN3 (2021)
+  - [《Alias-Free Generative Adversarial Networks》](https://arxiv.org/abs/2106.12423)
+  - https://nvlabs.github.io/stylegan3/
+  - [NVIDIA提供的範例](https://colab.research.google.com/drive/1BXNHZBai-pXtP-ncliouXo_kUiG1Pq7M?usp=sharing)
+- BigGAN(2018)
+  - [Large Scale GAN Training for High Fidelity Natural Image Synthesis](https://arxiv.org/abs/1809.11096)
+  - 【Tensorflow官方範例】[Generating Images with BigGAN]()
+
 
 ![GAN](GAN.png)
 
