@@ -1,7 +1,7 @@
 ### 報告主題
 - [電腦視覺](電腦視覺.md)
 - [基本圖形處理](圖形處理常用套件.md)
-- 圖形分類(Image Classification)與CNN模型
+- Image Classification與CNN模型
   - CNN 元件
     - Convolution Layer|卷積層 :padding(填補) |stride(步幅)
     - Pooling Layer |池化層
@@ -34,7 +34,8 @@
     - 使用pre-trained model
     - [KerasHub pretrained models](https://keras.io/keras_hub/presets/) 
   - fine-tuning
-    - [Image classification via fine-tuning with EfficientNet](https://keras.io/examples/vision/swin_transformers/) 
+    - [Image classification via fine-tuning with EfficientNet](https://keras.io/examples/vision/swin_transformers/)
+      - [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946) 
   - TF官方範例 [Transfer learning with TensorFlow Hub](https://www.tensorflow.org/tutorials/images/transfer_learning_with_hub) 
 
 ## 其他主題 
