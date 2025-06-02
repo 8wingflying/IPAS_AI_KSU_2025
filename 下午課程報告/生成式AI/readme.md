@@ -1,4 +1,10 @@
 ## GenAI
+- VAE
+- DCGAN
+  - [Images of LEGO Bricks|40,000 images of 50 different LEGO bricks|Kaggle](https://www.kaggle.com/datasets/joosthazelzet/lego-brick-images)
+    - [GAN for Lego Bricks](https://www.kaggle.com/code/gabrielcabas/gan-for-lego-bricks)
+- Diffusion model
+## GenAI
 - VAE 2013
   - Stacked Autoencoders
     - Implementing a Stacked Autoencoder Using Keras
