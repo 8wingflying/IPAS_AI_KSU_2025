@@ -32,19 +32,23 @@
 
 ## 歷史發展與模型
 - GAN(2014)
-- CGANs | Conditional Generative Adversarial Networks
+- [CGANs | Conditional Generative Adversarial Networks(2014)](https://arxiv.org/abs/1411.1784)
 - 訓練GAN的難處: 模式崩潰
   - problem of JS散度(Jensen–Shannon divergence) ==> Training ==>
     - https://blog.csdn.net/weixin_44441131/article/details/105878383
-    - https://blog.csdn.net/weixin_44441131/article/details/105878383 
+    - https://blog.csdn.net/weixin_44441131/article/details/105878383
+    - sigmoid cross entropy loss function ==> vanishing gradients problem 
   - 解決方式:
   - [WGAN == Wasserstein GAN(2017)](https://arxiv.org/abs/1701.07875)
     - [GAN Lecture 6 (2018): WGAN, EBGAN](https://www.youtube.com/watch?v=3JP-xuBJsyc)
     - 使用Wasserstein divergence
+    - https://www.cnblogs.com/for-technology-lover/p/14854809.html
   - [Energy-based Generative Adversarial Network(2016)](https://arxiv.org/abs/1609.03126)
+  - [Least Squares Generative Adversarial Networks(2016)](https://arxiv.org/abs/1611.04076)
+    - 使用另一個 divergence
 - DCGAN(2015)
   - [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan) 
-- [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/abs/1710.10196)
+- [Progressive Growing of GANs for Improved Quality, Stability, and Variation(2017)](https://arxiv.org/abs/1710.10196)
 - StyleGAN |Style Generative Adversarial Network(2018) 
   - [A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948) 
 - StyleGAN2 (2019)
