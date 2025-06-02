@@ -13,6 +13,11 @@
   - Deep Convolutional GANs(DCGANs)
   - 2018 NVIDIA | Progressive Growing of GANs
   - 2018 NVIDIA |StyleGANs
+  - WGAN
+  - WGAN-GP
+    - WGAN-GP相對於WGAN的改進很小，除了增加了一個正則項，其他部分都和WGAN一樣。
+    - 這個正則項就是WGAN-GP中GP（gradient penalty），即梯度約束。
+    - 這個約束的意思是：critic相對於原始輸入的梯度的L2範數要約束在 
   - 範例1 Fashion MNIST
   - 範例2
 - Diffussion Model(2015)
