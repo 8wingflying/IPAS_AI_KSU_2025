@@ -47,9 +47,9 @@ import matplotlib.style
 from gensim.models import FastText as ft
 from IPython.display import Image
 import os
-
-"""# Links to download required word embeddings
-
+```
+# Links to download required word embeddings
+```
 #### download w2v
  gdown https://drive.google.com/uc?id=0B7XkCwpI5KDYNlNUTTlSS21pQmM
 
@@ -58,9 +58,8 @@ import os
 
 #### download fastext
 gdown https://drive.google.com/uc?id=1vz6659Atv9OOXiakzj1xaKhZ9jxJkeFF
-
-#  Importing the data
-"""
+```
+# Importing the data
 
 df = pd.read_csv("Rec_sys_content.csv")
 # Viewing Top 5 Rows
