@@ -39,6 +39,10 @@
   - TF官方範例 [Transfer learning with TensorFlow Hub](https://www.tensorflow.org/tutorials/images/transfer_learning_with_hub) 
 
 ## 其他主題 
+- Image Classification與Transformer模型
+  - [Image classification with EANet (External Attention Transformer)](https://keras.io/examples/vision/eanet/)
+    - [Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks](https://arxiv.org/abs/2105.02358)
+  - [Train a Vision Transformer on small datasets](https://keras.io/examples/vision/vit_small_ds/)
 - 物件偵測
 
 #### 教科書:第14章 Deep Computer Vision Using Convolutional Neural Networks
