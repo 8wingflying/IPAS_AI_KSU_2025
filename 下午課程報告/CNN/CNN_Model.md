@@ -10,9 +10,10 @@ xception.summary()
 - 📝[A Comprehensive Survey on Architectural Advances in Deep CNNs: Challenges, Applications, and Emerging Research Directions()](https://arxiv.org/abs/2503.16546)
 - 🖊️LeNet(1989)
 - 📅LeNet-5 (1998)
-- GPU (2006)
-- NVIDIA (2007)
-- ImageNet(2010)
+- 重要發展
+  - GPU (2006)
+  - NVIDIA (2007)
+  - ImageNet(2010-2017) https://image-net.org/
 - AlexNet(2012)
   - AlexNet was trained in parallel on two NVIDIA GTX 580 GPUs 
 - ZFNet(2013)
@@ -31,6 +32,8 @@ xception.summary()
   - https://github.com/hujie-frank/SENet
 - ShuffleNet(2017) 一種針對移動設備的極高效卷積神經網路
   - [論文ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices(arXiv:1707.01083)](https://arxiv.org/abs/1707.01083) 
+
+## Vision Transformers (ViT)系列模型 2020-2021
 - Vision Transformers (ViTs)(2020)
   - [論文An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale(arXiv:2010.11929)](https://arxiv.org/abs/2010.11929)
   - Vision Transformer architecture comprises several key stages:
@@ -39,4 +42,21 @@ xception.summary()
     - Transformer Encoder
     - Classification Head (MLP Head) 
   - https://blog.csdn.net/abc13526222160/article/details/131228810
+- DeiT (Data-efficient Image Transformer)
+  - [[2012.12877]Training data-efficient image transformers & distillation through attention](https://arxiv.org/abs/2012.12877)
+  - https://blog.csdn.net/abc13526222160/article/details/132339050
+- 微軟Swin Transformer
+  - [[2103.14030] Swin Transformer: Hierarchical Vision Transformer using Shifted Windows ](https://arxiv.org/abs/2103.14030)
+  - https://www.geeksforgeeks.org/swin-transformer/
+- 微軟 CvT (Convolutional Vision Transformer)
+  - [[2103.15808] CvT: Introducing Convolutions to Vision Transformers ](https://arxiv.org/abs/2103.15808)
+  - https://zhuanlan.zhihu.com/p/583450848
+- T2T-ViT (Tokens-to-Token Vision Transformer)
+  -  [[2101.11986] Tokens-to-Token ViT: Training Vision Transformers from Scratch on ImageNet](https://arxiv.org/abs/2101.11986)
 
+## Vision Language Models ==> 邁向 MLLM(多模態大語言模型)
+- CLIP (Contrastive Language-Image Pre-training)
+  - 對比語言-圖像預訓練 （CLIP） 是一種使用對比目標訓練一對神經網路模型的技術，一個用於圖像理解，一個用於文本理解。
+  - 這種方法在多個領域實現了廣泛的應用，包括跨模態檢索 、文本到圖像生成和美學排序 
+- ALIGN (A Large-scale ImaGe and Noisy-text)
+- BLIP (Bootstrapping Language-Image Pre-training)
