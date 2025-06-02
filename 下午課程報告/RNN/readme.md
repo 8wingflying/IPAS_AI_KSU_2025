@@ -38,7 +38,8 @@
       - 具備多模態（文字和圖像輸入，文字輸出）和多語言（12種語言）特性 
 - NLP|文本分類(TEXT Classofication)
   - [IMDb文本分類](IMDb文本分類.md)
-  - Sentiment Analysis
+    - Sentiment Analysis 情緒分析 ==> 負評 vs 正評
+    - 以內容為基礎的推薦系統
 - NLP|文本生成(TEXT Generation) ==> GenAI
 
 
