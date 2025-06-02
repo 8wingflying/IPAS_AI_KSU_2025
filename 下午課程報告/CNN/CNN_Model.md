@@ -1,3 +1,10 @@
+## 使用內建MODEL
+```
+from tensorflow.keras.applications import Xception
+xception = Xception()
+xception.summary()
+```
+- [Keras 內建CNN MODEL| Keras Applications](https://keras.io/api/applications/)
 ## CNN Model
 - 📝[A Survey of the Recent Architectures of Deep Convolutional Neural Networks(abs/1901.06032)](https://arxiv.org/abs/1901.06032)
 - 📝[A Comprehensive Survey on Architectural Advances in Deep CNNs: Challenges, Applications, and Emerging Research Directions()](https://arxiv.org/abs/2503.16546)
@@ -32,9 +39,4 @@
     - Transformer Encoder
     - Classification Head (MLP Head) 
   - https://blog.csdn.net/abc13526222160/article/details/131228810
-- 使用內建MODEL
-```
-from tensorflow.keras.applications import Xception
-xception = Xception()
-xception.summary()
-```
+
