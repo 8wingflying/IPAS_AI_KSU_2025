@@ -1,7 +1,7 @@
 ## RNN 與 自然語言處理
 - NLP
   - https://www.geeksforgeeks.org/natural-language-processing-nlp-tutorial/ 
-- Text Representation or Text Embedding Techniques word ==> vector 
+- Text Representation or Text Embedding Techniques(word ==> vector) 
 - RNN
   - Vanilla RNN
   - LSTM
