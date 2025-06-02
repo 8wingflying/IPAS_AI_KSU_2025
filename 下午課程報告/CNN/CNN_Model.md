@@ -49,6 +49,7 @@ xception.summary()
 - 微軟Swin Transformer
   - [[2103.14030] Swin Transformer: Hierarchical Vision Transformer using Shifted Windows ](https://arxiv.org/abs/2103.14030)
   - https://www.geeksforgeeks.org/swin-transformer/
+  - [Image classification with Swin Transformers](https://keras.io/examples/vision/swin_transformers/)
 - 微軟 CvT (Convolutional Vision Transformer)
   - [[2103.15808] CvT: Introducing Convolutions to Vision Transformers ](https://arxiv.org/abs/2103.15808)
   - https://zhuanlan.zhihu.com/p/583450848
