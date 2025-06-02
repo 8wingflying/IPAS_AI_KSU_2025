@@ -34,7 +34,14 @@
 - GAN(2014)
 - CGANs | Conditional Generative Adversarial Networks
 - 訓練GAN的難處: 模式崩潰
-  -解決方式:  
+  - problem of JS散度(Jensen–Shannon divergence) ==> Training ==>
+    - https://blog.csdn.net/weixin_44441131/article/details/105878383
+    - https://blog.csdn.net/weixin_44441131/article/details/105878383 
+  - 解決方式:
+  - [WGAN == Wasserstein GAN(2017)](https://arxiv.org/abs/1701.07875)
+    - [GAN Lecture 6 (2018): WGAN, EBGAN](https://www.youtube.com/watch?v=3JP-xuBJsyc)
+    - 使用Wasserstein divergence
+  - [Energy-based Generative Adversarial Network(2016)](https://arxiv.org/abs/1609.03126)
 - DCGAN(2015)
   - [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan) 
 - [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/abs/1710.10196)
