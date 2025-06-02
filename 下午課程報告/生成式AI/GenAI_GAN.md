@@ -37,12 +37,21 @@
   - problem of JS散度(Jensen–Shannon divergence) ==> Training ==>
     - https://blog.csdn.net/weixin_44441131/article/details/105878383
     - https://blog.csdn.net/weixin_44441131/article/details/105878383
-    - sigmoid cross entropy loss function ==> vanishing gradients problem 
+    - sigmoid cross entropy loss function ==> vanishing gradients problem
+    - 原始的GAN的損失函數存在兩個主要問題，導致訓練十分不穩定而且難以收斂：
+      - `1`. 判別器越好，生成器梯度消失越嚴重
+      - `2`. 使用Ian Goodfellow trick ==> 會導致梯度不穩定和 mode collapse
   - 解決方式:
   - [WGAN == Wasserstein GAN(2017)](https://arxiv.org/abs/1701.07875)
     - [GAN Lecture 6 (2018): WGAN, EBGAN](https://www.youtube.com/watch?v=3JP-xuBJsyc)
-    - 使用Wasserstein divergence
+    - 使用Wasserstein divergence|Earth-Mover (EM)距離
     - https://www.cnblogs.com/for-technology-lover/p/14854809.html
+    - 對比原始的GAN，有四個改動：
+      - 判別器最後一層去掉sigmoid（因為原始GAN做的是分類，但是WGAN做的是回歸）
+      - 生成器和判別器的loss變了一下
+      - 每次更新判別器時把參數截斷到一定範圍內
+      - 不用基於動量的優化演算法（Adam等）（挺離譜的，作者之後在WGAN-GP又用了adam
+  - [Improved Training of Wasserstein GANs(2017)](https://arxiv.org/abs/1704.00028)
   - [Energy-based Generative Adversarial Network(2016)](https://arxiv.org/abs/1609.03126)
   - [Least Squares Generative Adversarial Networks(2016)](https://arxiv.org/abs/1611.04076)
     - 使用另一個 divergence
