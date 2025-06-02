@@ -12,6 +12,22 @@
 - [Diffusion model](DIFFUSION_2025.md)
   - 基本觀念 https://ithelp.ithome.com.tw/articles/10329715
   - 範例程式 
+- 生成模型評估指標
+  - 基於Inception網路的算法 https://ithelp.ithome.com.tw/articles/10333207
+  - Inception Score (IS)
+    - 判斷生成圖片是否是清楚的 ==>  用來評估生成模型能力是否優秀
+    - 生成圖片的多樣性是否足夠 ==> 判斷生成模型是否有模式崩潰 (Mode Collapse)的問題
+    - IS越高代表圖片品質越好
+  - Fréchet Inception Distance (FID)
+    - 計算真實圖片與生成圖片的特徵向量之間的距離。
+    - 距離近也就是分數低則相似度高，反之亦然，兩張圖片一模一樣則FID=0。
+    - FID的Fréchet Distance其實就跟Wasserstein Distance類似，全名叫做Wasserstein-2 Distance
+    - FID值越低代表圖片質量越好
+  - Kernel Inception Distance (KID)
+  - 峰值訊噪比 (Peak Signal-to-Noise Ratio, PSNR)
+  - 結構相似性指數 (Structural Similarity Index, SSIM)
+  - Learned perceptual image patch similarity (LPIPS)
+    - https://ithelp.ithome.com.tw/articles/10332547    
 ## GenAI
 - VAE 2013
   - Stacked Autoencoders
