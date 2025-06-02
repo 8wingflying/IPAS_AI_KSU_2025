@@ -6,7 +6,10 @@
 - RNN
   - Vanilla RNN
   - LSTM
+    - https://ithelp.ithome.com.tw/articles/10193924 
   - GRU (Gated Recurrent Unit)
+    - https://zhuanlan.zhihu.com/p/20310288990
+    - https://ithelp.ithome.com.tw/articles/10194201 
   - https://www.geeksforgeeks.org/rnn-vs-lstm-vs-gru-vs-transformers/
 - Neural Machine Translation 與 seq2seq model
   - 2014 [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
