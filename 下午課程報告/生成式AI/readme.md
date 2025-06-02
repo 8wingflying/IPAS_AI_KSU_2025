@@ -9,7 +9,9 @@
       - CH `4`. Generative Adversarial Networks
       - DCGAN | WGAN-GP | CGAN 
     - [GAN for Lego Bricks](https://www.kaggle.com/code/gabrielcabas/gan-for-lego-bricks)
-- Diffusion model
+- [Diffusion model](DIFFUSION_2025.md)
+  - 基本觀念 https://ithelp.ithome.com.tw/articles/10329715
+  - 範例程式 
 ## GenAI
 - VAE 2013
   - Stacked Autoencoders
@@ -34,8 +36,9 @@
   - 範例2
 - Diffussion Model(2015)
   - 2015 
-  - 2020 | DDPM|denoising diffusion probabilistic model
-  - 2021 | OpenAI |
+  - 2019
+  - 2020 | DDPM|denoising diffusion probabilistic model (很慢)
+  - 2021 | OpenAI | Denoising Diffusion Implicit Models (DDIM)
   - 2021 | LDM | latent diffusion models
   - 2022 | Stable Diffusion  ==> KerasCV
   - 推薦課程 ==> https://github.com/huggingface/diffusion-models-class
