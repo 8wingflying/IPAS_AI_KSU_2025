@@ -1,4 +1,7 @@
-
+## RNN 與 自然語言處理
+- NLP
+- RNN
+- 範例 
 
 ## 教科書:第16章
 - Generating Shakespearean Text Using a Character RNN
