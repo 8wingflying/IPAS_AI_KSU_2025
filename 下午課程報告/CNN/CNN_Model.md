@@ -52,11 +52,16 @@ xception.summary()
   - [[2103.15808] CvT: Introducing Convolutions to Vision Transformers ](https://arxiv.org/abs/2103.15808)
   - https://zhuanlan.zhihu.com/p/583450848
 - T2T-ViT (Tokens-to-Token Vision Transformer)
-  -  [[2101.11986] Tokens-to-Token ViT: Training Vision Transformers from Scratch on ImageNet](https://arxiv.org/abs/2101.11986)
+  - [[2101.11986] Tokens-to-Token ViT: Training Vision Transformers from Scratch on ImageNet](https://arxiv.org/abs/2101.11986)
+  - https://zhuanlan.zhihu.com/p/460938219  
 
-## Vision Language Models ==> 邁向 MLLM(多模態大語言模型)
+## Vision Language Models ==> 邁向 MLLM(多模態大語言模型) 2021/2022
 - CLIP (Contrastive Language-Image Pre-training)
   - 對比語言-圖像預訓練 （CLIP） 是一種使用對比目標訓練一對神經網路模型的技術，一個用於圖像理解，一個用於文本理解。
-  - 這種方法在多個領域實現了廣泛的應用，包括跨模態檢索 、文本到圖像生成和美學排序 
+  - 這種方法在多個領域實現了廣泛的應用，包括跨模態檢索 、文本到圖像生成
+  - https://en.wikipedia.org/wiki/Contrastive_Language-Image_Pre-training
+  - [Contrastive Language-Image Pre-Training with Knowledge Graphs](https://arxiv.org/abs/2210.08901) 
 - ALIGN (A Large-scale ImaGe and Noisy-text)
+  - [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](https://arxiv.org/abs/2102.05918) 
 - BLIP (Bootstrapping Language-Image Pre-training)
+  - [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](https://arxiv.org/abs/2201.12086) 
