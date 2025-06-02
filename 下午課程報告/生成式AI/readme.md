@@ -1,7 +1,13 @@
 ## GenAI
 - VAE
 - DCGAN
+  - MNIST dataset ==> [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan)
+  - Celeb-A Faces dataset ==>PyTorch [DCGAN Tutorial](https://docs.pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
+  - 
   - [Images of LEGO Bricks|40,000 images of 50 different LEGO bricks|Kaggle](https://www.kaggle.com/datasets/joosthazelzet/lego-brick-images)
+    - [Generative Deep Learning, 2nd Edition](https://learning.oreilly.com/library/view/generative-deep-learning/9781098134174/)
+      - CH `4`. Generative Adversarial Networks
+      - DCGAN | WGAN-GP | CGAN 
     - [GAN for Lego Bricks](https://www.kaggle.com/code/gabrielcabas/gan-for-lego-bricks)
 - Diffusion model
 ## GenAI
