@@ -1,6 +1,12 @@
 ## RNN 與 自然語言處理
 - NLP
 - RNN
+  - Vanilla RNN
+  - LSTM
+  - GRU 
+- Transformer
+- 文本分類(TEXT Classofication)
+- 文本生成(TEXT Generation)
 - 範例 
 
 ## 教科書:第16章
