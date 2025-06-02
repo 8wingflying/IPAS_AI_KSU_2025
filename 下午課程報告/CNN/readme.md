@@ -1,6 +1,38 @@
 ### 報告主題
 - [電腦視覺](電腦視覺.md)
-- 
+- [基本圖形處理](圖形處理常用套件.md)
+- 圖形分類(Image Classification)與CNN模型
+  - CNN 元件
+    - Convolution Layer|卷積層 :padding(填補) |stride(步幅)
+    - Pooling Layer |池化層
+    - Dropout
+      - 最早於2012年Hinton文章《ImageNet Classification with Deep Convolutional Neural Networks》中提出
+      - 在這篇文章中，Dropout技術確實提升了模型的性能，一般是添加到卷積神經網絡模型的全連接層中
+      - 使用深度學習工具箱實現起來很容易。
+    - Batch Normalization Layer
+    - [優化器|Optimizer ==> optimization | keras.optimizers](https://keras.io/api/optimizers/) 
+    - 激活函數|Activation Function
+    - [Metrics](https://keras.io/api/metrics/)
+      - Base Metric class
+      - Accuracy metrics
+  - [CNN 模型](CNN_Model.md)
+  - CNN特點:
+    - 局部感知：CNN的神經元只關注輸入數據的一小部分，這使得它能夠有效地提取局部特徵。
+    - 參數共享：同一層的卷積核在不同位置應用相同的權重，減少了模型的參數數量，提高了計算效率。
+    - 池化層：透過最大池化或平均池化來降低特徵圖的維度，減少計算量並提高模型的泛化能力。
+    - 層次化特徵學習：CNN透過多層卷積和池化逐步提取從低階到高階的特徵，使其在圖像分類、物體檢測等任務中表現優異
+  - CNN 實作
+    - [Image classification from scratch](https://keras.io/examples/vision/image_classification_from_scratch/)
+      - 資料集 [Dogs vs. Cats - Kaggle](https://www.kaggle.com/c/dogs-vs-cats/overview)
+      - image data augmentation ==> 資料量太少 ==> 擴增資料量的技術
+      - Batch Normalization()
+    - 教科書 ResNet-34
+    - TF官方範例 [Convolutional Neural Network (CNN) ](https://www.tensorflow.org/tutorials/images/cnn)   ==> CIFAR10 資料集
+    - TF官方範例 [Image classification](https://www.tensorflow.org/tutorials/images/classification)
+- Transfer learning and fine-tuning
+  - TF官方範例 [Transfer learning with TensorFlow Hub](https://www.tensorflow.org/tutorials/images/transfer_learning_with_hub) 
+- 其他主題 
+- 物件偵測
 
 #### 教科書:第14章 Deep Computer Vision Using Convolutional Neural Networks
 - The Architecture of the Visual Cortex
