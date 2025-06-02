@@ -1,10 +1,14 @@
-## GenAI
+## GenAI報告主題
 - VAE
-  - 【TF 範例程式】[Intro to Autoencoders](https://www.tensorflow.org/tutorials/generative/autoencoder)
-  - MNIST ==> 【TF 範例程式】[CVAE Convolutional Variational Autoencoder](https://www.tensorflow.org/tutorials/generative/cvae)
-- DCGAN
-  - MNIST dataset ==>【TF 範例程式】 [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan)
-  - Celeb-A Faces dataset ==>【PyTorch範例程式】 [DCGAN Tutorial](https://docs.pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
+  - 基本觀念
+  - 實作
+    - 【TF 範例程式】[Intro to Autoencoders](https://www.tensorflow.org/tutorials/generative/autoencoder)
+    - MNIST ==> 【TF 範例程式】[CVAE Convolutional Variational Autoencoder](https://www.tensorflow.org/tutorials/generative/cvae)
+- GAN 
+  - GAN基本觀念
+  - DCGAN實作
+    - MNIST dataset ==>【TF 範例程式】 [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan)
+    - Celeb-A Faces dataset ==>【PyTorch範例程式】 [DCGAN Tutorial](https://docs.pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
   - [Images of LEGO Bricks|40,000 images of 50 different LEGO bricks|Kaggle](https://www.kaggle.com/datasets/joosthazelzet/lego-brick-images)
     - [Generative Deep Learning, 2nd Edition](https://learning.oreilly.com/library/view/generative-deep-learning/9781098134174/)
       - CH `4`. Generative Adversarial Networks
