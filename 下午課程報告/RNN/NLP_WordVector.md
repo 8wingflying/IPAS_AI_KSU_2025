@@ -1,3 +1,25 @@
 ## NLP_WordVector
 - 資料來源
-- 
+- [Applied Recommender Systems with Python: Build Recommender Systems with Deep Learning, NLP and Graph-Based Techniques](https://learning.oreilly.com/library/view/applied-recommender-systems/9781484289549/)
+- [簡中譯本](https://www.tenlong.com.tw/products/9787302657408?list_name=srh)
+- https://github.com/Apress/applied-recommender-systems-python
+- Ch 3. Content-Based Recommender Systems內容過濾推薦系統
+  - 數據收集和下載詞嵌入
+  - 將數據導入為DataFrame
+  - 預處理數據 
+  - 文本(Text)轉為特徵
+    - OHE 
+    - 詞頻向量器CountVectorizer
+    - TF-IDF
+    - 詞嵌入
+  - 相似性度量
+    - 歐幾里得距離 
+    - 餘弦相似度 
+    - 曼哈頓距離
+  - 模型構建
+    - 使用CountVectorizer構建模型
+    - 使用TF-IDF特徵構建模型
+    - 使用Word2vec特徵構建模型
+    - 使用fastText特徵構建模型
+    - 使用GloVe特徵構建模型
+    - 使用共現矩陣構建模型
