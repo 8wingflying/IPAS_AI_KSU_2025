@@ -34,6 +34,7 @@ xception.summary()
   - [論文ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices(arXiv:1707.01083)](https://arxiv.org/abs/1707.01083) 
 
 ## Vision Transformers (ViT)系列模型 2020-2021
+- 應用Transformers 到電腦視覺的各種模型
 - Vision Transformers (ViTs)(2020)
   - [論文An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale(arXiv:2010.11929)](https://arxiv.org/abs/2010.11929)
   - Vision Transformer architecture comprises several key stages:
