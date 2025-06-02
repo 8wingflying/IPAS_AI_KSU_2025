@@ -14,8 +14,12 @@
 - LSTM
 - GRU
 - 各種變形LSTM+CNN
-- 官方程式碼[Text classification with an RNN ](https://www.tensorflow.org/text/tutorials/text_classification_rnn)
-- 官方程式碼[Classify text with BERT](https://www.tensorflow.org/text/tutorials/classify_text_with_bert)
+- Keras官方範例[Bidirectional LSTM on IMDB](https://keras.io/examples/nlp/bidirectional_lstm_imdb/)
+- Keras官方範例[Text classification with Transformer](https://keras.io/examples/nlp/text_classification_with_transformer/)
+- Keras官方範例[Text Classification using FNet](https://keras.io/examples/nlp/fnet_classification_with_keras_hub/)
+- TF官方範例[Text classification from scratch]()
+- TF官方範例[Text classification with an RNN ](https://www.tensorflow.org/text/tutorials/text_classification_rnn)
+- TF官方範例[Classify text with BERT](https://www.tensorflow.org/text/tutorials/classify_text_with_bert)
 
 ### 其他分析
 - [NLP Text Preprocessing Tutorial](https://www.kaggle.com/code/rudraneelsannigrahi/nlp-text-preprocessing-tutorial)
