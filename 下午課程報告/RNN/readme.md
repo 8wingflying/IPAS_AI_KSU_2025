@@ -17,7 +17,7 @@
 - Neural Machine Translation 與 seq2seq model
   - 2014 [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
   - 2014 [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)
-- 2017 Transformer
+- 2017 [Transformer](Transformer.md)
   - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
   - 基本構建單元 ==> 縮放點積注意力（scaled dot-product attention）單元
 - Pre-Trained Language Models ==> LLM
