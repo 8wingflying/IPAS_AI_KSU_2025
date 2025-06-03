@@ -6,11 +6,12 @@
   - Bag of Word
   - TF-IDF
   - Word Embedding 
-- RNN
+- RNN  ==> The Problem of Long-Term Dependencies
   - Vanilla RNN
-  - LSTM
+  - LSTM|Long Short-Term Memory|長短期記憶(1997)
+    - 👍👍 [Understanding LSTM Networks(2015)](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
     - https://ithelp.ithome.com.tw/articles/10193924 
-  - GRU (Gated Recurrent Unit)
+  - GRU | Gated Recurrent Unit(2014)
     - https://zhuanlan.zhihu.com/p/20310288990
     - https://ithelp.ithome.com.tw/articles/10194201 
   - https://www.geeksforgeeks.org/rnn-vs-lstm-vs-gru-vs-transformers/
