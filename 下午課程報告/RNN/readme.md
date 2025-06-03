@@ -27,13 +27,27 @@
   - BERT考慮到單詞出現時的上下文。例如，詞「水分」的word2vec詞向量在「植物需要吸收水分」和「財務報表裡有水分」是相同的，但BERT根據上下文的不同提供不同的詞向量，詞向量與句子表達的句意有關。
   - BERTology
   - OPENAI GPT (Generative Pre-trained Transformer)
+    - https://en.wikipedia.org/wiki/Generative_pre-trained_transformer
     - GPT模型是基於Transformer模型的類神經網路，在大型未標記文字資料集上進行預訓練，並能夠生成類似於人類自然語言的文字。
-    - 截至2023年，大多數LLM都具備這些特徵，並廣泛被稱為GPT
     - GPT-1(2018)
-    - GPT-4是一個多模態LLM，能夠處理文字和圖像輸入（儘管其輸出僅限於文字）
+    - GPT-2(2019)
+    - GPT-3(2020)
+    - GPT-3.5(2022)
+    - GPT-4(2023)
+      - GPT-4是一個多模態LLM，能夠處理文字和圖像輸入（儘管其輸出僅限於文字）
     - GPT-4o(2024年5月發布)
     - GPT-5 ?? MLLM
-  - Google PaLM
+  - Google PaLM ==> Gemini(2023)當家
+    - https://en.wikipedia.org/wiki/PaLM
+    - LaMDA (Language Model for Dialogue Applications)(2020)
+    - LaMDA 2(2022)==> Bard
+    - PaLM (Pathways Language Model)
+    - PaLM 2 (2023)
+    - AudioPaLM(2023) ==>speech-to-speech translation
+    - Gemini(2023)  https://en.wikipedia.org/wiki/Gemini_(language_model)
+    - Gemini 1.5(2024)
+    - Gemma 2(2024)
+    - Gemma 3(2025)
   - 2023 Meta AI | LLaMA(Large Language Model Meta AI)(2023年2月)
     - https://zh.wikipedia.org/zh-tw/LLaMA
     - LLaMA 2(2023年7月)
