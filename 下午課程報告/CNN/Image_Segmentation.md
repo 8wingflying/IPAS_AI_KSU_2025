@@ -1,0 +1,16 @@
+# Image Segmentation
+- Image Segmentation
+- 類型
+  - Instance Segmentation
+  - Semantic Segmentation
+  - Panoptic Segmentation
+- 傳統技術
+  - Thresholding
+  - Region-based Segmentation
+  - Edge-based Segmentation
+  - Clustering
+- 深度學習技術
+  - U-Net
+  - SegNet
+  - DeepLab
+- 應用
