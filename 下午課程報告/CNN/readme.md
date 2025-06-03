@@ -30,7 +30,7 @@
     - TF官方範例 [Convolutional Neural Network (CNN) ](https://www.tensorflow.org/tutorials/images/cnn)   ==> CIFAR10 資料集
     - TF官方範例 [Image classification](https://www.tensorflow.org/tutorials/images/classification)
 - Transfer learning and fine-tuning
-  - [KerasHub| pre-trained mode](https://keras.io/keras_hub/)
+  - [KerasHub| pre-trained model](https://keras.io/keras_hub/)
     - 使用pre-trained model
     - [KerasHub pretrained models](https://keras.io/keras_hub/presets/) 
   - fine-tuning
