@@ -9,6 +9,11 @@
 
 ### 導讀
 
-## 範例
+## 範例:應用
+- [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
+   - https://github.com/nlp-with-transformers/notebooks
+   - 01_introduction.ipynb
+ 
+## 範例: 實作
 - [Building a Simple Transformer using PyTorch [Code Included]](https://pureai.substack.com/p/building-a-simple-transformer-using-pytorch)
 - https://github.com/ermattson/pure-ai-tutorials/tree/main/SimpleTransformer-PyTorch
