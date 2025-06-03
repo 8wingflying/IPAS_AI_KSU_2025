@@ -8,3 +8,7 @@
   - 簡單的位置編碼：我們通過結合一種簡單的位置編碼方法，強調了位置資訊在 Transformer 模型中的關鍵作用，確保我們的模型能夠識別序列中元素的順序。 
 
 ### 導讀
+
+## 範例
+- [Building a Simple Transformer using PyTorch [Code Included]](https://pureai.substack.com/p/building-a-simple-transformer-using-pytorch)
+- https://github.com/ermattson/pure-ai-tutorials/tree/main/SimpleTransformer-PyTorch
