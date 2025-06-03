@@ -48,3 +48,4 @@
 - [Transformers for Natural Language Processing and Computer Vision - Third Edition](https://learning.oreilly.com/library/view/transformers-for-natural/9781805128724/)
   - https://github.com/Denis2054/Transformers-for-NLP-and-Computer-Vision-3rd-Edition/
 - [Hands-On Large Language Models](https://learning.oreilly.com/library/view/hands-on-large-language/9781098150952/)
+  - [章節內容](LLM_BOOK_Content.md) 
