@@ -28,4 +28,6 @@
 
 ## zero shot detection
 - 零樣本學習旨在訓練期間識別沒有可用標籤的對象，從而使分類器能夠識別看不見的類別
+- [Awesome Zero-Shot Object Detection](https://github.com/KennithLi/Awesome-Zero-Shot-Object-Detection)
+- [Awesome-Zero-Shot-Object-Detection](https://github.com/witnessai/Awesome-Zero-Shot-Object-Detection)
 - [A survey of zero shot detection: methods and applications](https://www.sciopen.com/article/10.26599/BDMA.2024.9020098?issn=2096-0654)
