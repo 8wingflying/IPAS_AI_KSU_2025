@@ -47,6 +47,7 @@
   - 【KERAS 官方範例】[Train a Vision Transformer on small datasets](https://keras.io/examples/vision/vit_small_ds/)
 - [物件偵測(Object Detection)](ObjectDetection.md)
 - [物件追蹤(Object Tracking)](Object_Tracking.md)
+- [圖像分割(Image_Segmentation)](Image_Segmentation.md)
 
 #### 教科書:第14章 Deep Computer Vision Using Convolutional Neural Networks
 - The Architecture of the Visual Cortex
