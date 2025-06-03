@@ -17,9 +17,10 @@
 - Neural Machine Translation 與 seq2seq model
   - 2014 [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
   - 2014 [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)
+  - 👍[Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
 - 2017 [Transformer](Transformer.md)
   - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-  - 基本構建單元 ==> 縮放點積注意力（scaled dot-product attention）單元
+  - 👍[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 - [Pre-Trained Language Models](Pre-Trained_Language_Models.md) ==> LLM
   - **2018 BERT Bidirectional Encoder Representations from Transforme**
 - NLP|文本分類(TEXT Classofication)
