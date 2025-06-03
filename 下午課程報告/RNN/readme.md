@@ -63,7 +63,14 @@
 - NLP|文本生成(TEXT Generation) ==> GenAI
 
 
-## 教科書:第16章
+## 教科書相關章節
+#### 教科書:第15章Processing Sequences Using RNNs and CNNs ==> 時間序列分析
+- Recurrent Neurons and Layers
+- Training RNNs
+- Forecasting a Time Series
+- Handling Long Sequences
+
+#### 教科書:第16章
 - Generating Shakespearean Text Using a Character RNN
 - Sentiment Analysis
 - An Encoder–Decoder Network for Neural Machine Translation
@@ -72,8 +79,4 @@
 - Vision Transformers
 - Hugging Face’s Transformers Library
 
-## 教科書:第15章Processing Sequences Using RNNs and CNNs ==> 時間序列分析
-- Recurrent Neurons and Layers
-- Training RNNs
-- Forecasting a Time Series
-- Handling Long Sequences
+
