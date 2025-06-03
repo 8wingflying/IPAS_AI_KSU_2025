@@ -43,7 +43,8 @@
   - 【KERAS 官方範例】[Image classification with EANet (External Attention Transformer)](https://keras.io/examples/vision/eanet/)
     - [Beyond Self-attention: External Attention using Two Linear Layers for Visual Tasks](https://arxiv.org/abs/2105.02358)
   - 【KERAS 官方範例】[Train a Vision Transformer on small datasets](https://keras.io/examples/vision/vit_small_ds/)
-- 物件偵測......
+- [物件偵測(Object Detection)](ObjectDetection.md)
+- [物件追蹤(Object Tracking)](Object_Tracking.md)
 
 #### 教科書:第14章 Deep Computer Vision Using Convolutional Neural Networks
 - The Architecture of the Visual Cortex
