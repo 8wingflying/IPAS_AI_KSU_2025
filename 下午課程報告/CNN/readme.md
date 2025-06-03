@@ -12,6 +12,8 @@
     - Batch Normalization Layer
     - [優化器|Optimizer ==> optimization | keras.optimizers](https://keras.io/api/optimizers/) 
     - 激活函數|Activation Function
+      - https://www.geeksforgeeks.org/activation-functions-neural-networks/
+      - https://en.wikipedia.org/wiki/Activation_function 
     - [Metrics](https://keras.io/api/metrics/)
       - Base Metric class
       - Accuracy metrics
