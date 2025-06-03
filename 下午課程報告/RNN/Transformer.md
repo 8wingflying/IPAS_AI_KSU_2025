@@ -39,4 +39,12 @@
 - https://github.com/ermattson/pure-ai-tutorials/tree/main/SimpleTransformer-PyTorch
 
 ## 參考書
-- 
+- [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
+  - https://github.com/nlp-with-transformers/notebooks
+- [Hands-On Generative AI with Transformers and Diffusion Models](https://learning.oreilly.com/library/view/hands-on-generative-ai/9781098149239/)
+  - https://github.com/genaibook/genaibook
+- [Mastering Transformers - Second Edition](https://learning.oreilly.com/library/view/mastering-transformers/9781837633784/)
+  - https://github.com/PacktPublishing/Mastering-Transformers-Second-Edition
+- [Transformers for Natural Language Processing and Computer Vision - Third Edition](https://learning.oreilly.com/library/view/transformers-for-natural/9781805128724/)
+  - https://github.com/Denis2054/Transformers-for-NLP-and-Computer-Vision-3rd-Edition/
+- [Hands-On Large Language Models](https://learning.oreilly.com/library/view/hands-on-large-language/9781098150952/)
