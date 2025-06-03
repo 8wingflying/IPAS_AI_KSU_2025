@@ -24,6 +24,10 @@
    - 01_introduction.ipynb
 
 ## 範例: 實作一個Keras Transformer
+- Attention Layers in TensorFlow
+  - Self-Attention (Scaled Dot-Product Attention) --> tf.keras.layers.Attention
+  - Multi-Head Attention  --> tf.keras.layers.MultiHeadAttention
+  - https://www.geeksforgeeks.org/attention-layers-in-tensorflow/
 - [Text classification with Transformer](https://keras.io/examples/nlp/text_classification_with_transformer/)
 
 ## 範例: Tensorflow  Transformer
