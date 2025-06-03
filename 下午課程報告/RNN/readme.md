@@ -37,7 +37,7 @@
 
 
 ## 教科書相關章節
-#### 教科書:第15章Processing Sequences Using RNNs and CNNs ==> 時間序列分析
+#### 教科書:第15章Processing Sequences Using RNNs and CNNs ==> [時間序列分析](時間序列分析.md)
 - Recurrent Neurons and Layers
 - Training RNNs
 - Forecasting a Time Series
@@ -55,8 +55,11 @@
 ## 延伸閱讀
 - [Natural Language Processing in Action, Second Edition(2025)](https://learning.oreilly.com/library/view/natural-language-processing/9781617299445/)
 - [Natural Language Processing with Transformers, Revised Edition(2022)](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
-- [()]()
+- [Python Natural Language Processing Cookbook - Second Edition(2024)](https://learning.oreilly.com/library/view/python-natural-language/9781803245744/)
 - [Practical Natural Language Processing(2020)](https://learning.oreilly.com/library/view/practical-natural-language/9781492054047/)
+- 傳統NLP ==> NLTK, spaCy, sklearn, and gensim
+  - [Python Natural Language Processing Cookbook(2021)](https://learning.oreilly.com/library/view/python-natural-language/9781838987312/)
+  - [Natural Language Processing: Python and NLTK(2016)](https://learning.oreilly.com/library/view/natural-language-processing/9781787285101/) 
 
 ## 延伸閱讀2:Large Language Model
 - [Build a Large Language Model (From Scratch)(2024)](https://learning.oreilly.com/library/view/build-a-large/9781633437166/)
