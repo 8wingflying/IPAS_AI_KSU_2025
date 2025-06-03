@@ -8,12 +8,21 @@
   - 簡單的位置編碼：我們通過結合一種簡單的位置編碼方法，強調了位置資訊在 Transformer 模型中的關鍵作用，確保我們的模型能夠識別序列中元素的順序。 
 
 ### 導讀
+- 👍[Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
+- 👍[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+- https://ithelp.ithome.com.tw/articles/10363257
 
 ## 範例:應用
 - [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
    - https://github.com/nlp-with-transformers/notebooks
    - 01_introduction.ipynb
- 
-## 範例: 實作
+
+## 範例: 實作一個Keras Transformer
+- [Text classification with Transformer](https://keras.io/examples/nlp/text_classification_with_transformer/)
+
+## 範例: Tensorflow  Transformer
+- [Neural machine translation with attention](https://www.tensorflow.org/text/tutorials/nmt_with_attention)
+- [Neural machine translation with a Transformer and Keras](https://www.tensorflow.org/text/tutorials/transformer)
+## 範例: 實作一個PyTorch Transformer
 - [Building a Simple Transformer using PyTorch [Code Included]](https://pureai.substack.com/p/building-a-simple-transformer-using-pytorch)
 - https://github.com/ermattson/pure-ai-tutorials/tree/main/SimpleTransformer-PyTorch
