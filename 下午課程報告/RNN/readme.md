@@ -16,8 +16,8 @@
   - https://www.geeksforgeeks.org/rnn-vs-lstm-vs-gru-vs-transformers/
 - Neural Machine Translation 與 seq2seq model
   - 2014 [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)
-  - 2014 [Learning Phrase Representations using RNN Encoder–Decoder
-for Statistical Machine Translation](https://emnlp2014.org/papers/pdf/EMNLP2014179.pdf)
+  - 2014 [Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](https://emnlp2014.org/papers/pdf/EMNLP2014179.pdf)
+  - https://research.google/blog/a-neural-network-for-machine-translation-at-production-scale/
 - Attention
   - 2014 [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
   - 2015 [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025)
