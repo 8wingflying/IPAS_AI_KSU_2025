@@ -2,7 +2,10 @@
 - NLP
   - https://www.geeksforgeeks.org/natural-language-processing-nlp-tutorial/ 
 - [Text Representation or Text Embedding Techniques(word ==> vector) ](NLP_WordVector.md)
-  - https://medium.com/ml-note/word-embedding-3ca60663999d 
+  - https://medium.com/ml-note/word-embedding-3ca60663999d
+  - Bag of Word
+  - TF-IDF
+  - Word Embedding 
 - RNN
   - Vanilla RNN
   - LSTM
