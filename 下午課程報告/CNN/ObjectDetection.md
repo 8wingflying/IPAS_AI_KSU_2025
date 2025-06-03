@@ -6,7 +6,8 @@
     - 3D Object Detection
     - Real-Time Object Detection
     - RGB Salient Object Detection
-    - Few-Shot Object Detection 
+    - Few-Shot Object Detection
+    - zero shot detection
 - 傳統技術Non-neural approaches
   - Viola–Jones object detection framework based on Haar features
   - Scale-invariant feature transform (SIFT)
@@ -24,3 +25,7 @@
 
 ## 導讀
 - https://en.wikipedia.org/wiki/Object_detection
+
+## zero shot detection
+- 零樣本學習旨在訓練期間識別沒有可用標籤的對象，從而使分類器能夠識別看不見的類別
+- [A survey of zero shot detection: methods and applications](https://www.sciopen.com/article/10.26599/BDMA.2024.9020098?issn=2096-0654)
