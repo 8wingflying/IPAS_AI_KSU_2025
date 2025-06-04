@@ -2,8 +2,7 @@
 - [DDPMs from scratch](https://magic-with-latents.github.io/latent/ddpms-series.html)
   - 👍很好的高斯分布教學 [Gaussian Distribution and DDPMs](https://github.com/AakashKumarNain/diffusion_models/blob/main/notebooks/all_you_need_to_know_about_gaussian.ipynb)
   -  [A deep dive into DDPMs](https://magic-with-latents.github.io/latent/posts/ddpms/part3/
--
-- )
+
 ####【Keras範例程式】[Denoising Diffusion Probabilistic Model](https://keras.io/examples/generative/ddpm/)
 - 生成建模在過去五年中經歷了巨大的增長。
 - 事實證明，VAE、GAN 和基於流的模型在生成高質量的圖像內容。
