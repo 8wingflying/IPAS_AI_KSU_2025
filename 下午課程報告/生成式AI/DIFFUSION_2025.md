@@ -5,14 +5,32 @@
     - https://www.youtube.com/@gongginshih/videos 
 - 數學推導
   - 👍👍【YOUTUBE 影片】[Diffusion Models: DDPM | Generative AI Animated](https://www.youtube.com/watch?v=EhndHhIvWWw)
+- 歷史發展
+  - 2015
+  - 2020 DDPM
+  - Y. Song and S. Ermon, “Score-based generative modeling through stochastic differential equations,” in ICLR, 2021.
+  - 2020 DDIM [Denoising diffusion implicit models](https://arxiv.org/abs/2010.02502)
+  - [[2303.07909] Text-to-image Diffusion Models in Generative AI: A Survey](https://arxiv.org/abs/2303.07909)
+  - [Diffusion Models on the Edge: Challenges, Optimizations, and Applications](https://arxiv.org/abs/2504.15298)
+    - TABLE II:Key Evaluation Metrics for Edge-Deployed Diffusion Models 
 - 範例程式 
   - MNIST dataset  ==> DDPM  https://github.com/bot66/MNISTDiffusion/tree/main
   - DDPM  ==> 【Keras範例程式】[Denoising Diffusion Probabilistic Model](https://keras.io/examples/generative/ddpm/)
     - 本範例要用keras 2, 因為使用別人的權重(在keras2上開發的) 
   - DDIM  ==> 【Keras範例程式】[Denoising Diffusion Implicit Models](https://keras.io/examples/generative/ddim/)
+- 其他主題
+  - [Attention in Diffusion Model: A Survey](Attention in Diffusion Model: A Survey)
+  - [A Comprehensive Survey on Knowledge Distillation](https://arxiv.org/abs/2503.12067)
 - 應用
   - Anomaly Detection
     - 2025 [ A Survey on Diffusion Models for Anomaly Detection](https://arxiv.org/abs/2501.11430)
+  - Image Editing
+    - 2025 [Image Editing with Diffusion Models: A Survey]() 
+  - Video
+    - 2025 [Survey of Video Diffusion Models: Foundations, Implementations, and Applications](https://arxiv.org/abs/2504.16081) 
+  - Robotic Manipulation
+    - [Diffusion Models for Robotic Manipulation: A Survey](https://arxiv.org/abs/2504.08438)
+    - [Generative Artificial Intelligence in Robotic Manipulation: A Survey](Generative Artificial Intelligence in Robotic Manipulation: A Survey) 
 
 ## 延伸學習
 - 👍CVPR 2022 Tutorial: [Denoising Diffusion-based Generative Modeling:|Foundations and Applications](https://cvpr2022-tutorial-diffusion-models.github.io/)
