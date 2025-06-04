@@ -702,6 +702,7 @@ model.fit(
 - 在V100 GPU 上訓練了這個模型 800 個 epoch， 每個 epoch 需要將近 8 秒才能完成
 
 ```python
+## https://github.com/AakashKumarNain/ddpms/releases/tag/v3.0.0
 !curl -LO https://github.com/AakashKumarNain/ddpms/releases/download/v3.0.0/checkpoints.zip
 !unzip -qq checkpoints.zip
 
