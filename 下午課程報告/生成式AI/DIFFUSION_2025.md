@@ -20,9 +20,34 @@
       - stochastic differential equations
       - ordinary differential equations 
     - Training and sampling are completely decoupled in the formulation of score-based generative models, so one can use a multitude of sampling techniques after the estimation of score functions. 
-  - 2021 | LDM | latent diffusion models
+  - 2021 | LDM | 潛在擴散模型| latent diffusion models
+    -[[2112.10752] High-resolution image synthesis with latent diffusion models](https://arxiv.org/abs/2112.10752)
+     - CVPR, pp. 10684–10695, 2022. 
   - 2022 | Stable Diffusion  ==> KerasCV
-  - 👍202209[Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796)
+    - Stable Diffusion由3個部分組成：變分自編碼器（VAE）、U-Net和一個文字編碼器
+    - 是一種潛在擴散模型
+    - Stable Diffusion模型訓練使用的資料集:LAION-5B的圖片和標題對 LAION-Aesthetics v2 5+
+    - 在亞馬遜雲端運算服務上使用256個NVIDIA A100 GPU訓練，共花費15萬個GPU小時，成本為60萬美元
+    - https://zh.wikipedia.org/zh-tw/Stable_Diffusion
+    - 文生圖功能 ==> "txt2img"==> 接受一個提示詞，以及包括採樣器（sampling type），圖像尺寸，和隨機種子的各種選項參數，並根據模型對提示的解釋生成一個圖像檔案。
+    - 圖生圖功能 ==> "img2img"==> 接受一個提示詞、現有圖像的檔案路徑和0.0到1.0之間的去噪強度，並在原始圖像的基礎上產生一個新的圖像
+    - https://gooptions.cc/stable-diffusion%E6%95%99%E5%AD%B8/
+    - 版本 ==> see https://zh.wikipedia.org/zh-tw/Stable_Diffusion
+      - Stable Diffusion 3.5(2024年10月)
+  - 可讓使用者對Stable Diffusion模型權重存檔點進行微調的方法
+    - LoRA ==> PEFT(Parameter-Efficient Fine-Tuning) [𝓐𝔀𝓮𝓼𝓸𝓶𝓮 𝓟𝓪𝓻𝓪𝓶𝓮𝓽𝓮𝓻-𝓔𝓯𝓯𝓲𝓬𝓲𝓮𝓷𝓽 𝓣𝓻𝓪𝓷𝓼𝓯𝓮𝓻 𝓛𝓮𝓪𝓻𝓷𝓲𝓷𝓰](https://github.com/synbol/Awesome-Parameter-Efficient-Transfer-Learning)
+      - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
+      - 凍結原本的預訓練模型，並搭配一個小的模型去微調就可以達到不錯的效果，就像 Adaptor 一樣
+      - 可以將 LoRA 視為一個插件，在特定層插入該模組，讓整個模型可以適應對應問題的處理 
+    - 嵌入(Embedding)
+      - [An Image is Worth One Word: Personalizing Text-to-Image Generation using Textual Inversion](https://arxiv.org/abs/2208.01618) 
+    - Hypernetwork ==> using a small network(called a “hypernetwork") to generate the weights for a larger network (called a main network).
+      - 2021 [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020v1)
+      - [Personalizing Text-to-Image Diffusion Models by Fine-Tuning Classification for AI Applications](https://www.researchgate.net/publication/369476053_Personalizing_Text-to-Image_Diffusion_Models_by_Fine-Tuning_Classification_for_AI_Applications) 
+    - DreamBooth(2022)
+      - [DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation](https://arxiv.org/abs/2208.12242)
+      - https://ithelp.ithome.com.tw/articles/10333641
+  - 👍202209 [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796)
   - [[2303.07909] Text-to-image Diffusion Models in Generative AI: A Survey](https://arxiv.org/abs/2303.07909)
   - [Diffusion Models on the Edge: Challenges, Optimizations, and Applications](https://arxiv.org/abs/2504.15298)
     - TABLE II:Key Evaluation Metrics for Edge-Deployed Diffusion Models 
