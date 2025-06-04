@@ -41,6 +41,7 @@
   - Learned perceptual image patch similarity (LPIPS)
     - https://ithelp.ithome.com.tw/articles/10332547
     - https://blog.51cto.com/u_16175458/6906283   
+
 ## GenAI
 - VAE 2013
   - Stacked Autoencoders
