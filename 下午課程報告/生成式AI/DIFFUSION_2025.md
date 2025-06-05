@@ -9,6 +9,7 @@
   - 2015 [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585)
   - 2019
   - 2020 | DDPM|denoising diffusion probabilistic model (很慢)
+    - [【DDPM介紹】Diffusion開山之祖 - DDPM](https://www.youtube.com/watch?v=6qR-BapJn-g) 
   - 2020 | OpenAI | Denoising Diffusion Implicit Models (DDIM)
     - 2020 DDIM [Denoising diffusion implicit models](https://arxiv.org/abs/2010.02502)
     - [【DDIM介紹】換個推導方式大加速 - DDIM](https://www.youtube.com/watch?v=swUoNBpHRpY)
