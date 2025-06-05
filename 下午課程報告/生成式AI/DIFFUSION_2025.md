@@ -5,12 +5,13 @@
     - https://www.youtube.com/@gongginshih/videos 
 - 數學推導
   - 👍👍【YOUTUBE 影片】[Diffusion Models: DDPM | Generative AI Animated](https://www.youtube.com/watch?v=EhndHhIvWWw)
-- 歷史發展Diffussion Model(2015)
+- 歷史發展Diffussion Model(2015)  [【Diffusion介紹】一系列Diffusion經典論文介紹](https://www.youtube.com/watch?v=PkBxB6aoOkQ)
   - 2015 [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585)
   - 2019
   - 2020 | DDPM|denoising diffusion probabilistic model (很慢)
   - 2020 | OpenAI | Denoising Diffusion Implicit Models (DDIM)
     - 2020 DDIM [Denoising diffusion implicit models](https://arxiv.org/abs/2010.02502)
+    - [【DDIM介紹】換個推導方式大加速 - DDIM](https://www.youtube.com/watch?v=swUoNBpHRpY)
   - 2021 Score-Based Generative Models (SGMs)
     - 使用(Stein) score (a.k.a., score or score function)  而非 Fisher score
     - Y. Song and S. Ermon, “Score-based generative modeling through stochastic differential equations,” in ICLR, 2021.
@@ -34,7 +35,7 @@
     - https://gooptions.cc/stable-diffusion%E6%95%99%E5%AD%B8/
     - 版本 ==> see https://zh.wikipedia.org/zh-tw/Stable_Diffusion
       - Stable Diffusion 3.5(2024年10月)
-  - 可讓使用者對Stable Diffusion模型權重存檔點進行微調的方法
+  - Stable Diffusion模型權重 微調的方法
     - LoRA ==> PEFT(Parameter-Efficient Fine-Tuning) [𝓐𝔀𝓮𝓼𝓸𝓶𝓮 𝓟𝓪𝓻𝓪𝓶𝓮𝓽𝓮𝓻-𝓔𝓯𝓯𝓲𝓬𝓲𝓮𝓷𝓽 𝓣𝓻𝓪𝓷𝓼𝓯𝓮𝓻 𝓛𝓮𝓪𝓻𝓷𝓲𝓷𝓰](https://github.com/synbol/Awesome-Parameter-Efficient-Transfer-Learning)
       - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
       - 凍結原本的預訓練模型，並搭配一個小的模型去微調就可以達到不錯的效果，就像 Adaptor 一樣
