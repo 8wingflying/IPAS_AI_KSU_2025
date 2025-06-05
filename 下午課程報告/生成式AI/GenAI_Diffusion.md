@@ -31,7 +31,11 @@
 - 2020經典[(arXiv:2006.11239)Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)
   - https://github.com/hojonathanho/diffusion 
 - [(arXiv:2102.09672)Improved Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2102.09672)
-- 2021 DALL-E
+- 2021 Latent diffusion model (LDM)
+  - [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) 
+- 2021 CLIP (Contrastive Language-Image Pre-Training)
+  - 經典[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) 
+-  2021 DALL-E
   - https://zh.wikipedia.org/wiki/DALL-E
   - DALL-E 2(2022-04)
   - DALL-E 3(October 2023)
@@ -44,10 +48,6 @@
   - Stable Diffusion (2022-08)
   - Stable Diffusion 3 (2024-03)
   - Stable Video 4D (2024-07)
-- 2021 Latent diffusion model (LDM)
-  - [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) 
-- 2021 CLIP (Contrastive Language-Image Pre-Training)
-  - 經典[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) 
 - 2021 Vision Transformer (ViT)
 - 微軟提出的 Swin Transformer
   - 【論文】[Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030)
