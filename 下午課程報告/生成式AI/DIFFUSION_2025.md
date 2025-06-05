@@ -77,6 +77,7 @@
 - https://github.com/diff-usion/Awesome-Diffusion-Models
 
 ## 延伸學習
+- [Understanding Diffusion Models: A Unified Perspective](https://arxiv.org/abs/2208.11970)
 - https://github.com/huggingface/diffusion-models-class
   - 中文說明 ==> [擴散模型從原理到實戰](https://www.tenlong.com.tw/products/9787115618870?list_name=srh) 
 - 👍CVPR 2022 Tutorial: [Denoising Diffusion-based Generative Modeling:|Foundations and Applications](https://cvpr2022-tutorial-diffusion-models.github.io/)
