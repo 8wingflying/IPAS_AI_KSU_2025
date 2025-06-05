@@ -22,7 +22,7 @@
     - DDPM  ==> 【Keras範例程式】[Denoising Diffusion Probabilistic Model](https://keras.io/examples/generative/ddpm/)
     - DDIM  ==> 【Keras範例程式】[Denoising Diffusion Implicit Models](https://keras.io/examples/generative/ddim/)
     - Stable Diffusion
-      - 【Keras範例程式】[A walk through latent space with Stable Diffusion 3](https://keras.io/examples/generative/random_walks_with_stable_diffusion_3/)
+      - [【Keras範例程式解說】](Keras_3.md)[A walk through latent space with Stable Diffusion 3](https://keras.io/examples/generative/random_walks_with_stable_diffusion_3/)
       - 【Keras範例程式】[Fine-tuning Stable Diffusion](https://keras.io/examples/generative/finetune_stable_diffusion/)
 - 生成模型評估指標
   - 基於Inception網路的算法 https://ithelp.ithome.com.tw/articles/10333207
