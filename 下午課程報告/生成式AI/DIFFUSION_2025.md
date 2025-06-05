@@ -60,6 +60,10 @@
   - DDPM  ==> 【Keras範例程式】[Denoising Diffusion Probabilistic Model](https://keras.io/examples/generative/ddpm/)
     - 本範例要用keras 2, 因為使用別人的權重(在keras2上開發的) 
   - DDIM  ==> 【Keras範例程式】[Denoising Diffusion Implicit Models](https://keras.io/examples/generative/ddim/)
+  - Stable Diffusion
+    - [Stable Diffusion 3 in KerasHub!](https://keras.io/keras_hub/guides/stable_diffusion_3_in_keras_hub/) [【Keras範例程式解說】](Keras_SD_1.md)
+    - [A walk through latent space with Stable Diffusion 3](https://keras.io/examples/generative/random_walks_with_stable_diffusion_3/) [【Keras範例程式解說】](Keras_SD_2.md)
+    - [Fine-tuning Stable Diffusion](https://keras.io/examples/generative/finetune_stable_diffusion/) [【Keras範例程式解說】](Keras_SD_3.md)
 - 其他主題
   - [Attention in Diffusion Model: A Survey](Attention in Diffusion Model: A Survey)
   - [A Comprehensive Survey on Knowledge Distillation](https://arxiv.org/abs/2503.12067)
