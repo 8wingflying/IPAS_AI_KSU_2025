@@ -25,8 +25,8 @@
       - ordinary differential equations 
     - Training and sampling are completely decoupled in the formulation of score-based generative models, so one can use a multitude of sampling techniques after the estimation of score functions. 
   - 2021 | LDM | 潛在擴散模型| latent diffusion models
-    -[[2112.10752] High-resolution image synthesis with latent diffusion models](https://arxiv.org/abs/2112.10752)
-     - CVPR, pp. 10684–10695, 2022. 
+    - [[2112.10752] High-resolution image synthesis with latent diffusion models](https://arxiv.org/abs/2112.10752)
+      - CVPR, pp. 10684–10695, 2022. 
   - 2022 | Stable Diffusion  ==> KerasCV
     - Stable Diffusion由3個部分組成：變分自編碼器（VAE）、U-Net和一個文字編碼器
     - 是一種潛在擴散模型
