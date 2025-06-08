@@ -1,6 +1,7 @@
 ## YOUTUBE
 - Hung-yi Lee
 - https://www.youtube.com/watch?v=75rZwxKBAf0&t=9s
+- https://sumniya.tistory.com/2
 
 ## 延伸閱讀
 - [Deep Reinforcement Learning Hands-On - Third Edition](https://learning.oreilly.com/library/view/deep-reinforcement-learning/9781835882702/)
