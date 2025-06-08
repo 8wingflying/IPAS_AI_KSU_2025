@@ -100,6 +100,12 @@
     - [Optimizing Vision Transformer Model for Deployment](https://docs.pytorch.org/tutorials/beginner/vt_tutorial.html) ==> Facebook Data-efficient Image Transformers
   - [PyTorch documentation](https://docs.pytorch.org/docs/stable/index.html)
 
+### [李弘毅教授| Hung-yi Lee](https://www.youtube.com/@HungyiLeeNTU)
+- [生成式AI導論 2024](https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI)
+- [生成式AI時代下的機器學習(2025)](https://www.youtube.com/playlist?list=PLJV_el3uVTsNZEFAdQsDeOdzAaHTca2Gi)
+  - **https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php** 
+
+
 ## Awesome-VAE
 - https://github.com/matthewvowels1/Awesome-VAEs
 - Vector Quantized Variational Autoencoder (VQ-VAE)
