@@ -1,11 +1,11 @@
 # IMDb文本分類_傳統作法
-
+- https://www.kaggle.com/code/jagarapusiva/imdb-movie-reviews-word2vec-tfidf-bow/notebook
 ```python
 import pandas as pd
 import numpy as np
 
-## 載入檔案
-messages=pd.read_csv()
+## 載入檔案 要先上傳資料集 IMDBDataset.csv
+messages=pd.read_csv("IMDBDataset.csv")
 
 messages.head()
 
