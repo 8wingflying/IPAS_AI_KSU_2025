@@ -1,4 +1,34 @@
 # LLM
 - LLM
 - LLM Engineering
-  - 如何善用LLM Model 
+  - 如何使用與調教LLM Model 
+- LLM Applications開發 
+
+## 延伸閱讀:Large Language Model
+- [讓 AI 好好說話！從頭打造 LLM (大型語言模型) 實戰秘笈](https://www.tenlong.com.tw/products/9789863128236?list_name=sp)
+  - [Build a Large Language Model (From Scratch)(2024)](https://learning.oreilly.com/library/view/build-a-large/9781633437166/)
+  - 第 1章 理解大語言模型
+  - 第 2章 處理文本資料
+    - 2.1 詞嵌入 (Word Embedding，或稱詞向量)
+    - 2.2 文本斷詞 (Tokenize)
+    - 2.3 將 token 轉換為 token ID
+    - 2.4 添加特殊 token
+    - 2.5 字節對編碼 (Byte Pair Encoding, BPE)
+    - 2.6 使用滑動視窗法 (Sliding Window) 進行資料取樣
+    - 2.7 創建 token 嵌入 (Embedding)
+    - 2.8 位置資訊的編碼 
+  - 第 3章 實作注意力機制
+  - 第 4章 從零實作 GPT 模型以生成文本
+  - 第 5章 使用無標籤的資料集進行預訓練
+  - 第 6章 分類任務微調
+    - 6.1 常見的 2 種微調類型
+  - 第 7章 指令微調  Fine-tuning to follow instructions==> 通過微調遵循人類指令
+- [Hands-On Large Language Models(2024)](https://learning.oreilly.com/library/view/hands-on-large-language/9781098150952/)
+  - [章節內容](LLM_BOOK_Content.md) 
+- [大語言模型工程師手冊：從概念到生產實踐](https://www.tenlong.com.tw/products/9787115667373?list_name=srh)
+  - [LLM Engineer's Handbook: Master the art of engineering large language models from concept to production](https://www.tenlong.com.tw/products/9787115667373?list_name=srh)
+- [Designing Large Language Model Applications(2025)](https://learning.oreilly.com/library/view/designing-large-language/9781098150495/)
+- [The Developer's Playbook for Large Language Model Security(2024)](https://learning.oreilly.com/library/view/the-developers-playbook/9781098162191/)
+- [Prompt Engineering for LLMs](https://learning.oreilly.com/library/view/prompt-engineering-for/9781098156145/)
+- [Prompt Engineering for Generative AI](https://learning.oreilly.com/library/view/prompt-engineering-for/9781098153427/)
+
