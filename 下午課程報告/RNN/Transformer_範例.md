@@ -12,10 +12,13 @@
 - 翻譯(Translation)：把一種語言的文字翻譯成另一種語言
 - 特徵提取(Feature extraction)：把一段文字用一個向量來表示
 
-## 參考書
+## 參考資料
+- [Hugging Face’s notebooks](https://huggingface.co/docs/transformers/notebooks)
+  - 有一堆範例程式
+  - 入門推薦 [快速入門Quick tour](https://github.com/huggingface/notebooks/blob/main/transformers_doc/en/quicktour.ipynb)
 - [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
-- https://github.com/nlp-with-transformers/notebooks
-- CH1
+  - https://github.com/nlp-with-transformers/notebooks
+  - CH1
 
 ### 範例1:情感分析(Sentiment analysis)
 - https://fancyerii.github.io/2020/07/08/huggingface-transformers/
@@ -81,9 +84,8 @@ pd.DataFrame([outputs])
 ```
 
 
-#### 範例5:text Summarization
+#### 範例5:text Summarization(文本摘要)
 ```python
-
 summarizer = pipeline("summarization")
 outputs = summarizer(text, max_length=45, clean_up_tokenization_spaces=True)
 print(outputs[0]['summary_text'])
