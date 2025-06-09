@@ -8,6 +8,46 @@
   - 使用Spacy
   - 使用TextBlob
 - https://www.analyticsvidhya.com/blog/2019/08/how-to-remove-stopwords-text-normalization-nltk-spacy-gensim-python/
+- 報告至篇[Top 8 most common NLP feature engineering techniques](https://spotintelligence.com/2023/03/25/nlp-feature-engineering/)
+  - `1`. Tokenization for NLP feature engineering
+  - `2`. Stop word removal for NLP feature engineering
+  - `3`. Stemming and lemmatization for NLP feature engineering
+  - `4`. N-grams for NLP feature engineering
+  - `5`. Part-of-speech (POS) tagging for NLP feature engineering
+  - `6`. Named Entity Recognition (NER) for NLP feature engineering
+  - `7`. TF-IDF
+  - `8`. Word Embeddings
+
+- `7`. TF-IDF
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer 
+
+corpus = [ "The quick brown fox jumps over the lazy dog.", 
+           "The quick brown foxes jump over the lazy dogs and cats.", 
+           "The lazy dogs and cats watch the quick brown foxes jump over the moon."] 
+
+tfidf_vectorizer = TfidfVectorizer() 
+tfidf_matrix = tfidf_vectorizer.fit_transform(corpus) 
+print(tfidf_matrix.toarray())
+```
+```
+[[0.         0.24543856 0.         0.4155636  0.         0.4155636  0.         0.    0.4155636  0.24543856 0.    0.24543856  0.24543856 0.49087711 0.        ]
+ [0.31903606 0.24775996 0.31903606 0.      0.31903606 0.  0.31903606 0.31903606 0.         0.24775996 0.    0.24775996 0.24775996 0.49551992 0.  ]
+ [0.24770391 0.19236418 0.24770391 0.      0.24770391 0. 0.24770391 0.24770391 0.    0.19236418 0.32570088 0.19236418 0.19236418 0.57709255 0.32570088]]
+```
+- `8`. Word Embeddings
+- 安裝genism ==> 有一些錯誤要克服
+```python
+from gensim.models import Word2Vec 
+
+sentences = [ "The quick brown fox jumps over the lazy dog".split(), 
+              "The lazy dog watches the quick brown fox".split(), 
+              "The quick brown cat jumps over the lazy dog".split(), 
+              "The lazy dog watches the quick brown cat".split() ] 
+
+model = Word2Vec(sentences, min_count=1) 
+print(model['quick'])
+```
 
 #### 移除 Stop Words（停用詞）
 - https://www.analyticsvidhya.com/blog/2019/08/how-to-remove-stopwords-text-normalization-nltk-spacy-gensim-python/ 
