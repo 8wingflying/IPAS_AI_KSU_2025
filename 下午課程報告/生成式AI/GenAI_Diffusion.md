@@ -78,4 +78,4 @@
 - [Hands-On Generative AI with Transformers and Diffusion Models](https://learning.oreilly.com/library/view/hands-on-generative-ai/9781098149239/)
 - [Using Stable Diffusion with Python](https://learning.oreilly.com/library/view/using-stable-diffusion/9781835086377/)
 - [Diffusions in Architecture: Artificial Intelligence and Image Generators](https://learning.oreilly.com/library/view/diffusions-in-architecture/9781394191772/)
-- [Applied Generative AI for Beginners: Practical Knowledge on Diffusion Models, ChatGPT, and Other LLMs]()
+- [Applied Generative AI for Beginners: Practical Knowledge on Diffusion Models, ChatGPT, and Other LLMs](https://learning.oreilly.com/library/view/applied-generative-ai/9781484299944/)
