@@ -5,16 +5,26 @@
     - https://blog.csdn.net/weixin_38278334/article/details/82320307 
   - TF-IDF ==> [sklearn.feature_extraction.text.TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
     - https://blog.csdn.net/qq_43391414/article/details/112912107 
-- word embedding tools.
-  - Word2vec
+- word embedding tools ==> [Genism](https://radimrehurek.com/gensim/apiref.html#api-reference)
+  - 通過對向量的運算，比如歐幾裡得距離或者cosine相似度，可以計算出兩個單詞之間的語義相似性。
+  - Word2vec(2013/4)
     - Continuous bag-of-words (CBOW)
     - Skip-gram
     - https://serokell.io/blog/word2vec
-  - fastText
-  - GloVe
+    - Gensim 則是 Google 於 2013 提出的 Word2Vec 論文的 Python 實現
+  - fastText(2016)
+    - https://radimrehurek.com/gensim/models/fasttext.html
+    - [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606)
+    - https://blog.csdn.net/qq_38890412/article/details/104710375
+  - GloVe(Global Vectors for Word Representation)(2014)
+    - 由 Stanford NLP Group 所發表的一篇論文、同時也是開放出來的一個 Pre-trained 詞嵌入模型
+    - [GloVe-Gensim](https://clay-atlas.com/blog/2020/07/01/python-cn-glove-convert-gensim/) ==> 把 GloVe Glove 模型轉換成 Gensim 可以讀取的格式
+    - https://clay-atlas.com/blog/2020/07/01/python-cn-glove-convert-gensim/
+    - https://zhuanlan.zhihu.com/p/79573970
 - Pretrained model ==> Keras `Embedding` Layers
   - The Embedding layer can be understood as a lookup table that maps from integer indices (which stand for specific words) to dense vectors (their embeddings).
   - The dimensionality (or width) of the embedding is a parameter you can experiment with to see what works well for your problem, much in the same way you would experiment with the number of neurons in a Dense layer.
+  - [Understanding Word Embeddings with Keras](https://medium.com/@hsinhungw/understanding-word-embeddings-with-keras-dfafde0d15a4)
   - 參看 Tensorflow官方範例 [Word embeddings](https://www.tensorflow.org/text/guide/word_embeddings)
   - 參看 keras 官方範例 [Using pre-trained word embeddings](https://keras.io/examples/nlp/pretrained_word_embeddings/)
   - [在Keras模型中使用預訓練的詞向量](https://keras-cn.readthedocs.io/en/latest/legacy/blog/word_embedding/)
