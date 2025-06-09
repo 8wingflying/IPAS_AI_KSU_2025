@@ -3,7 +3,7 @@
   - 使用NLTK
   - 使用Spacy
   - 使用genism 
-- Text Normalization
+- Text Normalization ==> `詞幹提取(stemming)`和`詞形還原(lemmatization)`
   - 使用NLTK
   - 使用Spacy
   - 使用TextBlob
