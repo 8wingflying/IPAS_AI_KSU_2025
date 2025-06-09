@@ -61,7 +61,7 @@
 
 ## Gensim
 - Gensim comes with several already pre-trained models, in the Gensim-data repository
-- Colab安裝genism ==> 版本匹配
+- Colab安裝genism ==> 注意版本匹配
 ```
 # Uninstall existing versions of numpy, scipy, and gensim
 !pip uninstall numpy scipy gensim -y
@@ -70,6 +70,20 @@
 # We are installing numpy==1.23.5 and scipy==1.9.3 as these are known to work well together
 # and are within reasonable ranges for gensim compatibility.
 !pip install numpy==1.23.5 scipy==1.9.3 gensim
+```
+- 範例:
+```PYTHON
+import gensim.downloader
+# Show all available models in gensim-data
+print(list(gensim.downloader.info()['models'].keys()))
+```
+```
+['fasttext-wiki-news-subwords-300',
+'conceptnet-numberbatch-17-06-300',
+'word2vec-ruscorpora-300', 'word2vec-google-news-300',
+'glove-wiki-gigaword-50', 'glove-wiki-gigaword-100', 'glove-wiki-gigaword-200',
+'glove-wiki-gigaword-300', 'glove-twitter-25', 'glove-twitter-50', 'glove-twitter-100', 'glove-twitter-200',
+'__testing_word2vec-matrix-synopsis']
 ```
 - 範例:
 ```python
@@ -104,7 +118,6 @@ model.most_similar("car")
 
 ## Wordvector
 - [models.word2vec – Word2vec embeddings](https://radimrehurek.com/gensim/models/word2vec.html)
-
 
 ```python
 from gensim.test.utils import common_texts
