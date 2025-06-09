@@ -79,6 +79,21 @@
     - 202504[Diffusion Models for Robotic Manipulation: A Survey](https://arxiv.org/abs/2504.08438)
     - 202503[Generative Artificial Intelligence in Robotic Manipulation: A Survey](https://arxiv.org/abs/2503.03464) 
 
+## [Stable Diffusion 在線](https://stablediffusionweb.com/zh-tw)
+### 李弘毅教授YOUTUBE:Diffusion Model
+- [【生成式AI】淺談圖像生成模型 Diffusion Model 原理(DDPM)](https://www.youtube.com/watch?v=azBugJzmz-o&list=PLJV_el3uVTsOePyfmkfivYZ7Rqr2nMk3W&index=18)
+- [【生成式AI】Stable Diffusion、DALL-E、Imagen 背後共同的套路](https://www.youtube.com/watch?v=JbfcAaBT66U&list=PLJV_el3uVTsOePyfmkfivYZ7Rqr2nMk3W&index=19&t=296s)
+- [【生成式AI】Diffusion Model 原理剖析 (1/4) (optional)](https://www.youtube.com/watch?v=ifCDXFdeaaM)
+- [【生成式AI】Diffusion Model 原理剖析 (2/4) (optional)](https://www.youtube.com/watch?v=73qwu77ZsTM)
+- [【生成式AI】Diffusion Model 原理剖析 (3/4) (optional)](https://www.youtube.com/watch?v=m6QchXTx6wA)
+- [【生成式AI】Diffusion Model 原理剖析 (4/4) (optional)](https://www.youtube.com/watch?v=67_M2qP5ssY)
+## BOOKS
+- [Hands-On Generative AI with Transformers and Diffusion Models](https://learning.oreilly.com/library/view/hands-on-generative-ai/9781098149239/)
+- [Using Stable Diffusion with Python](https://learning.oreilly.com/library/view/using-stable-diffusion/9781835086377/)
+  - 👍 讚 Chapter 4: Understanding the Theory Behind Diffusion Models 
+- [Diffusions in Architecture: Artificial Intelligence and Image Generators](https://learning.oreilly.com/library/view/diffusions-in-architecture/9781394191772/)
+- [Applied Generative AI for Beginners: Practical Knowledge on Diffusion Models, ChatGPT, and Other LLMs](https://learning.oreilly.com/library/view/applied-generative-ai/9781484299944/)
+
 ## Awesome diffusion
 - https://github.com/Zeqiang-Lai/awesome-diffusion
 - https://github.com/diff-usion/Awesome-Diffusion-Models
@@ -93,5 +108,31 @@
   - [Introduction to Flow Matching and Diffusion Models](https://diffusion.csail.mit.edu/)
   - [An Introduction to Flow Matching and Diffusion Models](https://arxiv.org/abs/2506.02070) 
 
+## 學習資源
+- https://andy6804tw.github.io/wiki/
 
+## review
+- [Diffusion Models in Vision: A Survey](https://arxiv.org/abs/2209.04747)
+- [Diffusion Models in Recommendation Systems: A Survey](https://arxiv.org/abs/2501.10548)
+- [A Survey on Deep Neural Networks in Collaborative Filtering Recommendation Systems](https://arxiv.org/abs/2412.01378)
+- [Attacks and Defenses for Generative Diffusion Models: A Comprehensive Survey](https://arxiv.org/abs/2408.03400)
+- [A Comprehensive Survey on Knowledge Distillation of Diffusion Models](https://arxiv.org/abs/2304.04262)
+- [Survey of Video Diffusion Models: Foundations, Implementations, and Applications](https://arxiv.org/abs/2504.16081)
+- [Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions](https://arxiv.org/abs/2502.17119)
+  - https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data 
+- [Diffusion Model-Based Image Editing: A Survey](https://arxiv.org/abs/2402.17525)
+- [A Survey on Pre-Trained Diffusion Model Distillations](https://arxiv.org/abs/2502.08364)
+  - DM 的多步驟樣本生成機制使其在實踐中沒有吸引力，尤其是在資源匱乏的環境中。
+  - 與生成對抗網路 （GAN） 等單步生成模型不同Goodfellow 等人。 (2014)，DM 通過反覆運算過程生成樣本，該過程遞歸評估經過訓練的大型神經網路。
+  - 這種機制雖然可以有效地產生高質量的輸出，但對於這些高數量的函數計算 （NFE） 會產生大量的計算成本。
+  - 此外，訓練實用型 DM 通常需要大量數據，這對訓練過程提出了挑戰。
+  - 因此，在效率和速度至關重要的實際應用中部署 DM 仍然是一項重大挑戰。
+  - 為了解決這些限制，預先訓練的擴散蒸餾方法作為有前途的解決方案而受到關注。
+  - 蒸餾技術旨在創建更小尺寸、更高效的模型，該模型能夠以更少的步驟生成高品質的樣品，從而減少計算開銷。
+  - 這些方法的方法差異很大，從損失函數設計到雜訊到樣本生成過程中的軌跡優化。
+  - 此review從以下幾個方面系統地研究蒸餾方法：
+    - `1`.輸出重建(Output reconstruction) ==> 通過輸出值的角度、輸出分佈、一步去噪像空間和 Fisher 散度來回顧方法。
+    - `2`.軌跡蒸餾(Trajectory distillation) ==> 一致性蒸餾(Consistency distillation|Consistency model (CM) )、整流蒸餾(Rectified flow distillation)及其整合(Integrating CM and rectified flow)。
+    - `3`.對抗性蒸餾(Adversarial distillation)
+  - 最後，此review討論了該領域目前面臨的挑戰，並提出了潛在的未來研究方向。
 - 2025[Mean Flows for One-step Generative Modeling](https://arxiv.org/abs/2505.13447)
