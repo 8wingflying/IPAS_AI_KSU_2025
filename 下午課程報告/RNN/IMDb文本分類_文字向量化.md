@@ -1,0 +1,11 @@
+# 文字向量化
+- One-hot encoding (OHE)
+- scikit-learn
+  - CountVectorizer
+  - TF-IDF
+- word embedding tools.
+  - Word2vec
+  - fastText
+  - GloVe
+- Pretrained model ==> Keras Embedding Layers
+  - 參看 keras 官方範例 [Using pre-trained word embeddings](https://keras.io/examples/nlp/pretrained_word_embeddings/) 
