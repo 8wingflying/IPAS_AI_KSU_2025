@@ -17,6 +17,7 @@
   - The dimensionality (or width) of the embedding is a parameter you can experiment with to see what works well for your problem, much in the same way you would experiment with the number of neurons in a Dense layer.
   - 參看 Tensorflow官方範例 [Word embeddings](https://www.tensorflow.org/text/guide/word_embeddings)
   - 參看 keras 官方範例 [Using pre-trained word embeddings](https://keras.io/examples/nlp/pretrained_word_embeddings/)
+  - [在Keras模型中使用預訓練的詞向量](https://keras-cn.readthedocs.io/en/latest/legacy/blog/word_embedding/)
   - https://ithelp.ithome.com.tw/articles/10254164
   - embedding_layer = Embedding(200, 32, input_length=50)
     - 200 第一個參數－字彙數目或文章中 unique words 數目。
