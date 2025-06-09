@@ -1,5 +1,6 @@
 # IMDb文本分類_傳統作法
 - https://www.kaggle.com/code/jagarapusiva/imdb-movie-reviews-word2vec-tfidf-bow/notebook
+- 在colab殘念 ==> 使用kaggle平台
 ```python
 import pandas as pd
 import numpy as np
