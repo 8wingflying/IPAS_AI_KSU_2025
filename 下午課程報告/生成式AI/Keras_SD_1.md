@@ -65,8 +65,9 @@ def display_generated_images(images):
     plt.imshow(display_image)
     plt.show()
     plt.close()
+```
 
-
+```python
 backbone = keras_hub.models.StableDiffusion3Backbone.from_preset(
     "stable_diffusion_3_medium", image_shape=(512, 512, 3), dtype="float16"
 )
