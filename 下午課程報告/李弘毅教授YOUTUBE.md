@@ -56,7 +56,7 @@
 ### 生成式對抗網路 (Generative Adversarial Network, GAN)
 - [【機器學習2021】生成式對抗網路 (Generative Adversarial Network, GAN) (一) – 基本概念介紹](https://www.youtube.com/watch?v=4OWp0wDu6Xw)
 - [【機器學習2021】生成式對抗網路 (Generative Adversarial Network, GAN) (二) – 理論介紹與WGAN](https://www.youtube.com/watch?v=jNY1WBb8l4U)
-- [【機器學習2021】生成式對抗網路 (Generative Adversarial Network, GAN) (三) – 生成器效能評估與條件式生成](https://www.youtube.com/watch?v=MP0BnVH2yOo
+- [【機器學習2021】生成式對抗網路 (Generative Adversarial Network, GAN) (三) – 生成器效能評估與條件式生成](https://www.youtube.com/watch?v=MP0BnVH2yOo)
 - [【機器學習2021】生成式對抗網路 (Generative Adversarial Network, GAN) (四) – Cycle GAN](https://www.youtube.com/watch?v=wulqhgnDr7E)
 
 ### Diffusion Model
