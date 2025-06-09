@@ -1,6 +1,8 @@
 # Stable Diffusion 3
-- [Stable Diffusion 3 in KerasHub!](https://keras.io/keras_hub/guides/stable_diffusion_3_in_keras_hub/)
-
+- 【Keras範例程式】[Stable Diffusion 3 in KerasHub!](https://keras.io/keras_hub/guides/stable_diffusion_3_in_keras_hub/)
+- 文字到圖像任務 ==> keras_hub.models.StableDiffusion3TextToImage | text_to_image.generate()
+- 圖像到圖像任務 ==> StableDiffusion3ImageToImage
+- 圖片修復(Inpaint)任務 ==> StableDiffusion3Inpaint
 
 #### 說明
 - Stable Diffusion 3 是一個強大的開源潛在擴散模型 （LDM） 
