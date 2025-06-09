@@ -1,9 +1,10 @@
-# AI ==> [李弘毅教授YOUTUBE](李弘毅教授YOUTUBE.md)
+# AI ==> 
 - 電腦視覺與CNN
 - 自然語言處理與RNN, Transformer,BERT及Pre-trained Model 與LLM
 - 生成式GAN
 - 強化學習
-- https://www.youtube.com/@HungyiLeeNTU/featured
+- [李弘毅教授YOUTUBE](李弘毅教授YOUTUBE.md)
+  - https://www.youtube.com/@HungyiLeeNTU/featured
 ## 開發技術
 - Keras 3
 - 🤗[Hugging Face – The AI community building the future.](https://huggingface.co)
