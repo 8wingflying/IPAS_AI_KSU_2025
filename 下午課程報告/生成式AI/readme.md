@@ -20,8 +20,9 @@
       - CH `4`. Generative Adversarial Networks
       - DCGAN | WGAN-GP | CGAN 
     - [GAN for Lego Bricks](https://www.kaggle.com/code/gabrielcabas/gan-for-lego-bricks)
-- [Diffusion model](DIFFUSION_2025.md)
-  - 基本觀念 https://ithelp.ithome.com.tw/articles/10329715
+- Diffusion model
+  - [基本觀念](DIFFUSION_2025.md)
+    - https://ithelp.ithome.com.tw/articles/10329715
   - 範例程式
     - MNIST dataset  ==> DDPM  https://github.com/bot66/MNISTDiffusion/tree/main
     - DDPM  ==> 【Keras範例程式】[Denoising Diffusion Probabilistic Model](https://keras.io/examples/generative/ddpm/)
@@ -31,6 +32,8 @@
       - [A walk through latent space with Stable Diffusion 3](https://keras.io/examples/generative/random_walks_with_stable_diffusion_3/) [【Keras範例程式解說】](Keras_SD_2.md)
       - [Fine-tuning Stable Diffusion](https://keras.io/examples/generative/finetune_stable_diffusion/) [【Keras範例程式解說】](Keras_SD_3.md)
     - 套件 [Diffusers快速上手](Diffusers快速上手.md)
+  - 推薦課程 ==> https://github.com/huggingface/diffusion-models-class
+    - 中文說明 ==> [擴散模型從原理到實戰](https://www.tenlong.com.tw/products/9787115618870?list_name=srh) 
 - 生成模型評估指標
   - 基於Inception網路的算法 https://ithelp.ithome.com.tw/articles/10333207
   - Inception Score (IS)
@@ -77,8 +80,7 @@
   - 2021 | OpenAI | Denoising Diffusion Implicit Models (DDIM)
   - 2021 | LDM | latent diffusion models
   - 2022 | Stable Diffusion  ==> KerasCV
-  - 推薦課程 ==> https://github.com/huggingface/diffusion-models-class
-    - 中文說明 ==> [擴散模型從原理到實戰](https://www.tenlong.com.tw/products/9787115618870?list_name=srh) 
+
 
 ## GenAI 程式範例
 - Keras
