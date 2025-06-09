@@ -66,7 +66,7 @@
     - [A walk through latent space with Stable Diffusion 3](https://keras.io/examples/generative/random_walks_with_stable_diffusion_3/) [【Keras範例程式解說】](Keras_SD_2.md)
     - [Fine-tuning Stable Diffusion](https://keras.io/examples/generative/finetune_stable_diffusion/) [【Keras範例程式解說】](Keras_SD_3.md)
 - 其他主題
-  - [Attention in Diffusion Model: A Survey](Attention in Diffusion Model: A Survey)
+  - [Attention in Diffusion Model: A Survey](https://arxiv.org/abs/2504.03738)
   - [A Comprehensive Survey on Knowledge Distillation](https://arxiv.org/abs/2503.12067)
 - 應用
   - Anomaly Detection
