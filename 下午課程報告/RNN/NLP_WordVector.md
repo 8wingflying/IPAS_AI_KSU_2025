@@ -26,13 +26,10 @@
 ###
 ```python
 # -*- coding: utf-8 -*-
-
-
 #  Installing and Importing the Required Libraries
 
-
 # Commented out IPython magic to ensure Python compatibility.
-#Importing the libraries
+# Importing the libraries
 
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
@@ -60,7 +57,7 @@ import os
 gdown https://drive.google.com/uc?id=1vz6659Atv9OOXiakzj1xaKhZ9jxJkeFF
 ```
 # Importing the data
-
+```
 df = pd.read_csv("Rec_sys_content.csv")
 # Viewing Top 5 Rows
 df.head(5)
