@@ -41,6 +41,7 @@
 ## 參考書
 - [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
   - https://github.com/nlp-with-transformers/notebooks
+  - 第一版簡體中譯本
 - [Hands-On Generative AI with Transformers and Diffusion Models](https://learning.oreilly.com/library/view/hands-on-generative-ai/9781098149239/)
   - https://github.com/genaibook/genaibook
 - [Mastering Transformers - Second Edition](https://learning.oreilly.com/library/view/mastering-transformers/9781837633784/)
