@@ -1,5 +1,9 @@
 # Transformer_範例
 - 使用預訓練模型
+  - KERAS 範例
+    - [Text classification with Transformer](https://keras.io/examples/nlp/text_classification_with_transformer/)
+    - [Named Entity Recognition using Transformers](https://keras.io/examples/nlp/ner_transformers/)
+    - [Text classification with Switch Transformer](https://keras.io/examples/nlp/text_classification_with_switch_transformer/)
 - 微調預訓練模型
 
 ### 使用預訓練模型最簡單的方法就是使用pipeline函數：
