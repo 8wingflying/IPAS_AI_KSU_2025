@@ -5,8 +5,9 @@
 - LLM Applications開發 
 
 ## 延伸閱讀:Large Language Model
-- [讓 AI 好好說話！從頭打造 LLM (大型語言模型) 實戰秘笈](https://www.tenlong.com.tw/products/9789863128236?list_name=sp)
+- BOOK1[讓 AI 好好說話！從頭打造 LLM (大型語言模型) 實戰秘笈](https://www.tenlong.com.tw/products/9789863128236?list_name=sp)
   - [Build a Large Language Model (From Scratch)(2024)](https://learning.oreilly.com/library/view/build-a-large/9781633437166/)
+  - [BOOK1筆記](BOOK1筆記.md)
   - 第 1章 理解大語言模型
   - 第 2章 處理文本資料
     - 2.1 詞嵌入 (Word Embedding，或稱詞向量)
