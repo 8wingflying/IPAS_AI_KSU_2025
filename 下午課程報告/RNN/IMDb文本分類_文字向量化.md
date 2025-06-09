@@ -9,3 +9,7 @@
   - GloVe
 - Pretrained model ==> Keras Embedding Layers
   - 參看 keras 官方範例 [Using pre-trained word embeddings](https://keras.io/examples/nlp/pretrained_word_embeddings/) 
+
+# scikit-learn
+### CountVectorizer
+### TF-IDF
