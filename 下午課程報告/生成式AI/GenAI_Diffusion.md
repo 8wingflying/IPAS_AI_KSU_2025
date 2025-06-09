@@ -35,7 +35,7 @@
   - [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) 
 - 2021 CLIP (Contrastive Language-Image Pre-Training)
   - 經典[Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) 
--  2021 DALL-E
+- 2021 DALL-E
   - https://zh.wikipedia.org/wiki/DALL-E
   - DALL-E 2(2022-04)
   - DALL-E 3(October 2023)
