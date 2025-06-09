@@ -12,6 +12,11 @@
 - 翻譯(Translation)：把一種語言的文字翻譯成另一種語言
 - 特徵提取(Feature extraction)：把一段文字用一個向量來表示
 
+## 參考書
+- [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
+- https://github.com/nlp-with-transformers/notebooks
+- CH1
+
 ### 範例1:情感分析(Sentiment analysis)
 - https://fancyerii.github.io/2020/07/08/huggingface-transformers/
 - !pip install transformers
@@ -37,8 +42,7 @@ label: POSITIVE, with score: 0.9998
 label: NEGATIVE, with score: 0.5309
 ```
 #### 範例2:text-classification文本分類
-- [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
-- https://github.com/nlp-with-transformers/notebooks
+
 ```python
 
 text = """Dear Amazon, last week I ordered an Optimus Prime action figure \
