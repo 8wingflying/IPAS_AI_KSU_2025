@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2b553914-ba3e-4475-bc27-978c400c6ed8)# 文字向量化 ==> Representing text as numbers
+# 文字向量化 ==> Representing text as numbers
 - One-hot encoding (OHE)
 - scikit-learn
   - CountVectorizer ==> [](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
