@@ -60,6 +60,8 @@
 - [【機器學習2021】生成式對抗網路 (Generative Adversarial Network, GAN) (四) – Cycle GAN](https://www.youtube.com/watch?v=wulqhgnDr7E)
 
 ### Diffusion Model
+- [【生成式AI】淺談圖像生成模型 Diffusion Model 原理(DDPM)](https://www.youtube.com/watch?v=azBugJzmz-o&list=PLJV_el3uVTsOePyfmkfivYZ7Rqr2nMk3W&index=18)
+- [【生成式AI】Stable Diffusion、DALL-E、Imagen 背後共同的套路](https://www.youtube.com/watch?v=JbfcAaBT66U&list=PLJV_el3uVTsOePyfmkfivYZ7Rqr2nMk3W&index=19&t=296s)
 - [【生成式AI】Diffusion Model 原理剖析 (1/4) (optional)](https://www.youtube.com/watch?v=ifCDXFdeaaM)
 - [【生成式AI】Diffusion Model 原理剖析 (2/4) (optional)](https://www.youtube.com/watch?v=73qwu77ZsTM)
 - [【生成式AI】Diffusion Model 原理剖析 (3/4) (optional)](https://www.youtube.com/watch?v=m6QchXTx6wA)
