@@ -7,12 +7,12 @@
     - https://blog.csdn.net/qq_43391414/article/details/112912107 
 - word embedding tools ==> [Genism](https://radimrehurek.com/gensim/apiref.html#api-reference)
   - 通過對向量的運算，比如歐幾裡得距離或者cosine相似度，可以計算出兩個單詞之間的語義相似性。
-  - Word2vec(2013/4)
+  - Word2vec(2013/4) ==> [models.word2vec – Word2vec embeddings](https://radimrehurek.com/gensim/models/word2vec.html)
     - Continuous bag-of-words (CBOW)
     - Skip-gram
     - https://serokell.io/blog/word2vec
     - Gensim 則是 Google 於 2013 提出的 Word2Vec 論文的 Python 實現
-  - fastText(2016)
+  - fastText(2016) ==> [models.fasttext – FastText model](https://radimrehurek.com/gensim/models/fasttext.html)
     - https://radimrehurek.com/gensim/models/fasttext.html
     - [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606)
     - https://blog.csdn.net/qq_38890412/article/details/104710375
@@ -58,3 +58,81 @@
     - 一個術語在語料庫中可能很少見（高IDF），但在特定文檔中（低TF）中無關緊要。
 - TF-IDF 分數越高，意味著該術語在該特定文檔中更重要
 
+
+## Gensim
+- Gensim comes with several already pre-trained models, in the Gensim-data repository
+- Colab安裝genism ==> 版本匹配
+```
+# Uninstall existing versions of numpy, scipy, and gensim
+!pip uninstall numpy scipy gensim -y
+
+# Install a compatible set of versions
+# We are installing numpy==1.23.5 and scipy==1.9.3 as these are known to work well together
+# and are within reasonable ranges for gensim compatibility.
+!pip install numpy==1.23.5 scipy==1.9.3 gensim
+```
+- 範例:
+```python
+import gensim.downloader as api
+
+info = api.info()  # show info about available models/datasets
+model = api.load("glove-twitter-25")  # download the model and return as object ready for use
+model.most_similar("cat")
+```
+- 範例: load a corpus and use it to train a Word2Vec model
+```python
+from gensim.models.word2vec import Word2Vec
+import gensim.downloader as api
+
+corpus = api.load('text8')  # download the corpus and return it opened as an iterable
+model = Word2Vec(corpus)  # train a model from the corpus
+model.most_similar("car")
+```
+```
+[==================================================] 100.0% 104.8/104.8MB downloaded
+[('dog', 0.9590820074081421),
+ ('monkey', 0.920357882976532),
+ ('bear', 0.9143136739730835),
+ ('pet', 0.9108031392097473),
+ ('girl', 0.8880629539489746),
+ ('horse', 0.8872726559638977),
+ ('kitty', 0.8870542049407959),
+ ('puppy', 0.886769711971283),
+ ('hot', 0.886525571346283),
+ ('lady', 0.8845519423484802)]
+```
+
+## Wordvector
+- [models.word2vec – Word2vec embeddings](https://radimrehurek.com/gensim/models/word2vec.html)
+
+
+```python
+from gensim.test.utils import common_texts
+from gensim.models import Word2Vec
+
+model = Word2Vec(sentences=common_texts, vector_size=100, window=5, min_count=1, workers=4)
+model.save("word2vec.model")
+
+
+model = Word2Vec.load("word2vec.model")
+model.train([["hello", "world"]], total_examples=1, epochs=1)
+
+vector = model.wv['computer']  # get numpy vector of a word
+sims = model.wv.most_similar('computer', topn=10)  # get other similar words
+```
+
+
+## Fasttext
+- https://radimrehurek.com/gensim/models/fasttext.html
+```python
+from gensim.models import FastText
+from gensim.test.utils import common_texts  # some example sentences
+
+print(common_texts[0])
+
+print(len(common_texts))
+
+model = FastText(vector_size=4, window=3, min_count=1)  # instantiate
+model.build_vocab(corpus_iterable=common_texts)
+model.train(corpus_iterable=common_texts, total_examples=len(common_texts), epochs=10)  # train
+```
