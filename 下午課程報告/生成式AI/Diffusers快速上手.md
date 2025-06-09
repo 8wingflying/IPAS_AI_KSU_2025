@@ -12,7 +12,7 @@
 - `預訓練模型(Pretrained models)`可用作構建區塊(building blocks)，並與`調度器(schedulers)`結合使用，用於創建您自己的端到端擴散系統。
   - Popular pretrained model architectures and modules that can be used as building blocks for creating diffusion systems.
 
-## diffusers_實戰1
+## diffusers_實戰1 ==> 更多學習 請參閱 https://huggingface.co/docs/diffusers/index
 - https://github.com/huggingface/diffusers
 - [使用T4 GPU](diffusers_實戰1_20250609_2.ipynb)
 ```python
