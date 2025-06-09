@@ -76,8 +76,8 @@
   - Video
     - 2025 [Survey of Video Diffusion Models: Foundations, Implementations, and Applications](https://arxiv.org/abs/2504.16081) 
   - Robotic Manipulation
-    - [Diffusion Models for Robotic Manipulation: A Survey](https://arxiv.org/abs/2504.08438)
-    - [Generative Artificial Intelligence in Robotic Manipulation: A Survey](Generative Artificial Intelligence in Robotic Manipulation: A Survey) 
+    - 202504[Diffusion Models for Robotic Manipulation: A Survey](https://arxiv.org/abs/2504.08438)
+    - 202503[Generative Artificial Intelligence in Robotic Manipulation: A Survey](https://arxiv.org/abs/2503.03464) 
 
 ## Awesome diffusion
 - https://github.com/Zeqiang-Lai/awesome-diffusion
