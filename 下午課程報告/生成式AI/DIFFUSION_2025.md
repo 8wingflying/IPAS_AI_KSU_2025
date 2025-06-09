@@ -53,7 +53,7 @@
       - https://ithelp.ithome.com.tw/articles/10333641
   - REVIEWs:
     - 👍202209 [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796)
-    - [[2303.07909] Text-to-image Diffusion Models in Generative AI: A Survey](https://arxiv.org/abs/2303.07909
+    - [[2303.07909] Text-to-image Diffusion Models in Generative AI: A Survey](https://arxiv.org/abs/2303.07909)
     - [Diffusion Models on the Edge: Challenges, Optimizations, and Applications](https://arxiv.org/abs/2504.15298)
       - TABLE II:Key Evaluation Metrics for Edge-Deployed Diffusion Models 
 - 範例程式 
