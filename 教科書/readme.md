@@ -1,8 +1,8 @@
-# [精通機器學習｜使用 Scikit-Learn , Keras 與 TensorFlow, 3/e](https://www.tenlong.com.tw/products/9786263246676?list_name=srh) 
+### [精通機器學習｜使用 Scikit-Learn , Keras 與 TensorFlow, 3/e](https://www.tenlong.com.tw/products/9786263246676?list_name=srh) 
 - Hands-On Machine Learning with Scikit-Learn, Keras, and Tensorflow: Concepts, Tools, and Techniques to Build Intelligent Systems, 3/e
 - Aurélien Géron
 - https://github.com/ageron/handson-ml3
-
+### 推薦參考書 [Machine Learning with PyTorch and Scikit-Learn](https://learning.oreilly.com/library/view/machine-learning-with/9781801819312/)
 ## 上課規劃
 - 早上三節課 ==> [I.機器學習的基礎知識](I_ML.md)
 - 下午三節課 ==> [II.神經網路和深度學習](II_DL.md)
