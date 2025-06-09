@@ -17,8 +17,9 @@
     - MNIST dataset ==>【TF 範例程式】 [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan)
     - Celeb-A Faces dataset ==>【PyTorch範例程式】 [DCGAN Tutorial](https://docs.pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
   - [Images of LEGO Bricks|40,000 images of 50 different LEGO bricks|Kaggle](https://www.kaggle.com/datasets/joosthazelzet/lego-brick-images)
-    - [Generative Deep Learning, 2nd Edition](https://learning.oreilly.com/library/view/generative-deep-learning/9781098134174/)
-      - CH `4`. Generative Adversarial Networks ==>DCGAN | WGAN-GP | CGAN 
+    - [Generative Deep Learning, 2nd Edition](https://learning.oreilly.com/library/view/generative-deep-learning/9781098134174/) [中譯本: 生成深度學習 2/e](https://www.tenlong.com.tw/products/9786263248540?list_name=srh)
+      - CH `4`. Generative Adversarial Networks ==>DCGAN | WGAN-GP | CGAN
+      - CH `10`.Advanced GANs
     - [GAN for Lego Bricks](https://www.kaggle.com/code/gabrielcabas/gan-for-lego-bricks)
 - Diffusion model
   - [基本觀念](DIFFUSION_2025.md)
