@@ -1,7 +1,12 @@
 ##
-
-#### Stop Words（停用詞）
-- 在NLP與資訊檢索中，為節省儲存空間和提高搜尋效率，在自然語言處理資料（或文字）之前或之後會自動過濾掉某些字或詞，這些字或詞即被稱為Stop Words（停用詞）。
+- 移除Stop Words（停用詞）
+  - 使用NLTK
+  - 使用Spacy
+  - 使用genism 
+- Text Normalization
+#### 移除 Stop Words（停用詞）
+- https://www.analyticsvidhya.com/blog/2019/08/how-to-remove-stopwords-text-normalization-nltk-spacy-gensim-python/ 
+- NLP與資訊檢索中，為節省儲存空間和提高搜尋效率，在自然語言處理資料（或文字）之前或之後會自動過濾掉某些字或詞，這些字或詞即被稱為Stop Words（停用詞）。
 - nltk.download('stopwords')
 ```python
 # The following code is to remove stop words from sentence using nltk
