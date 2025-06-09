@@ -1,5 +1,15 @@
 # LLM
 - LLM
+  - Contemporary Transformer Models 三大類型
+  - `1`.純 decoder架構
+  - `2`.純 encoder架構
+  - `3`.encoder-decoder 架構
+  - [大模型技術 30講 Machine Learning Q and AI](https://www.tenlong.com.tw/products/9787115659835?list_name=e-llm-2024)
+    - [Machine Learning Q and AI](https://learning.oreilly.com/library/view/machine-learning-q/9781098168827/)
+    - 第9章　生成式AI模型==>
+      - 9.1　生成式模型與判別式模型 
+      - 9.2　深度生成式模型的類型
+    - 17.4　當代Transformer模型 
 - LLM Engineering
   - 如何使用與調教LLM Model 
 - LLM Applications開發 
