@@ -48,3 +48,17 @@ image = image.cpu().permute(0, 2, 3, 1).numpy()[0]
 image = Image.fromarray((image * 255).round().astype("uint8"))
 image
 ```
+## 其他範例
+- https://huggingface.co/docs/diffusers/using-diffusers/write_own_pipeline
+- https://blog.csdn.net/weixin_44966641/article/details/134877089
+- 任務快速完成
+```python
+from diffusers import DDPMPipeline
+
+ddpm = DDPMPipeline.from_pretrained("google/ddpm-cat-256", use_safetensors=True).to("cuda")
+image = ddpm(num_inference_steps=25).images[0]
+image
+```
+- 拆解成運作原理
+- https://huggingface.co/docs/diffusers/using-diffusers/write_own_pipeline
+- https://blog.csdn.net/weixin_44966641/article/details/134877089
