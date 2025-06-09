@@ -11,7 +11,7 @@
 
 ## diffusers_實戰1
 - https://github.com/huggingface/diffusers
-- [使用T4 GPU]()
+- [使用T4 GPU](diffusers_實戰1_20250609.ipynb)
 ```python
 from diffusers import DiffusionPipeline
 import torch
