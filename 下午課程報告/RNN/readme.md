@@ -2,7 +2,9 @@
 - `1`.NLP研究主題
   - https://www.geeksforgeeks.org/natural-language-processing-nlp-tutorial/ 
 - Text Prepocessing(文本預處理) | Text Feature Engineering
-  -  
+  - [使用NLTK](IMDb文本分類_NLTK.md)
+  - 移除Stop Words（停用詞）
+  - Text Normalization ==> `詞幹提取(stemming)`和`詞形還原(lemmatization)`
 - `2`.[Text Representation or Text Embedding Techniques(word ==> vector) ](NLP_WordVector.md)
   - https://medium.com/ml-note/word-embedding-3ca60663999d
   - Bag of Word
