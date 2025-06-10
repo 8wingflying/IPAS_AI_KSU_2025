@@ -93,15 +93,6 @@ info = api.info()  # show info about available models/datasets
 model = api.load("glove-twitter-25")  # download the model and return as object ready for use
 model.most_similar("cat")
 ```
-- 範例: load a corpus and use it to train a Word2Vec model
-```python
-from gensim.models.word2vec import Word2Vec
-import gensim.downloader as api
-
-corpus = api.load('text8')  # download the corpus and return it opened as an iterable
-model = Word2Vec(corpus)  # train a model from the corpus
-model.most_similar("car")
-```
 ```
 [==================================================] 100.0% 104.8/104.8MB downloaded
 [('dog', 0.9590820074081421),
@@ -115,6 +106,16 @@ model.most_similar("car")
  ('hot', 0.886525571346283),
  ('lady', 0.8845519423484802)]
 ```
+- 範例: load a corpus and use it to train a Word2Vec model
+```python
+from gensim.models.word2vec import Word2Vec
+import gensim.downloader as api
+
+corpus = api.load('text8')  # download the corpus and return it opened as an iterable
+model = Word2Vec(corpus)  # train a model from the corpus
+model.most_similar("car")
+```
+
 
 ## Wordvector
 - [models.word2vec – Word2vec embeddings](https://radimrehurek.com/gensim/models/word2vec.html)
