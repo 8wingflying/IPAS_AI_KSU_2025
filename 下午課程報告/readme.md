@@ -8,7 +8,8 @@
 ## 開發技術
 - Keras 3
 - 🤗[Hugging Face – The AI community building the future.](https://huggingface.co)
-- 🤗[Diffusers |state-of-the-art pretrained diffusion models](https://github.com/huggingface/diffusers)
+  - [Transformers](https://huggingface.co/docs/transformers/en/index)
+  - [Diffusers |state-of-the-art pretrained diffusion models](https://github.com/huggingface/diffusers)
 - [Fastai](FastAI.md)
 ## 部屬技術
 - API ==> 使用 Flask | FastAPI
