@@ -32,8 +32,9 @@
     - 👍👍👍[Attention Is All You Need](https://arxiv.org/abs/1706.03762)
     - [[1607.06450] Layer Normalization | Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton](https://arxiv.org/abs/1607.06450)
     - 👍[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
-  - [Pre-Trained Language Models](Pre-Trained_Language_Models.md) ==> LLM
-    - **2018 BERT Bidirectional Encoder Representations from Transforme**
+- [Pre-Trained Language Models](Pre-Trained_Language_Models.md) ==> LLM
+  - **2018 BERT Bidirectional Encoder Representations from Transforme**
+  - 2018 GPT
 - `5`.範例應用NLP|文本分類(TEXT Classofication)
   - [IMDb文本分類](IMDb文本分類.md)
     - Sentiment Analysis 情緒分析 ==> 負評 vs 正評
