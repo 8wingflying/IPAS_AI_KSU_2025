@@ -54,13 +54,13 @@
 - https://fancyerii.github.io/2020/07/08/huggingface-transformers/
 
 # `5`.延伸閱讀
-## 【REVIEW】
+#### 【REVIEW】
 - [A Survey of Transformers](https://arxiv.org/abs/2106.04554)
 - [A Survey on Visual Transformer](https://arxiv.org/abs/2012.12556)
 - [Transformers in Time Series: A Survey](https://arxiv.org/abs/2202.07125)
 - [Long Range Arena: A Benchmark for Efficient Transformers](https://arxiv.org/abs/2011.04006)
 
-## 參考書
+#### 參考書
 - [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
   - https://github.com/nlp-with-transformers/notebooks
   - 第一版簡體中譯本
