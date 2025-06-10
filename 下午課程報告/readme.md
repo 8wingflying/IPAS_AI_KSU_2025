@@ -9,7 +9,7 @@
 - Keras 3
 - 🤗[Hugging Face – The AI community building the future.](https://huggingface.co)
 - 🤗[Diffusers |state-of-the-art pretrained diffusion models](https://github.com/huggingface/diffusers)
-- Fastai
+- [Fastai](FastAI.md)
 ## 部屬技術
 - API ==> 使用 Flask | FastAPI
   - [Building Generative AI Services with FastAPI](https://learning.oreilly.com/library/view/building-generative-ai/9781098160296/)
