@@ -6,6 +6,7 @@
 - 數學推導
   - 👍👍【YOUTUBE 影片】[Diffusion Models: DDPM | Generative AI Animated](https://www.youtube.com/watch?v=EhndHhIvWWw)
   - [[論文導讀] Understanding Diffusion Models: A Unified Perspective 擴散模型的數學原理](https://www.youtube.com/watch?v=__NWtPdsfxA)
+  - [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/#reverse-diffusion-process)
   - [Understanding Diffusion Models: A Unified Perspective](https://arxiv.org/abs/2208.11970)
 - 歷史發展Diffussion Model(2015)  [【Diffusion介紹】一系列Diffusion經典論文介紹](https://www.youtube.com/watch?v=PkBxB6aoOkQ)
   - 2015 [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585)
