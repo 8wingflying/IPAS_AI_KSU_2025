@@ -1,4 +1,4 @@
-# TextPreprocessing
+# Text Preprocessing
 - Text preprocessing involves cleaning and transforming raw text data into a format suitable for analysis, typically used in Natural Language Processing (NLP) and Machine Learning (ML) tasks.
 - This process aims to remove noise, inconsistencies, and irrelevant information, enhancing data quality and model performance.
 
