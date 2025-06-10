@@ -1,7 +1,8 @@
-### 報告主題
-- [電腦視覺](電腦視覺.md)
-- [基本圖形處理](圖形處理常用套件.md)
-- Image Classification與CNN模型
+### 電腦視覺與CNN 報告主題
+- 需涵蓋底下`1`到`4`內容(未編號者(加分項):可不做)
+- `1`.[電腦視覺](電腦視覺.md)
+- `2`.[基本圖形處理](圖形處理常用套件.md)
+- `3`.Image Classification與CNN模型
   - CNN 元件
     - Convolution Layer|卷積層 :padding(填補) |stride(步幅)
     - Pooling Layer |池化層
@@ -31,7 +32,7 @@
     - 教科書 ResNet-34
     - TF官方範例 [Convolutional Neural Network (CNN) ](https://www.tensorflow.org/tutorials/images/cnn)   ==> CIFAR10 資料集
     - TF官方範例 [Image classification](https://www.tensorflow.org/tutorials/images/classification)
-- Transfer learning and fine-tuning
+- `4`.Transfer learning and fine-tuning
   - [KerasHub| pre-trained model](https://keras.io/keras_hub/)
     - 使用pre-trained model
     - [KerasHub pretrained models](https://keras.io/keras_hub/presets/) 
