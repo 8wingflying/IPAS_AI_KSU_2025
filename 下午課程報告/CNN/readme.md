@@ -24,7 +24,7 @@
     - 參數共享：同一層的卷積核在不同位置應用相同的權重，減少了模型的參數數量，提高了計算效率。
     - 池化層：透過最大池化或平均池化來降低特徵圖的維度，減少計算量並提高模型的泛化能力。
     - 層次化特徵學習：CNN透過多層卷積和池化逐步提取從低階到高階的特徵，使其在圖像分類、物體檢測等任務中表現優異
-  - CNN 範例學習與實作
+  - CNN 範例學習與實作(至少要有一個範例實作)
     - [Image classification from scratch](https://keras.io/examples/vision/image_classification_from_scratch/)
       - 資料集 [Dogs vs. Cats - Kaggle](https://www.kaggle.com/c/dogs-vs-cats/overview)
       - image data augmentation ==> 資料量太少 ==> 擴增資料量的技術
