@@ -37,7 +37,8 @@
 ## 範例: 實作一個PyTorch Transformer
 - [Building a Simple Transformer using PyTorch [Code Included]](https://pureai.substack.com/p/building-a-simple-transformer-using-pytorch)
 - https://github.com/ermattson/pure-ai-tutorials/tree/main/SimpleTransformer-PyTorch
-
+## 更多範例
+- https://fancyerii.github.io/2020/07/08/huggingface-transformers/
 ## 參考書
 - [Natural Language Processing with Transformers, Revised Edition](https://learning.oreilly.com/library/view/natural-language-processing/9781098136789/)
   - https://github.com/nlp-with-transformers/notebooks
