@@ -17,19 +17,19 @@
   - 解碼器的輸出==> 通過一個線性層，再進行 Softmax，生成對應的機率分布，代表模型對下一個詞的預測。 
 - 基本構建單元 ==> 縮放點積注意力（scaled dot-product attention）單元
 
-### 【架構】導讀
+### `1`.【架構】導讀
 - 👍[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
   -  【教學影片(限量免費版20250610)】[How Transformer LLMs Work](https://www.deeplearning.ai/short-courses/how-transformer-llms-work/?utm_campaign=handsonllm-launch&utm_medium=partner) 
 - 👍[Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
 - https://ithelp.ithome.com.tw/articles/10363257
 
-### 【架構】實作==> 核心關鍵技術的程式實作[Optional]
-### Transformer工程學[Optional]
+### `2`.【架構】實作==> 核心關鍵技術的程式實作[Optional]
+### `3`.Transformer工程學[Optional]
 - Transfer Learning
   - 【範例】 [Transfer learning with Transformers trainer and pipeline for NLP](https://billtcheng2013.medium.com/transfer-learning-with-transformers-trainer-and-pipeline-for-nlp-8b1d2c1a8c3d)
   - 【REVIEW】202410[Transfer Learning on Transformers for Building Energy Consumption Forecasting -- A Comparative Study](https://arxiv.org/abs/2410.14107) 
 - Fine-Tuning
-#  範例學習==>應用
+#  `4`.範例學習==>應用
 #### 範例學習:[Transformer_HuggingFace範例](Transformer_HuggingFace範例.md)
 #### 作業 ==> 入門推薦 完成 [快速入門Quick tour](https://github.com/huggingface/notebooks/blob/main/transformers_doc/en/quicktour.ipynb)
 #### 範例學習: 實作一個Keras Transformer
@@ -53,7 +53,8 @@
 #### 更多範例
 - https://fancyerii.github.io/2020/07/08/huggingface-transformers/
 
-## 延伸閱讀
+# `5`.延伸閱讀
+## 【REVIEW】
 - [A Survey of Transformers](https://arxiv.org/abs/2106.04554)
 - [A Survey on Visual Transformer](https://arxiv.org/abs/2012.12556)
 - [Transformers in Time Series: A Survey](https://arxiv.org/abs/2202.07125)
