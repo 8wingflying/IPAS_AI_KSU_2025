@@ -1,4 +1,5 @@
 ## RNN 與 自然語言處理|報告主題
+- 需涵蓋底下`1`到`5`內容(未編號者(加分項):可不做)
 - `1`.NLP研究主題
   - https://www.geeksforgeeks.org/natural-language-processing-nlp-tutorial/ 
 - Text Prepocessing(文本預處理) | Text Feature Engineering
