@@ -12,9 +12,15 @@
 - 👍[Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
 - https://ithelp.ithome.com.tw/articles/10363257
 
-##  範例學習:應用
+### 【架構】實作==> 核心關鍵技術的程式實作[Optional]
+### Transformer工程學[Optional]
+- Transfer Learning
+  - 【範例】 [Transfer learning with Transformers trainer and pipeline for NLP](https://billtcheng2013.medium.com/transfer-learning-with-transformers-trainer-and-pipeline-for-nlp-8b1d2c1a8c3d)
+  - 【REVIEW】202410[Transfer Learning on Transformers for Building Energy Consumption Forecasting -- A Comparative Study](https://arxiv.org/abs/2410.14107) 
+- Fine-Tuning
+#  範例學習==>應用
 #### 範例學習:[Transformer_HuggingFace範例](Transformer_HuggingFace範例.md)
-
+#### 作業 ==> 入門推薦 完成 [快速入門Quick tour](https://github.com/huggingface/notebooks/blob/main/transformers_doc/en/quicktour.ipynb)
 #### 範例學習: 實作一個Keras Transformer
 - Attention Layers in TensorFlow
   - Self-Attention (Scaled Dot-Product Attention) --> tf.keras.layers.Attention
