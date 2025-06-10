@@ -1,3 +1,12 @@
+# 強化學習| 增強式學習 |Reinforcement Learning(RL)報告(2025/10)
+- 強化學習
+- 強化學習架構
+  - 簡單示意圖
+  - 馬爾可夫決策過程（Markov decision processes，MDP） 
+- 強化學習演算法
+- 強化學習範例學習
+
+
 # YOUTUBE教學影片
 ### [李弘毅教授| Hung-yi Lee](https://www.youtube.com/@HungyiLeeNTU)
 - [【機器學習2021】概述增強式學習 (Reinforcement Learning, RL) (一) – 增強式學習跟機器學習一樣都是三個步驟](https://www.youtube.com/watch?v=XWukX-ayIrs&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=30)
