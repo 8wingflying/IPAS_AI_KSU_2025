@@ -5,13 +5,19 @@
   - **https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php** 
 
 ## GenAI報告主題
-- 生成式AI
-- VAE
-  - [基本觀念](GenAI_VAE.md)
+- 需涵蓋底下`1`到`4`內容(未編號者(加分項):可不做)
+- `1`.生成式AI
+  - 生成式AI
+  - 生成式AI vs 鑑別式 AI
+  - 生成式AI模型主要類型
+- `2`.AE==>VAE
+  - 須包括[AE/VAE基本觀念]說明與某一AE/VA 實作或應用
+  - [VAE基本觀念](GenAI_VAE.md)
   - 實作
     - 【TF 範例程式】[Intro to Autoencoders](https://www.tensorflow.org/tutorials/generative/autoencoder)
     - MNIST ==> 【TF 範例程式】[CVAE Convolutional Variational Autoencoder](https://www.tensorflow.org/tutorials/generative/cvae)
-- GAN 
+- `3`.GAN 
+  - 須包括[GAN基本觀念]說明與某一GAN 實作(推薦使用DCGAN)
   - [GAN基本觀念](GenAI_GAN.md)
   - DCGAN實作
     - MNIST dataset ==>【TF 範例程式】 [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/tutorials/generative/dcgan)
@@ -21,10 +27,15 @@
       - CH `4`. Generative Adversarial Networks ==>DCGAN | WGAN-GP | CGAN
       - CH `10`.Advanced GANs
     - [GAN for Lego Bricks](https://www.kaggle.com/code/gabrielcabas/gan-for-lego-bricks)
-- Diffusion model
+- `4`.Diffusion model
+  - 須包括[Diffusion mode基本觀念](DIFFUSION_2025.md)說明與Diffusion model應用
+    - Diffusion model應用
+      - 使用 套件 [Diffusers快速上手](Diffusers快速上手.md)
+      - 使用 Keras==> see【Keras範例程式】
+        - 推薦 [Stable Diffusion 3 in KerasHub!](https://keras.io/keras_hub/guides/stable_diffusion_3_in_keras_hub/) [【Keras範例程式解說】](Keras_SD_1.md) 
   - [基本觀念](DIFFUSION_2025.md)
     - https://ithelp.ithome.com.tw/articles/10329715
-  - 範例程式
+  - 【Keras範例程式】
     - MNIST dataset  ==> DDPM  https://github.com/bot66/MNISTDiffusion/tree/main
     - DDPM  ==> 【Keras範例程式】[Denoising Diffusion Probabilistic Model](https://keras.io/examples/generative/ddpm/)
     - DDIM  ==> 【Keras範例程式】[Denoising Diffusion Implicit Models](https://keras.io/examples/generative/ddim/)
@@ -32,7 +43,6 @@
       - [Stable Diffusion 3 in KerasHub!](https://keras.io/keras_hub/guides/stable_diffusion_3_in_keras_hub/) [【Keras範例程式解說】](Keras_SD_1.md)
       - [A walk through latent space with Stable Diffusion 3](https://keras.io/examples/generative/random_walks_with_stable_diffusion_3/) [【Keras範例程式解說】](Keras_SD_2.md)
       - [Fine-tuning Stable Diffusion](https://keras.io/examples/generative/finetune_stable_diffusion/) [【Keras範例程式解說】](Keras_SD_3.md)
-    - 套件 [Diffusers快速上手](Diffusers快速上手.md)
   - 推薦課程 ==> https://github.com/huggingface/diffusion-models-class
     - 中文說明 ==> [擴散模型從原理到實戰](https://www.tenlong.com.tw/products/9787115618870?list_name=srh) 
 - 生成模型評估指標
