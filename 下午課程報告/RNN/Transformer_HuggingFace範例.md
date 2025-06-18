@@ -118,4 +118,17 @@ outputs = generator(prompt, max_length=200)
 print(outputs[0]['generated_text'])
 ```
 
-
+#### 範例8: 使用streamlit 網站介面
+- pip install streamlit 
+```python
+import streamlit as st
+from transformers import pipeline
+ 
+st.title("Hugging Face Demo")
+text = st.text_input("Enter text to analyze")
+model = pipeline("sentiment-analysis")
+if text:
+    result = model(text)
+    st.write("Sentiment:", result[0]["label"])
+    st.write("Confidence:", result[0]["score"])
+```
