@@ -58,8 +58,16 @@
 
 - `5`.範例應用NLP|文本分類(TEXT Classofication)
   - [IMDb文本分類](IMDb文本分類.md)
+    - [IMDb文本分類_NLTK](IMDb文本分類_NLTK.md)
+    - [IMDb文本分類_文字向量化](IMDb文本分類_文字向量化.md)
+    - [IMDb文本分類_傳統作法](IMDb文本分類_傳統作法.md)
+      - 模型1 ==> 使用CountVectorizer + MultinomialNB
+      - 模型2 ==> 使用TfidfVectorizer + MultinomialNB
+      - 模型3 ==> 使用 wordvector + SVC | RandomForestClassifier
+    - [IMDb文本分類_RNN](IMDb文本分類_RNN.md)
     - Sentiment Analysis 情緒分析 ==> 負評 vs 正評
   - 以內容為基礎的推薦系統
+  - [主題建模Topic Modeling](TopicModeling主題建模.md)
 
 
 
