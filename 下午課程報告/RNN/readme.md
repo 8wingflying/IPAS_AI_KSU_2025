@@ -17,7 +17,7 @@
 - `3`.RNN model  ==> The Problem of Long-Term Dependencies
   - Vanilla RNN
   - LSTM|Long Short-Term Memory|長短期記憶(1997)
-    - 👍👍 [Understanding LSTM Networks(2015)](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+    - 【導讀】[Understanding LSTM Networks(2015)](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
     - https://ithelp.ithome.com.tw/articles/10193924 
   - GRU | Gated Recurrent Unit(2014)
     - https://zhuanlan.zhihu.com/p/20310288990
@@ -33,13 +33,28 @@
     - 2015 [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025)
     - 👍[Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
   - 2017 [Transformer](Transformer.md)
-    - 👍👍👍[Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-    - [[1607.06450] Layer Normalization | Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton](https://arxiv.org/abs/1607.06450)
-    - 👍[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+    - 👍👍👍【經典論文】[Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+    - 【論文】[[1607.06450] Layer Normalization | Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton](https://arxiv.org/abs/1607.06450)
+    - 【導讀】[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
     - [Transformer_HuggingFace範例](Transformer_HuggingFace範例.md)
 - [Pre-Trained Language Models](Pre-Trained_Language_Models.md) ==> LLM
   - **2018 BERT Bidirectional Encoder Representations from Transforme**
+    - 【經典論文】[[1810.04805] BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
   - 2018 GPT
+    - GPT-1
+    -  [https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf]()
+    - GPT-2
+    - GPT-3
+    - GPT-3.5
+    - GPT-4 
+  - LLAMA
+    - https://zh.wikipedia.org/zh-tw/LLaMA
+    - LLAMA-1(2023年2月)
+    - LLAMA-2(2023年7月)
+    - Code Llama(2023年8月)
+    - LLAMA-3(2024年4月18日)
+    - Llama-4(2025年4月5日) 
+
 - `5`.範例應用NLP|文本分類(TEXT Classofication)
   - [IMDb文本分類](IMDb文本分類.md)
     - Sentiment Analysis 情緒分析 ==> 負評 vs 正評
