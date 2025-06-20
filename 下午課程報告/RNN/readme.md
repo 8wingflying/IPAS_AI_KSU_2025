@@ -38,7 +38,7 @@
     - 【論文】[[1607.06450] Layer Normalization | Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton](https://arxiv.org/abs/1607.06450)
     - 【導讀】[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
     - 【模型應用】[Transformer_HuggingFace範例](Transformer_HuggingFace範例.md)
-- [Pre-Trained Language Models](Pre-Trained_Language_Models.md) ==> LLM
+- `5`.[Pre-Trained Language Models](Pre-Trained_Language_Models.md) ==> LLM
   - **2018 BERT Bidirectional Encoder Representations from Transforme**
     - 【經典論文】[[1810.04805] BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
   - 2018 GPT
