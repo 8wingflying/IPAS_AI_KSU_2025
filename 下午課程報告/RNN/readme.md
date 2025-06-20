@@ -36,6 +36,7 @@
     - 👍👍👍[Attention Is All You Need](https://arxiv.org/abs/1706.03762)
     - [[1607.06450] Layer Normalization | Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton](https://arxiv.org/abs/1607.06450)
     - 👍[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+    - [Transformer_HuggingFace範例](Transformer_HuggingFace範例.md)
 - [Pre-Trained Language Models](Pre-Trained_Language_Models.md) ==> LLM
   - **2018 BERT Bidirectional Encoder Representations from Transforme**
   - 2018 GPT
