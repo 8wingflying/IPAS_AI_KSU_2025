@@ -57,7 +57,28 @@
     - Llama-4(2025年4月5日) 
 
 - `5`.範例應用NLP|文本分類(TEXT Classofication)
-  - [IMDb文本分類](IMDb文本分類.md)
+  - IMDb文本分類
+    - [IMDB Dataset of 50K Movie Reviews|Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+      - IMDB 數據集具有 50K 條電影評論，用於自然語言處理或文本分析。
+      - 這是一個用於二元情感分類的數據集，包含的數據比以前的基準數據集多得多。
+      - 一組 25,000 篇高度極性的電影評論用於培訓，25,000 篇用於測試。
+      - 因此，使用分類或深度學習演算法預測正面和負面評論的數量。
+      - 有關數據集的更多資訊，請訪問以下連結 http://ai.stanford.edu/~amaas/data/sentiment/
+    - [Towards Tensorflow 2.0 系列](https://ithelp.ithome.com.tw/users/20119971/ironman/2254?page=1)
+    - 傳統做法: word2vec | tfidf | bow
+      - https://www.kaggle.com/code/jagarapusiva/imdb-movie-reviews-word2vec-tfidf-bow
+    - MLP
+    - SimpleRNN
+    - LSTM
+    - GRU
+    - 各種變形LSTM+CNN
+    - Keras官方範例[Bidirectional LSTM on IMDB](https://keras.io/examples/nlp/bidirectional_lstm_imdb/)
+    - Keras官方範例[Text classification with Transformer](https://keras.io/examples/nlp/text_classification_with_transformer/)
+    - Keras官方範例[Text Classification using FNet](https://keras.io/examples/nlp/fnet_classification_with_keras_hub/)
+    - TF官方範例[Text classification from scratch](https://keras.io/examples/nlp/text_classification_from_scratch/)
+    - TF官方範例[Text classification with an RNN ](https://www.tensorflow.org/text/tutorials/text_classification_rnn)
+    - TF官方範例[Classify text with BERT](https://www.tensorflow.org/text/tutorials/classify_text_with_bert)
+  - IMDb文本分類
     - [IMDb文本分類_NLTK](IMDb文本分類_NLTK.md)
     - [IMDb文本分類_文字向量化](IMDb文本分類_文字向量化.md)
     - [IMDb文本分類_傳統作法](IMDb文本分類_傳統作法.md)
@@ -69,7 +90,8 @@
   - 以內容為基礎的推薦系統
   - [主題建模Topic Modeling](TopicModeling主題建模.md)
 
-
+### 其他分析
+- [NLP Text Preprocessing Tutorial](https://www.kaggle.com/code/rudraneelsannigrahi/nlp-text-preprocessing-tutorial)
 
 ## 教科書相關章節
 #### 教科書:第15章Processing Sequences Using RNNs and CNNs ==> [時間序列分析](時間序列分析.md)
