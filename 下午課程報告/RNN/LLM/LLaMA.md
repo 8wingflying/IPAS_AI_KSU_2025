@@ -31,3 +31,23 @@
 ## LLama導讀
 ## 架構實作
 ## 應用
+```python
+from transformers import pipeline
+import torch
+
+model_id = "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+
+messages = [
+    {"role": "user", "content": "what is the recipe of mayonnaise?"},
+]
+
+pipe = pipeline(
+    "text-generation",
+    model=model_id,
+    device_map="auto",
+    torch_dtype=torch.bfloat16
+)
+
+output = pipe(messages, do_sample=False, max_new_tokens=200)
+print(output[0]["generated_text"][-1]["content"])
+```
