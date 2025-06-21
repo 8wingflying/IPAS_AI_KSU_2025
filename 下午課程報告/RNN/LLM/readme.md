@@ -20,7 +20,7 @@
   - [Part 1: Tokenization — A Complete Guide](https://medium.com/p/cedc9f72de4e)
   - Part 2: Word Embeddings with word2vec from Scratch in Python
   - Part 3: Self-Attention Explained with Code
-  - Part 4: A Complete Guide to BERT with Code
+  - [Part 4: A Complete Guide to BERT with Code](https://towardsdatascience.com/a-complete-guide-to-bert-with-code-9f87602e4a11/)
   - Part 5: Mistral 7B Explained: Towards More Efficient Language Models
 
 ## 延伸閱讀:Large Language Model
