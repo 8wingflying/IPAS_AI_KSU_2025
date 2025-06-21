@@ -13,14 +13,25 @@
     - [GPT-4](https://openai.com/index/gpt-4-research/)
   - GPT-4o(2024年5月發布)
   - GPT-5 ?? MLLM
-## 論文
+## 導讀
 
 ## 模型實作
 - [GPT in 60 Lines of NumPy](https://jaykmody.com/blog/gpt-from-scratch/)
+- [程式碼 gpt2.py](https://github.com/jaymody/picoGPT/blob/main/gpt2.py)
 - 執行
 ```python
 python gpt2.py \
     "Alan Turing theorized that computers would one day become" \
     --n_tokens_to_generate 8
+```
+-使用 Docker執行
+```
+docker build -t "openai-gpt-2" "https://gist.githubusercontent.com/jaymody/9054ca64eeea7fad1b58a185696bb518/raw/Dockerfile"
+
+docker run -dt "openai-gpt-2" --name "openai-gpt-2-app"
+
+docker exec -it "openai-gpt-2-app" /bin/bash -c 'python3 src/interactive_conditional_samples.py --length 8 --model_type 124M --top_k 1'
+
+# paste "Alan Turing theorized that computers would one day become" when prompted
 ```
 ## 應用
