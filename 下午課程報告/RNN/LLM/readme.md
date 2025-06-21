@@ -11,10 +11,18 @@
       - 9.2　深度生成式模型的類型
     - 17.4　當代Transformer模型 
 - LLM Engineering
-  - 如何使用與調教LLM Model 
+  - 如何善用與調教LLM Model 
 - LLM Applications開發 
 - Datasets
   - 202402[Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research](https://arxiv.org/abs/2402.00159) 
+## 導讀
+- “LLMs from Scratch” series — a complete guide to understanding and building Large Language Models.
+  - [Part 1: Tokenization — A Complete Guide](https://medium.com/p/cedc9f72de4e)
+  - Part 2: Word Embeddings with word2vec from Scratch in Python
+  - Part 3: Self-Attention Explained with Code
+  - Part 4: A Complete Guide to BERT with Code
+  - Part 5: Mistral 7B Explained: Towards More Efficient Language Models
+
 ## 延伸閱讀:Large Language Model
 - BOOK1[讓 AI 好好說話！從頭打造 LLM (大型語言模型) 實戰秘笈](https://www.tenlong.com.tw/products/9789863128236?list_name=sp)
   - [Build a Large Language Model (From Scratch)(2024)](https://learning.oreilly.com/library/view/build-a-large/9781633437166/)
