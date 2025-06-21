@@ -9,4 +9,4 @@
 # `2`.純 encoder架構
 - [BERT](BERT.md)
 # `3`.純 decoder架構
-- GPT
+- [Generative Pre-trained Transformer (GPT)](GPT.md) 
