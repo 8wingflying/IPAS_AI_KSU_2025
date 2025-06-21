@@ -17,7 +17,7 @@
 - `3`.RNN model  ==> The Problem of Long-Term Dependencies
   - Vanilla RNN
   - LSTM|Long Short-Term Memory|長短期記憶(1997)
-    - 【導讀】[Understanding LSTM Networks(2015)](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+    - 👍【導讀】[Understanding LSTM Networks(2015)](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
     - https://ithelp.ithome.com.tw/articles/10193924 
   - GRU | Gated Recurrent Unit(2014)
     - https://zhuanlan.zhihu.com/p/20310288990
@@ -34,7 +34,7 @@
     - 👍【導讀】[Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
     - 【導讀】 ==> 28. 注意力機制（Attention mechanism）
   - 2017 [Transformer](Transformer.md)
-    - 👍👍👍【經典論文】[Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+    - 👍👍【經典論文】[Attention Is All You Need](https://arxiv.org/abs/1706.03762)
     - 【論文】[[1607.06450] Layer Normalization | Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton](https://arxiv.org/abs/1607.06450)
     - 【導讀】[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
     - 【模型應用】[Transformer_HuggingFace範例](Transformer_HuggingFace範例.md)
@@ -55,7 +55,6 @@
     - Code Llama(2023年8月)
     - LLAMA-3(2024年4月18日)
     - Llama-4(2025年4月5日) 
-
 - `5`.範例應用NLP|文本分類(TEXT Classofication)
   - IMDb文本分類
     - [IMDB Dataset of 50K Movie Reviews|Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
@@ -68,9 +67,7 @@
     - 傳統做法: word2vec | tfidf | bow
       - https://www.kaggle.com/code/jagarapusiva/imdb-movie-reviews-word2vec-tfidf-bow
     - MLP
-    - SimpleRNN
-    - LSTM
-    - GRU
+    - SimpleRNN | LSTM | GRU
     - 各種變形LSTM+CNN
     - Keras官方範例[Bidirectional LSTM on IMDB](https://keras.io/examples/nlp/bidirectional_lstm_imdb/)
     - Keras官方範例[Text classification with Transformer](https://keras.io/examples/nlp/text_classification_with_transformer/)
@@ -78,7 +75,7 @@
     - TF官方範例[Text classification from scratch](https://keras.io/examples/nlp/text_classification_from_scratch/)
     - TF官方範例[Text classification with an RNN ](https://www.tensorflow.org/text/tutorials/text_classification_rnn)
     - TF官方範例[Classify text with BERT](https://www.tensorflow.org/text/tutorials/classify_text_with_bert)
-  - IMDb文本分類
+  - IMDb文本分類{參考報告主題}
     - [IMDb文本分類_NLTK](IMDb文本分類_NLTK.md)
     - [IMDb文本分類_文字向量化](IMDb文本分類_文字向量化.md)
     - [IMDb文本分類_傳統作法](IMDb文本分類_傳統作法.md)
@@ -89,7 +86,7 @@
     - Sentiment Analysis 情緒分析 ==> 負評 vs 正評
   - 以內容為基礎的推薦系統
   - [主題建模Topic Modeling](TopicModeling主題建模.md)
-
+- `6`.範例應用:[時間序列分析](時間序列分析.md)
 ### 其他分析
 - [NLP Text Preprocessing Tutorial](https://www.kaggle.com/code/rudraneelsannigrahi/nlp-text-preprocessing-tutorial)
 
