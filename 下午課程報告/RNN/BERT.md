@@ -13,5 +13,6 @@
 - https://zhuanlan.zhihu.com/p/52282552
 - https://medium.com/@pocheng0118/bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-d751cdbaff02
 - https://www.woshipm.com/ai/6223371.html
+- https://nlp.stanford.edu/seminar/details/jdevlin.pdf
 
 ## 應用
