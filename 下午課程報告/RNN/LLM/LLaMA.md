@@ -11,6 +11,7 @@
 ## Open Source LLM
 - [Open LLMs](https://github.com/eugeneyan/open-llms)
 - https://blog.n8n.io/open-source-llm/
+- https://github.com/Hannibal046/Awesome-LLM
 - LLaMA(Large Language Model Meta AI) 
 - Mistral 7B
 - Falcon
