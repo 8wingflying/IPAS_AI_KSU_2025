@@ -15,9 +15,12 @@
   - GPT-4o(2024年5月發布)
   - GPT-5 ?? MLLM
 ## 導讀
+- [How GPT3 Works - Visualizations and Animations](https://jalammar.github.io/how-gpt3-works-visualizations-animations/)
 
 ## 模型實作
 - [GPT in 60 Lines of NumPy](https://jaykmody.com/blog/gpt-from-scratch/)
+- https://github.com/jaymody/picoGPT/tree/main
+- https://jiqihumanr.github.io/2023/04/13/gpt-from-scratch/
 - [程式碼 gpt2.py](https://github.com/jaymody/picoGPT/blob/main/gpt2.py)
 - 執行
 ```python
