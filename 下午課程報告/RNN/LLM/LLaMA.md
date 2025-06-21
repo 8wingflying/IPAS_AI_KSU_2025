@@ -10,6 +10,7 @@
   - 具備多模態（文字和圖像輸入，文字輸出）和多語言（12種語言）特性
 ## Open Source LLM
 - [Open LLMs](https://github.com/eugeneyan/open-llms)
+- https://blog.n8n.io/open-source-llm/
 - LLaMA(Large Language Model Meta AI) 
 - Mistral 7B
 - Falcon
