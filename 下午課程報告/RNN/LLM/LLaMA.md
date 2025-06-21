@@ -1,9 +1,12 @@
 # LLaMA(Large Language Model Meta AI)  
-- 2023 Meta AI | LLaMA(Large Language Model Meta AI)(2023年2月)
+- Meta AI | LLaMA(Large Language Model Meta AI)
+- LLaMA 1(2023年2月)
   - https://zh.wikipedia.org/zh-tw/LLaMA
   - [[2302.13971]LLaMA: Open and efficient foundation language models](https://arxiv.org/abs/2302.13971)
 - LLaMA 2(2023年7月)
-  - [Llama 2: Open Foundation and Fine-Tuned Chat Models]() 
+  - [Llama 2: Open Foundation and Fine-Tuned Chat Models]()
+  - Llama 2使用了和Llama 1相同的模型架構以及tokenizer。
+  - 與Llama 1不同的是，Llama 2將上下文長度擴展到了4k，並且34B和70B參數量版本使用了GQA
 - Code Llama(2023年8月)
 - Llama 3 (2024年4月18日)
   - [The Llama 3 Herd of Models](https://arxiv.org/abs/2407.21783) 
