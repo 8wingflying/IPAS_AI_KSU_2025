@@ -24,7 +24,7 @@ python gpt2.py \
     "Alan Turing theorized that computers would one day become" \
     --n_tokens_to_generate 8
 ```
--使用 Docker執行
+- 使用 Docker執行
 ```
 docker build -t "openai-gpt-2" "https://gist.githubusercontent.com/jaymody/9054ca64eeea7fad1b58a185696bb518/raw/Dockerfile"
 
