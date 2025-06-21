@@ -4,6 +4,7 @@
   - GPT-1(2018)
     - [Improving Language Understanding by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) 
   - GPT-2(2019)
+    - [Language Models are Unsupervised Multitask Learners]() 
   - GPT-3(2020)
     - [[2005.14165] Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) 
   - GPT-3.5(2022)
