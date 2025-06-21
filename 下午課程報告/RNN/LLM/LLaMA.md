@@ -31,6 +31,7 @@
 ## LLama導讀
 ## 架構實作
 ## 應用
+- https://huggingface.co/docs/transformers/main/model_doc/llama4
 ```python
 from transformers import pipeline
 import torch
