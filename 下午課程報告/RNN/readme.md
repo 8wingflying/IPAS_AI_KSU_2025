@@ -14,25 +14,38 @@
   - Bag of Word
   - TF-IDF
   - Word Embedding 
-- `3`.RNN model  ==> The Problem of Long-Term Dependencies
+- `3`.RNN model 
+  - Recurrent Neural Networks (RNNs)
+    - https://www.geeksforgeeks.org/introduction-to-recurrent-neural-network/
   - Vanilla RNN
   - LSTM|Long Short-Term Memory|長短期記憶(1997)
+    - Problem with Long-Term Dependencies in RNN
+      - Vanishing Gradient
+      - Exploding Gradient 
     - 👍【導讀】[Understanding LSTM Networks(2015)](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+    - https://www.geeksforgeeks.org/deep-learning-introduction-to-long-short-term-memory/
     - https://ithelp.ithome.com.tw/articles/10193924 
   - GRU | Gated Recurrent Unit(2014)
     - https://zhuanlan.zhihu.com/p/20310288990
-    - https://ithelp.ithome.com.tw/articles/10194201 
+    - https://ithelp.ithome.com.tw/articles/10194201
+    - https://www.geeksforgeeks.org/machine-learning/gated-recurrent-unit-networks/
   - https://www.geeksforgeeks.org/rnn-vs-lstm-vs-gru-vs-transformers/
 - `4`.從seq2seq model到Transformer
   - Neural Machine Translation 與 seq2seq model
-    - 2014 [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)
-    - 2014 [Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](https://emnlp2014.org/papers/pdf/EMNLP2014179.pdf)
-    - https://research.google/blog/a-neural-network-for-machine-translation-at-production-scale/
+    - 2014【經典論文 [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)
+    - 2014 【經典論文[Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](https://emnlp2014.org/papers/pdf/EMNLP2014179.pdf)
+    - 【導讀】
+      - https://blog.csdn.net/zhuge2017302307/article/details/119979892
+      - https://research.google/blog/a-neural-network-for-machine-translation-at-production-scale/
+      - https://en.wikipedia.org/wiki/Seq2seq
   - Attention
-    - 2014【經典論文】 [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
-    - 2015 【經典論文】[Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025)
+    - 2014【經典論文】[Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
+    - 2015【經典論文】[Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025)
     - 👍【導讀】[Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
     - 【導讀】 ==> 28. 注意力機制（Attention mechanism）
+    - 【導讀】 https://en.wikipedia.org/wiki/Attention_(machine_learning)
+    - https://machinelearningmastery.com/the-attention-mechanism-from-scratch/
+    - https://www.geeksforgeeks.org/artificial-intelligence/ml-attention-mechanism/
   - 2017 [Transformer](Transformer.md)
     - 👍👍【經典論文】[Attention Is All You Need](https://arxiv.org/abs/1706.03762)
     - 【論文】[[1607.06450] Layer Normalization | Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton](https://arxiv.org/abs/1607.06450)
