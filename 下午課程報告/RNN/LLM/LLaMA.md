@@ -32,6 +32,24 @@
   - https://blog.csdn.net/qq_36530891/article/details/132832476
   - [Code Llama 本地部署使用指南，并在 VSCode 和 chatbox 中使用](https://www.bingal.com/posts/code-llama-usage/)
 ## LLama導讀
+- https://zhuanlan.zhihu.com/p/694072728
+- https://blog.csdn.net/qq_41185868/article/details/137981416
+- 
+
+## LLaMA-Factory
+- https://llamafactory.readthedocs.io/zh-cn/latest/index.html
+- https://zhuanlan.zhihu.com/p/1919124023255741920
+- LLaMA Factory 是一個簡單易用且高效的大型語言模型（Large Language Model）訓練與微調平臺。
+- 通過 LLaMA Factory，可以在無需編寫任何代碼的前提下，在本地完成上百種預訓練模型的微調
+- 框架特性包括：
+  - 模型種類：LLaMA、LLaVA、Mistral、Mixtral-MoE、Qwen、Yi、Gemma、Baichuan、ChatGLM、Phi 等等。
+  - 訓練演算法：（增量）預訓練、（多模態）指令監督微調、獎勵模型訓練、PPO 訓練、DPO 訓練、KTO 訓練、ORPO 訓練等等。
+  - 運算精度：16 比特全參數微調、凍結微調、LoRA 微調和基於 AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ 的 2/3/4/5/6/8 比特 QLoRA 微調。
+  - 優化演算法：GaLore、BAdam、DoRA、LongLoRA、LLaMA Pro、Mixture-of-Depths、LoRA+、LoftQ 和 PiSSA。
+  - 加速運算元：FlashAttention-2 和 Unsloth。
+  - 推理引擎：Transformers 和 vLLM。
+  - 實驗監控：LlamaBoard、TensorBoard、Wandb、MLflow、SwanLab 等等。
+
 ## 架構實作
 ## 應用
 - https://huggingface.co/docs/transformers/main/model_doc/llama4
